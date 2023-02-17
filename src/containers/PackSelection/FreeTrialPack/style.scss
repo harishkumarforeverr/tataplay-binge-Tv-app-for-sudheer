@@ -1,0 +1,98 @@
+.free-trial-container {
+  height: 85vh;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+
+  .free-trial.pack-parent {
+    .pack-header {
+      .free-trial-text {
+        margin-bottom: 30px;
+        font-family: sky_med;
+
+        &.white {
+          color: $white-color;
+        }
+      }
+    }
+
+    .pack-body {
+      li {
+        height: fit-content;
+
+        &:first-child {
+          margin-right: 0;
+          background-color: transparent;
+        }
+
+        .app-block {
+          max-height: fit-content;
+          min-height: fit-content;
+          margin-bottom: 0;
+          overflow-x: auto;
+          text-align: left;
+        }
+
+        &:after {
+          height: 0;
+        }
+      }
+    }
+
+    .skip.for-web {
+      margin-top: 20px;
+    }
+
+
+  }
+
+  .free-trial-start {
+    // position: absolute;
+    // bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    .skip {
+      color: #5087c7;
+      margin-top: 15px;
+      text-decoration: underline;
+      font-weight: bold;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      -moz-tap-highlight-color: transparent;
+      -o-tap-highlight-color: transparent;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape) {
+
+    height: 100vh;
+
+    .free-trial.pack-parent {
+      .pack-header {
+        h3 {
+          margin-top: 16px;
+          padding: 0 12px;
+        }
+      }
+    }
+    .free-trial-start {
+      margin-top: 69px;
+      .primary-btn {
+        margin: 0 auto 10px;
+        width: 90%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-height: 600px) and (min-device-width: 320px) and (max-device-width: 480px){
+  .free-trial-start{
+    margin-top: 15%;
+  }
+}

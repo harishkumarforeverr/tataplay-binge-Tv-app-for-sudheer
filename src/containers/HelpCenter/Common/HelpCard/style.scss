@@ -1,0 +1,141 @@
+section {
+  &.more-way-tohelp1 {
+    background: #fff;
+    .heading-md {
+      position: relative;
+      .heading1,
+      .heading-sm .heading1 {
+        color: #220046;
+        margin-bottom: 0;
+        font-size: 35px;
+        font-family: $font-family-regular, Tahoma;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .helpcard-item-wrapper {
+      background: rgba(51, 53, 77, 1);
+      position: relative;
+      width: calc(33.33% - 10px);
+      margin: 5px;
+      border-radius: 6px;
+      
+      &:hover {
+        cursor: pointer;
+      }
+      span {
+        font-family: $font-family-medium,sans-serif;
+      }
+      a {
+        color: #1d1e30;
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        text-decoration: none;
+
+        &:hover {
+          background: #f4f2f6;
+          transition-property: background;
+          transition-duration: 0.5s;
+          transition-timing-function: ease;
+          .text-contr {
+              span{
+            font-family: $font-family-semiBold, sans-serif;
+             transition-duration: 0.5s;
+          transition-timing-function: ease;
+              }
+          }
+        }
+        .text-contr {
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          font-family: sky_reg, Tahoma;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+          }
+          .icon-Partner-apps{
+            padding-right: 0px;
+            }
+        }
+        .icon-contr {
+          height: 40px;
+          width: 40px;
+          display: flex;
+          margin-right: 10px;
+          justify-content: center;
+          align-items: center;
+          background: #594074;
+          // padding: 5px 0px 5px 5px;
+          border-radius: 50%;
+          img {
+            max-width: 60%;
+            opacity: 0.8;
+          }
+        
+        }
+        .icon-partner-apps{
+          padding-right: 0px!important;
+        }
+        .arrow-contr {
+          height: 16px;
+          display: inline-block;
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &.more-way-tohelp1 {
+      .heading-md {
+        margin-bottom: 15px;
+        text-align: left;
+        .heading1 {
+          font-size: 20px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
+      .helpcard-item-wrapper {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #bdbdbd;
+        background: transparent;
+        margin: 0;
+        border-radius: 0;
+
+        &:last-child {
+          border-bottom: none;
+          a {
+            padding-bottom: 0;
+          }
+        }
+
+        a {
+          width: 100%;
+          padding: 10px 0;
+          box-shadow: none;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.comment-modal-popup{
+	.popupOuter{
+		.popupSec{
+		transform: none;
+		// background-color: red($color: #000000)!important;
+		border:none;
+		background: none;
+	}
+	
+}
+
+
+.modal-body-container {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	z-index: 10001;
+	text-align: center;
+	// background-color: rgba(10, 10, 10, 0.9);
+	left: 0;
+	animation: fadeInDown 0.8s;
+	background: none;
+}
+.popup-body {
+	position: fixed;
+	border-radius: 5px;
+	width: 498px;
+	line-height: 1.4;
+	background: #fff;
+	border-radius: 0.3rem;
+	overflow: hidden;
+	animation: fadeInDown 1.0s;
+	margin: 15px;
+	padding-bottom: 20px;
+}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.popup-fullbody {
+	
+    padding: 0 15px 0 20px;
+
+}
+.modal-header.ticketinfo {
+	height: 38px;
+	width: 230px;
+	border-radius: 0 0 70px 0;
+	background: rgb(19, 0, 40);
+	background: linear-gradient(
+		90deg,
+		rgba(19, 0, 40, 1) 0%,
+		rgba(34, 0, 70, 1) 100%
+	);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 12px 22px 12px 20px;
+}
+.hovering{ 
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	width: 171px;
+	height: 22px;
+}
+.requestId {
+	white-space: nowrap;
+	display: inline-block;
+	width: 171px;
+	&:not(:hover) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 3px;
+	}
+  &:hover{
+	overflow: initial;
+	animation-name: marqee;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	margin-top: 3px;
+  }
+}
+.ticketpara {
+	line-height: 60px;
+	font-size: 17px;
+	display: flex;
+}
+.comment {
+	display: flex;
+	color: #1d1e30;
+	font-weight: 1000;
+}
+.form-control {
+	width: 100%;
+	height: 20px;
+	padding: 5px 5px 5px 12px;
+	line-height: 18px;
+	background-color: transparent;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+	box-sizing: border-box;
+	height: auto;
+	font-size: 16px;
+}
+textarea {
+	height: 100px !important;
+	
+}
+textarea:focus{
+	
+		outline: none !important;
+		border:1px solid #80bdff ;
+		box-shadow: 0 0 10px #80bdff;
+}
+.error {
+	display: flex;
+	font-size: 12px;
+	color: #e56c6c;
+}
+
+.suggestion {
+	display: flex;
+	font-size: 12px;
+}
+.btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24px;
+}
+.btn-contr {
+	min-width: calc(40% - 14px);
+	height: 44px;
+	line-height: 37px;
+	margin: 6px;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 1px solid #e10092;
+	font-size: 19px;
+	font-family: $font-family-regular;
+}
+.btn-contr.reopen {
+	background: #e10092 !important;
+	color: #fff;
+}
+.btn-contr.close {
+	color: #e10092;
+	background-color: #fff;
+}
+.btn-contr.close:hover {
+	background: #e10092 !important;
+	color: #fff;
+}
+@media screen and (max-width: 530px) {
+	.popup-body {
+		border-radius: 5px;
+
+		width: 100%;
+		margin: 0 auto;
+		animation: animatebottom 1.0s;
+		bottom: 0;
+	}
+	@keyframes animatebottom {
+		from {
+		  bottom: -300px;
+		  opacity: 0;
+		}
+	  
+		to {
+		  bottom: 0;
+		  opacity: 1;
+		}
+	  }
+	.btn-contr {
+		width: calc(100% - 24px);
+	}
+	p {
+		line-height: 18px;
+	}
+	.ticketpara {
+		line-height: 18px;
+		margin: 10px 0 10px 0px;
+	}
+		
+	.form-control {
+		font-size: 14px;
+	}
+
+	.btns {
+		display: block;
+	}
+	.modal-header.ticketinfo {
+		padding: 15px 0 10px 22px;
+	}
+	.error {
+		display: flex;
+	}
+}
+@media screen and (max-width: 365px)
+{
+	.ticketpara {
+		line-height: 18px;
+		font-size: 13px;
+	}
+}
+}

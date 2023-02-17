@@ -1,0 +1,44 @@
+.info-box {
+    color: #a3a6c2;
+    display: flex;
+    flex-direction: column;
+
+    .footer-text-bottom {
+        display: inline-block;
+
+        span {
+            &:first-child {
+                font-size: 16px;
+                margin-bottom: 8px;
+                font-family: $font-family-medium;
+                line-height: 120%;
+                font-weight: 500;
+                color: #D7C6F4;
+            }
+
+            display: block;
+            font-size: 10px;
+            font-family: $font-family-regular;
+            line-height: 120%;
+            color: #D7C6F4;
+        }
+    }
+
+    .footer-text-top {
+        h1 {
+            text-indent: -9999px;
+            background-size: auto;
+            width: 100%;
+            background: url("../../../assets/images/bingeLogo.svg") no-repeat;
+            cursor: pointer;
+
+            &:active {
+                cursor: pointer;
+            }
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        margin-top: 25px;
+        margin-right: 0px;
+    }
+}

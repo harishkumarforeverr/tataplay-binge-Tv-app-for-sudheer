@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'sky_reg';
+    src: url('../assets/fonts/Sky_Reg.woff') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_med';
+    src: url('../assets/fonts/Sky_Med.woff') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_bold';
+    src: url('../assets/fonts/Sky_Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_italic';
+    src: url('../assets/fonts/Sky_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot');
+    src: url('../assets/fonts/icomoon.eot?1e1b1d#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf') format('truetype'),
+    url('../assets/fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'volte_medium';
+    src: url('../assets/fonts/VoltePlay-Medium.woff') format('truetype')
+}
+@font-face {
+    font-family: 'volte_reg';
+    src: url('../assets/fonts/VoltePlay-Regular.woff') format('truetype')
+}
+@font-face {
+    font-family: 'volte_semiBold';
+    src: url('../assets/fonts/VoltePlay-SemiBold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'volte_bold';
+    src: url('../assets/fonts/VoltePlay-Bold.woff') format('truetype')
+}
+
+html {
+    scrollbar-color: #6b00dd #33345d;
+    scrollbar-width: thin;
+    cursor: pointer;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.eula-base-container.main-container {
+    margin-top: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* background-color: #1d1e30; */
+    cursor: default;
+    background-color: #020005;
+    /* margin-bottom: 5em; */
+}
+
+.eula-container {
+    color: #fff;
+    padding: 15px 10px 50px 10px;
+}
+
+.eula-container.form-container .page-heading {
+    margin-top: 25px;
+}
+
+.eula-container p.privacy-sub-head {
+    font-size: 16px;
+    font-family: volte_medium;
+    margin-bottom: 12px;
+}
+
+.eula-container .eula-text {
+    font-family: volte_reg;
+    font-size: 14px;
+    font-weight: normal;
+    overflow-y: auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.eula-container .eula-text p {
+    line-height: 1.1;
+}
+
+.page-main-heading {
+    font-family: volte_medium;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.3;
+    font-style: normal;
+    font-stretch: normal;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #220046;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #220046;
+    border-radius: 5px;
+}
+
+.eula-text .first_list li {
+    margin: 12px 0 12px 0;
+}
+
+ol {
+    padding-inline-start: 15px;
+}
+
+ol.first_list {
+    padding-inline-start: 45px;
+}
+
+a {
+    color: #e10092;
+}
+
+li.marker-size::marker {
+    font-size: 16px;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+ol > li {
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+ol > li:before {
+    display: table-cell;
+    padding-right: 0.6em;
+}
+li ol > li {
+    margin: 0;
+}
+
+.imp-tc {
+    text-align: center;
+}
+
+.eula-list > li:before {
+    content: '';
+}
+
+.eula-block {
+    margin: 12px 0 12px 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+(min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) {
+
+    .form-container {
+        padding: 1px 10px 50px 40px;
+    }
+
+    @-moz-document url-prefix() {
+        .form-container {
+            padding: 1px 10px 50px 25px;
+        }
+        ol.first_list {
+            padding-inline-start: 17px;
+        }
+        ol {
+            padding-inline-start: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h2.page-main-heading {
+        font-size: 30px;
+    }
+}

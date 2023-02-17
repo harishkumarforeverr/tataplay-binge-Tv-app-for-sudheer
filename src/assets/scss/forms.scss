@@ -1,0 +1,45 @@
+.form-group {
+  margin: 10px auto;
+  list-style: none;
+  .or-text {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  .form-data {
+    display: inline-block;
+    //min-width: 250px;
+    min-width: 263px;
+    .or-text{
+      display: inline-block
+    }
+  }
+}
+
+.red-background-errors {
+  color: $white-color;
+  background: $error-color;
+  display: block;
+  padding: 10px;
+  width: 100%
+}
+
+.important-message{
+  background: $border-color;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom:20px;
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 767px) {
+      .form-group{
+        .form-data{
+          .multi-select{
+            margin-right: 0;
+          }
+        }
+      }
+    }

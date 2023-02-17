@@ -1,0 +1,58 @@
+deployment:
+  replicaCount: 1
+      
+  version: 14.14.0
+  platform: node
+  containers:
+    - name: binge-anywhere-web-tb
+      repository: binge-anywhere-web-tb
+      secrets:
+        enabled: false
+      env:
+      - name: ngnix.restart.url
+        value: ""
+      - name: tvod.rental.expiry
+        value: "48"
+      - name: server.contextPath
+        value: /binge-anywhere-web
+
+      healthcheck:
+        enabled: true
+        path: /versioninfo.txt
+        port: 3000
+        initialDelaySeconds: 100
+        timeoutSeconds: 100
+        failureThreshold: 7        
+        
+        
+      ports:
+        containerPort: 8080
+      volumeMounts:
+        mountPath: /opt/logs/binge-anywhere-web-tb
+      resources:
+        limits:
+          cpu: 500m
+          memory: 500Mi
+        requests:
+          cpu: 500m
+          memory: 500Mi
+
+  volume:
+    - name: application-logs
+  nodeSelector:
+    ENV: uat-amd-int
+   
+
+service:
+  ports:
+    name: www
+    port: 80
+    targetport: 3000
+
+
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 60
+  targetMemoryUtilizationPercentage: 60

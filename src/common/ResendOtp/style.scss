@@ -1,0 +1,44 @@
+.resend-otp-container {
+  vertical-align: baseline;
+
+  &.disabled {
+    vertical-align: bottom;
+    span.blue-text {
+      color: #52547a;
+    }
+  }
+
+  p {
+    color: #4a90e2;
+    font-weight: bold;
+
+    i {
+      color: #4a90e2;
+      position: relative;
+      vertical-align: bottom;
+      right: 2px;
+    }
+  }
+
+  span {
+    font-family: sky_med;
+    font-size: 14px;
+    color: $white-color;
+    line-height: 1.2;
+  }
+
+  #resend-button {
+    &.disabled {
+      color: $disable-color;
+      pointer-events: none;
+
+      i {
+        color: $disable-color;
+      }
+    }
+  }
+}
+
+.password-case {
+  display: none;
+}

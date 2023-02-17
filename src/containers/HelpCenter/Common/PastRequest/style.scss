@@ -1,0 +1,139 @@
+.past-request-container {
+  .ticket-compact {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(206, 210, 218, 0.6);
+    margin: 0 auto;
+
+    .content-area {
+      position: relative;
+      z-index: 2;
+      .request-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        .img-contr {
+          margin-right: 20px;
+          width: 30px;
+        }
+        .text-contr {
+          width: calc(100% - 180px);
+          display: flex;
+          align-items: center;
+        }
+        .heading {
+          font-size: 22px;
+          padding-bottom: 20px;
+          padding-top: 20px;
+          line-height: 16px;
+          padding-right: 30px;
+          margin-right: 30px;
+          border-right: 1px solid rgba(34, 0, 70, 0.5);
+          color: rgba(34, 0, 70, 1);
+          font-family: $font-family-medium, sans-serif;
+        }
+        .info-txt {
+          font-family: $font-family-regular, Tahoma;
+          color: #1d1e30;
+          font-size: 18px;
+        }
+        .label {
+          margin-top: -5px;
+        }
+      }
+      .btn {
+        margin: 0;
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        vertical-align: middle;
+        border-radius: 22px;
+        font-size: 18px;
+        text-transform: none;
+        box-shadow: none;
+        font-family: $font-family-medium;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        .btn-tertiary {
+          background: transparent;
+          border: 1px solid #e10092 !important;
+          color: #e10092 !important;
+        }
+        .btn-sm {
+          padding: 8px 20px;
+          min-width: max-content;
+          height: auto;
+          line-height: inherit;
+        }
+        .cta {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .past-request-container {
+    .ticket-compact {
+      padding: 15px;
+      .content-area {
+        font-size: 16px;
+        .request-top {
+          font-size: 16px;
+          .img-contr {
+            margin-right: 10px;
+            font-size: 16px;
+          }
+          .text-contr {
+            width: calc(100% - 110px);
+            flex-direction: column;
+            margin-right: 10px;
+            align-items: flex-start;
+            .heading {
+              font-size: 22px;
+              padding-bottom: 10px;
+              padding-top: 0;
+              padding-right: 0;
+              margin-right: 0;
+              border-right: none;
+            }
+            .info-txt {
+              font-size: 16px;
+            }
+          }
+        }
+        .btn {
+          font-size: 14px;
+          width:0;
+
+          .btn-tertiary {
+            background: #e10092;
+            color: #fff !important;
+          }
+          .btn-sm {
+            padding: 8px 20px;
+            min-width: max-content;
+            height: auto;
+            line-height: inherit;
+            width: fit-content;
+          }
+          .pl3 {
+                display: none;
+          }
+          .cta {
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

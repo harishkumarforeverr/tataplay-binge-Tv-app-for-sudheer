@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <filter id="bsjpk2w2ya" color-interpolation-filters="auto">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#bsjpk2w2ya)" transform="translate(-18 -146) translate(16 144)">
+                <g>
+                    <g stroke="#FFF">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M8.958.11c-.353-.177-.775-.139-1.09.098L3.282 3.125H1.2c-.575 0-1.042.466-1.042 1.042V6.25c0 .575.467 1.042 1.042 1.042h2.083l4.584 2.916c.315.237.738.275 1.09.099.353-.177.576-.537.576-.932V1.042c0-.395-.222-.756-.575-.932zM3.283 3.125L3.283 7.292" transform="translate(2 2) translate(3.125 4.792)"/>
+                        <path fill-rule="nonzero" d="M14.217 4.034c.045-.046.12-.046.165 0 .046.045.046.12 0 .165h0l-1.05 1.05 1.05 1.051c.034.034.043.085.026.127l-.026.038c-.046.046-.12.046-.165 0h0l-1.05-1.05-1.051 1.05c-.035.035-.085.043-.127.026l-.039-.026c-.045-.045-.045-.12 0-.165h0l1.051-1.05-1.05-1.051c-.035-.034-.043-.084-.026-.127l.025-.038c.046-.046.12-.046.166 0h0l1.05 1.05z" transform="translate(2 2) translate(3.125 4.792)"/>
+                    </g>
+                    <path d="M0 0H20V20H0z" transform="translate(2 2)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

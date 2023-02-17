@@ -1,0 +1,68 @@
+  .color-background {
+    background: #1d1e30;
+  }
+ .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    //   width: 640px;
+    height: 71px;
+    align-items: center;
+    // background: #28293e;
+    // background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+    background-color: $background-page;
+    mix-blend-mode: normal;
+
+    border: 1px solid $bingeBlue-75;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 16px 15px 17px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      padding-left: 3px;
+      img {
+        width: 40px;
+        height: auto;
+      }
+      p {
+        //    font-family: Sky Text;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        padding-left: 24px;
+        font-family: $font-family-medium;
+        /* identical to box height, or 24px */
+
+        color: #ffffff;
+      }
+    }
+  }
+
+
+@media only screen and (max-width: 480px) {
+
+   .button-wrapper {
+      height: 56px;
+
+      padding: 16px 15px 17px;
+      margin: 15px 0;
+
+      div:nth-child(1) {
+        padding-left: 3px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        p {
+          font-size: 16px;
+
+          padding-left: 10.67px;
+        }
+      }
+    }
+}

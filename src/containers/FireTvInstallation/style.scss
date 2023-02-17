@@ -1,0 +1,400 @@
+.fsEdition-container {
+  margin: 0 auto;
+  position: relative;
+  top: 2em;//changes to 5em to 0.3em
+
+  h1 {
+    font-size: 26px; //35px to 26px
+    text-align: center;
+    color: #ffffff;
+    line-height: 31.2px;//newly added
+    font-family: $font-family-medium!important;
+  }
+
+  .instructions {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #cdcee5;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-family: $font-family-medium!important;
+  }
+
+  .radio-block {
+    background: none;
+    padding: 20px;
+    width: 396px;
+    height: auto;
+
+    margin: 0px auto 20px auto;
+    border: 1px solid $bingeBlue-75;//newly added
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    .radio-text {
+      font-size: 18px;
+      color: #ffffff;
+      font-family: $font-family-medium;
+      float: left;
+      width: 293px;
+      // text-align: left;
+      
+      margin-right: 1.8rem;//newly added
+    }
+
+    .radio-button {
+      margin: 0;
+      right: 0;
+      bottom: 4px;
+    }
+
+    .radio-desc {
+      color: $pink-25;
+      line-height: 1.25;
+      font-size: 16px;
+      font-family: $font-family-medium;
+      width: auto;
+    }
+  }
+
+  .second {
+    background: none;
+    padding: 20px;
+    width: 396px;
+    height: auto;
+
+    margin: 0 auto 0px auto;
+    border: 1px solid $bingeBlue-75;//newly added
+    box-sizing: border-box;
+    border-radius: 10px;
+    .radio-text {
+      font-size: 18px;
+      color: #ffffff;
+      font-family: $font-family-medium;
+      float: left;
+      width: 293px;
+      text-align: left;
+      margin-right: 1.8rem;//newly added
+    }
+
+    .radio-button {
+      margin: 0;
+      right: 0;
+      bottom: 4px;
+    }
+
+    .radio-desc {
+      color: $pink-25;
+      line-height: 1.25;
+      font-size: 16px;
+      font-family: $font-family-medium;
+      width: auto;
+    }
+  }
+
+  .btn-block {
+    width: 396px;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      text-decoration: none;
+    }
+
+    .button-margin{
+      margin-bottom: 20px;
+      margin-top: 60px;
+    }
+
+    .button-text {
+      font-size: 16px;
+      // font-family: $font-family-semiBold!important;
+    }
+
+    .btn-link {
+      color: $pink-25!important;
+      font-size: 16px;
+      font-family: $font-family-medium, serif;
+      // margin-top: 20px;
+      // text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 100px;
+    }
+  }
+
+  .fs-img {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .address-container {
+    .hidden {
+      visibility: hidden;
+    }
+
+    .instructions {
+      margin: 20px auto 0 auto;
+      // width: 530px;
+
+      &.second {
+        margin: 3 auto 30px auto;
+      }
+    }
+
+    .form {
+      text-align: center;
+      margin: 3.5em auto;
+      width: 324px;
+      height: auto;
+
+      .form-block {
+        margin-bottom: 20px;
+        text-align: left;
+
+        textarea {
+          margin: 0 auto;
+          width: 324px;
+          height: 156px;
+          display: block;
+          font-family: $font-family-regular;
+          padding: 10px 10px 14px 15px;
+          color: #ffffff;
+          background: #33354d;
+          border-radius: 2px;
+          box-sizing: border-box;
+          border: 1px solid transparent;
+          resize: none;
+          font-size: 16px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .heading {
+          font-size: 18px;
+          line-height: 1.33;
+          letter-spacing: normal;
+          // text-align: center;
+          color: #a3a6c2;
+          margin-bottom: 5px;
+        }
+
+        .value {
+          color: #ffffff;
+          font-size: 16px;
+          width: 324px;
+          margin: 0 auto;
+          line-height: 18px;
+        }
+        .valued {
+          color: #A3A6C2;
+          font-size: 16px;
+          width: 324px;
+          margin: 0 auto;
+          line-height: 16px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .installation-container {
+   
+    .instructions {
+      margin-bottom: 30px;
+    }
+
+    .form {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3em;
+      width: 396px;
+      height: auto;
+      margin-bottom: 60px;
+
+      .form-block {
+        &:first-child, &:last-child {
+          margin-bottom: 30px;
+        }
+
+        margin-bottom: 10px;
+
+        .heading {
+          font-size: 16px;
+          line-height: 0.94;
+          letter-spacing: normal;
+          text-align: left;
+          color: #ffffff;
+          margin-bottom: 5px;
+        }
+        .select-box{
+          width: 396px;
+          height: 59px;
+          background: $background-page;
+          border: 1px solid $bingeBlue-75;
+          box-sizing: border-box;
+          border-radius: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          color: #A3A6C2;
+          padding-left: 1em;
+          option{
+            margin: 40px;
+            padding: 20px;
+          }
+          // .option-valid{
+          //   padding: 40px;
+          // }
+         
+          // option {
+          //   background: #1b1a1a !important;
+          //   color: #357b1d !important;
+          // }
+        }
+        //  select>option:hover
+        //   {
+        //       color: #7e671b;
+        //       cursor: pointer;
+        //   }
+
+        // .value {
+        //   height: 59px;
+        // }
+
+        // .radio-block {
+        //   margin: 10px auto;
+        //   height: 59px;
+
+        //   .radio-text {
+        //     span {
+        //       text-align: left;
+        //       &:first-child {
+        //         float: left;
+        //         width: 30%;
+        //       }
+        //     }
+        //   }
+        // }
+      }
+    }
+    .btn-block{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media only screen and (max-width: 600px)  {
+  .fsEdition-container {
+    top: 5em;//changes to 5em to 0.3em
+    h1 {
+      font-size: 25px;
+      line-height: 35px;//newly added
+    }
+  
+    .instructions {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  
+    .radio-block {
+      padding: 20px;
+      width: 325px;
+      height: auto;
+  
+  
+      .radio-text {
+        font-size: 16px;
+        width: 230px;
+      }
+      .radio-desc {
+        line-height: 17px;
+        font-size: 14px;
+      }
+    }
+  
+    .second {
+      padding: 20px;
+      width: 325px;
+      height: auto;
+      .radio-text {
+        font-size: 16px;
+        width: 230px;
+      }
+  
+      .radio-desc {
+        color: $pink-25;
+        line-height: 17px;
+        font-size: 14px;
+        font-family: $font-family-medium;
+        width: auto;
+      }
+    }
+  
+    .btn-block {
+      width: 324px;
+  
+      .btn-link {
+        margin-bottom: 150px;
+      }
+    }
+    .installation-container {
+   
+      // .instructions {
+      //   margin-bottom: 30px;
+      // }
+  
+      .form {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+        // width: 396px;
+        // height: auto;
+        margin-bottom: 140px;
+        width: 324px;
+  
+        .form-block {
+          &:first-child, &:last-child {
+            margin-bottom: 30px;
+          }
+  
+          margin-bottom: 10px;
+  
+          // .heading {
+          //   font-size: 16px;
+          //   line-height: 0.94;
+          //   letter-spacing: normal;
+          //   text-align: left;
+          //   color: #ffffff;
+          //   margin-bottom: 5px;
+          // }
+          .select-box{
+            width: 324px;
+            // height: 59px;
+            // background: #33354D;
+            // border: 1px solid #444764;
+            // box-sizing: border-box;
+            // border-radius: 10px;
+            // font-style: normal;
+            // font-weight: normal;
+            // font-size: 16px;
+            // color: #A3A6C2;
+            // padding-left: 1em;
+            option{
+              margin: 40px;
+              padding: 20px;
+            }
+          }
+        }
+      }
+  
+      .btn-block{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

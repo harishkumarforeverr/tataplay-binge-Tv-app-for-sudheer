@@ -1,0 +1,30 @@
+.download-link {
+    margin-top: 18px;
+
+    span {
+        font-family: $font-family-medium;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+        color: $white-color;
+    }
+    .app-store-btn {
+        margin-top: 8px;
+        display: flex;
+
+        a {
+            margin-right: 16px;
+            display: inline-block;
+
+            .apple-store {
+                width: 100px;
+                height: 34px;
+            }
+
+            .play-store {
+                width: 111px;
+                height: 34px;
+            }
+        }
+    }
+}

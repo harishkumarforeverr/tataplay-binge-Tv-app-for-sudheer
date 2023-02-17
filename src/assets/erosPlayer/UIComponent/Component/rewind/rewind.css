@@ -1,0 +1,146 @@
+.logituit_rewindTooltip {
+    visibility: hidden;
+    /* width: 100%; */
+    width: 32px;
+    max-width:none;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 0px;
+    /* Position the tooltip */
+    position: absolute;
+    /* left: -4px; */
+    left: 3px;
+    bottom: 90%;
+    z-index: 1;
+  }
+  .logituit_rewindText{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 2px;
+    position: absolute;
+    left: 1.66em;
+    top: 1.15em;
+    z-index: 1;
+    margin: 0;
+    /* animation-name: rotate;  */
+    
+  }
+  .logituit_rewindText_animation {
+    animation: rewindtext 1s 1;
+    animation-direction: normal;
+  }
+  .logituit_rewind{
+    position: absolute;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    height: 4.4%;
+    outline: none;
+    width: 2.5%;
+    z-index: 1;
+    display: block;
+    cursor: pointer;    
+  }
+  
+  @keyframes rewindtext {
+    from {left: 20px;}
+    to {left: -37px;}
+  }
+
+  .logituit_rewindIcon{
+    top: 0%;
+    /* left: 73.3%; */
+    /* height: 12%; */
+    /* width: 6.8%; */
+    padding: 20px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    display: block;
+    /* transition: transform 500ms linear 0s; */
+    cursor: pointer;
+    position: absolute;
+    /* bottom: 45%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  .logituit_rewindIcon_animation {
+    animation: rewindmove 1s 1 !important;
+  }
+
+  @keyframes rewindmove {
+    50% {transform: rotate(-90deg);}
+  }
+ 
+@media (hover: hover) and (pointer: fine) {
+.logituit_rewind:hover .logituit_rewindTooltip {
+    visibility: visible;
+  }
+  .logituit_rewind:hover {
+    transform: scale(1.1) !important;
+    transition: none !important;
+    }
+}
+.animationRewindIcon{
+  width: 40px;
+  height: 40px;
+  display: none;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* animation: rewindicon-animation 0.8s 1 0s ease-in-out; */
+  animation: rewindicon-animation 1s 1 0s ease-in-out;
+}
+.logituit_rewind_animation{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #e9e9e9;
+  opacity: 0.2;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border-radius: 50%;
+  /* animation: rewindAnimation 0.8s 1 0s ease-in-out; */
+  animation: rewindAnimation 1s 1 0s ease-in-out;
+}
+@keyframes rewindicon-animation{
+  50%{
+    opacity: 0.2;
+  }    
+  100%{
+      opacity: 0;
+      }
+  }
+@keyframes rewindAnimation{
+  50%{
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
+  }    
+  100%{
+      width: 70px;
+      height: 70px;
+      opacity: 0;
+      }
+  }
+.visible{
+  display: block;
+}
+
+@media(max-width:480px){
+  .logituit_rewindText{
+    /* left: 6% ;
+    bottom: 14% ;
+    bottom: unset ; */
+  }
+ 
+}

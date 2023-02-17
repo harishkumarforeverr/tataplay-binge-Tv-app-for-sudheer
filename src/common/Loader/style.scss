@@ -1,0 +1,29 @@
+.loader-container {
+  width:100%;
+  position: fixed;
+  // left: 40%;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  z-index: 10001;
+  text-align: center;
+  // pointer-events: none;
+
+  img.scroll-loader {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    // left: 35%;
+    img.scroll-loader{
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+

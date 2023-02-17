@@ -1,0 +1,91 @@
+.container {
+  .header-msg {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+    font-family: $font-family-medium;
+  }
+  .footer-msg {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #a3a6c2;
+    font-family: $font-family-medium;
+  }
+  .expire-msg {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    margin-top: 12px;
+    color: #a3a6c2;
+    font-family: $font-family-regular;
+  }
+  .btn-wrapper-later {
+    // background: $pink-100;
+    border-radius: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    .button-text {
+      font-size: 16px;
+    }
+  }
+  .btn-wrapper-proceed {
+    background: transparent;
+    border-radius: 22px;
+    display: block;
+    width: 100%;
+    border: 2px solid $pink-100;
+    .button-text {
+      color: #ffff;
+      font-size: 16px;
+    }
+  }
+}
+.cancel-plan-error {
+  .popupSec {
+    height: 170px;
+
+    h1 {
+      margin: 20px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    .header-msg {
+      font-size: 20px;
+    }
+    .footer-msg {
+      font-size: 16px;
+    }
+    .expire-msg {
+      font-size: 16px;
+
+      margin-top: 10px;
+    }
+    .btn-wrapper-later {
+      margin-top: 15px;
+      margin-bottom: 8px;
+
+      .button-text {
+        font-size: 14px;
+      }
+    }
+    .btn-wrapper-proceed {
+      .button-text {
+        color: #ffff;
+        font-size: 14px;
+      }
+    }
+  }
+}

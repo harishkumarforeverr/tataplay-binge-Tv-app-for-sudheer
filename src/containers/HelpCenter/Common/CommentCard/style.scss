@@ -1,0 +1,129 @@
+.user-comment1, .agent-comment1 {
+    width: 500px; 
+    max-width: 100%;
+  }
+  .light{
+    background: #F4F2F6; 
+  }
+  
+
+  .agent-comment1{
+    position:relative;
+    padding: 10px; 
+    border-radius: 3px;
+  
+    .top
+    { 
+          display:flex; 
+          align-items:center;
+          margin-bottom:5px;
+      
+        .user-shortname
+      {
+        height:28px;
+         width:28px;
+          border-radius:50%;
+           line-height:30px;
+            text-align:center; 
+            background:#6B00DD;
+             color:#fff;
+              margin-right:10px;
+               font-size:14px;
+               .username-text{
+                height:28px;
+                width:28px;
+                 border-radius:50%;
+                  line-height:30px;
+                   text-align:center; 
+                   background:#E10092;
+                    color:#fff;
+                     margin-right:10px;
+                      font-size:14px;
+               }
+               .logged-out-profile{
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                text-align: center;
+                cursor: pointer;
+                background-color: #E10092;
+                border: 0.5px solid #E10092;
+               }
+      }
+                .user-name{
+                  font-size:14px;
+                  font-family: $font-family-medium, sans-serif;
+                  }
+  
+            
+                }
+      .comments{
+        font-size:14px;
+        font-family: $font-family-medium, sans-serif;
+        }
+  
+        .time{
+          font-size:14px;
+           color:#575757;
+            margin-top:5px;
+            font-family: $font-family-medium, sans-serif;
+          }
+  
+  
+      }
+  
+      .user-comment1{
+        position:relative;
+        padding: 10px; 
+  
+        .top{ 
+          display:flex; 
+          align-items:center;
+           margin-bottom:5px;
+  
+           .user-shortname{
+            height:28px; 
+            width:28px; 
+            border-radius:50%;
+             line-height:30px;
+              text-align:center; 
+              background:#E10092!important;
+               color:#fff;
+                margin-right:10px;
+                 font-size:14px;
+                }
+               
+               
+                .user-name
+                {
+                  font-size:14px;
+                  font-family: $font-family-medium, sans-serif;
+                  }
+                  
+  
+  
+  
+  
+          }
+  
+          .comments{
+            font-size:14px;
+             font-family: $font-family-medium, sans-serif;
+             font-weight: none;
+            }
+            .time{
+              font-size:14px;
+               color:#575757;
+                margin-top:5px;
+              }
+  
+  
+  
+  
+      }
+      // .agent-comment1 .light{
+      //   background: red !important; 
+      // }
+      // .request-view > div.collapse-show > div > div .agent-comment1 .light{
+      //   background: red !important; 
+      // }

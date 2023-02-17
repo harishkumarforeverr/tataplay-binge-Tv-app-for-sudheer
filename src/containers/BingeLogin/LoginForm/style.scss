@@ -1,0 +1,420 @@
+.login-form {
+
+  .react-tabs {
+    margin-top: 18px;
+    padding: 0 16% 35px 16%;
+    text-align: center;
+    background-color: #1d1e30;
+
+    .tab-row {
+      margin-bottom: 22px;
+    }
+
+    .tab {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      letter-spacing: 0.32px;
+      text-align: center;
+      color: #a3a6c2;
+      padding: 9px 0;
+      width: 35%;
+      cursor: pointer;
+      margin: 0 6%;
+
+      &.tab-disable {
+        cursor: not-allowed;
+      }
+
+      &.active {
+        color: $white-color;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 93%;
+          height: 5px;
+          left: 4px;
+          bottom: -3px;
+          background: #5087c7;
+          margin: auto;
+        }
+      }
+
+      &:focus {
+        outline: none;
+        background: transparent;
+      }
+
+    }
+  }
+
+  .login-details-container {
+    .form-data {
+      width: 100%;
+      text-align: left;
+
+      .error-message {
+        bottom: -15px;
+      }
+
+      label {
+        font-family: $font-family-medium;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 24px;
+      }
+
+      input {
+        width: 100%;
+        font-size: 16px;
+        height: 47px;
+        line-height: normal;
+      }
+
+      &.sub-id, &.otp {
+        input[type="tel"] {
+          padding: 13px 14px 13px 14px;
+        }
+      }
+
+      .initialVal {
+        font-size: 16px;
+        color: #e9e9e9;
+        width: fit-content;
+        top: 0;
+        padding: 13px 0;
+        border: 2px solid transparent;
+        font-family: $font-family-medium;
+      }
+
+      .initial-val-input {
+        padding: 13px 14px 13px 44px;
+      }
+    }
+
+    .or-separator {
+      font-family: $font-family-medium;
+      color: #ffffff;
+      margin: 18px 0;
+
+    }
+
+    .primary-btn {
+      margin-top: 24px;
+      width: 100%;
+      color: #ffffff;
+      padding: 13px 0;
+      font-size: 16px;
+    }
+
+    .primary-btn[disabled] {
+      background: #52547a;
+      border: solid 1px #52547a;
+    }
+
+    .blue-text {
+      font-family: $font-family-medium;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: $pink-25;
+      text-decoration: underline;
+      margin-top: 8px;
+      cursor: pointer;
+
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      a {
+        color: $pink-25;
+      }
+    }
+
+
+    .otp-verification-block {
+      p {
+        font-size: 14px;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 12px;
+        line-height: 24px;
+      }
+
+      .resend-otp-container {
+        margin-top: 40px;
+        min-height: 48px;
+
+        p {
+          text-align: center;
+          color: $pink-50;
+          margin-bottom: 8px;
+        }
+
+        &.disabled {
+          /*cursor: not-allowed;*/
+        }
+
+        #timer {
+          margin-left: 0;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+
+      .primary-btn {
+        margin-top: 65px;
+      }
+    }
+
+    .password-verification-block {
+      p.blue-text {
+        margin-top: 6px;
+        text-align: left;
+        cursor: pointer;
+      }
+    }
+
+    .forget-password-container {
+      margin-top: 21px;
+      padding: 0 15%;
+      text-align: center;
+
+      .form-data {
+        margin-bottom: 21px;
+
+        &.password {
+          input[type='text'] {
+            padding: 13px 40px 13px 15px;
+          }
+        }
+
+        &:first-child {
+          margin-bottom: 6px;
+        }
+
+        input[type="tel"] {
+          padding: 13px 10px 13px 15px;
+        }
+      }
+
+      span {
+        text-align: left;
+        //margin-top: 0;
+        &.blue-text {
+          float: left;
+          margin-top: 0;
+        }
+
+        &.timer {
+          float: right;
+        }
+      }
+
+      .primary-btn {
+        margin-top: 141px;
+
+        &.authenticate {
+          margin-top: 191px;
+        }
+      }
+    }
+
+    &.password-login {
+      .primary-btn {
+        margin-top: 153px;
+      }
+
+      .password-verification-block {
+        .primary-btn {
+          margin-top: 159px;
+        }
+      }
+    }
+
+    div {
+      &.terms-condition {
+        margin-top: 15px;
+        text-align: left;
+
+        p {
+          display: inline-block;
+          color: $white-color;
+          font-family: $font-family-medium;
+          font-size: 14px;
+          bottom: 2px;
+          position: relative;
+        }
+      }
+    }
+
+    .blue-text {
+      font-family: $font-family-medium;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: $pink-50;
+      text-decoration: underline;
+      margin-top: 15px;
+      cursor: pointer;
+
+      &.font-14 {
+        font-size: 14px;
+      }
+
+      a {
+        color: $pink-25;
+      }
+    }
+
+    .checkbox input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape) {
+    .react-tabs {
+      padding: 0 18px;
+
+      .tab {
+        margin: 0 8px;
+      }
+    }
+    .login-details-container {
+      .form-data {
+        .initialVal {
+          top: auto;
+        }
+
+        @media only screen and (min-width: 2040px) {
+          .initialVal {
+            padding: 17px 0;
+          }
+        }
+      }
+
+      .forget-password-container {
+        padding: 0 18px;
+        input[type="tel"] {
+          padding: 13px 14px 13px 14px;
+        }
+        .resend-otp-container {
+          position: absolute;
+          display: block;
+          width: 90%;
+          z-index: 1;
+        }
+      }
+
+      &.password-login {
+        .primary-btn {
+          margin-top: 0;
+        }
+      }
+
+      div {
+        &.terms-condition {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 490px) and (max-width: 905px) {
+    .login-details-container {
+      .form-data {
+        label {
+          font-size: 13px;
+        }
+      }
+
+      div {
+        &.terms-condition {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.password-update-modal {
+  &.alert-modal {
+    .popupSec {
+      width: 554px;
+      height: 346px;
+      border-radius: 4px;
+      box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+      background-color: #1d1e30;
+
+      .modal-body {
+        padding: 0;
+
+        .alert-icon {
+          font-size: 62px;
+          margin: 75px 0 26px 0;
+
+          i {
+            color: #a3a6c2;
+            font-size: 45px;
+          }
+
+          .get-icon-success-tick {
+            padding: 7.5px 18.5px;
+            border-radius: 50%;
+
+            i:before {
+              top: 0;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 35px;
+          font-family: $font-family-medium;
+          margin: 0 50px;
+        }
+
+        .instructions-text {
+          font-family: $font-family-medium;
+          /*padding: 0 150px 0 118px;*/
+          margin: 12px 12%;
+        }
+
+        .btn-group .btn {
+          width: 263px;
+          height: 50px;
+          font-family: $font-family-semiBold;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .popupSec {
+        width: 75%;
+        height: auto;
+        overflow-y: auto;
+
+        .modal-body {
+          h1 {
+            margin: 0 15px 0 15px;
+          }
+        }
+      }
+    }
+  }
+}

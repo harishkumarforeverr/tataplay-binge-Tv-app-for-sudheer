@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "../../../../assets/scss/variable.scss";
+@import "../../../../../src/styles/styleguide.scss";
+.AutoCompleteItem {
+  display: flex;
+  padding: 0 0 16px 0;
+
+  &__img img {
+    width: 92px;
+    height: 52px;
+    border-radius: 6px;
+    .top-image {
+      height: 17px;
+      width: 16px
+    }
+  }
+ 
+  &__content {
+    display: flex;
+    flex-flow: column;
+    padding: 0 16px;
+
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 120%;
+      color: $bingeBlue-50;
+    }
+  }
+  &__title {
+    color: $bingeBlue-50;
+  }
+}
+
+.live-content {
+  color: $error-color;
+}
+
+.live-dot-image {
+  height: 5px;
+  width: 5px;
+  margin-left: 4px;
+  margin-top: 4px;
+  align-items: center;
+  align-self: center;
+}
+
+.Keyword__wrapper{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 23px;
+
+  &-img {
+    height: 17px;
+    width: 17px;
+    margin-right: 16px;
+  }
+}
+
+
+.autocomplete-item-wrapper {
+  cursor: pointer;
+  display: flex !important;
+}
+
+.autocomplete-background-image {
+  height: 52px;
+  width: 92px;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 17px;
+    width: 16px;
+  }
+}
+

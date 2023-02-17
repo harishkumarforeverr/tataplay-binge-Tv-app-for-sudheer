@@ -1,0 +1,60 @@
+section.login-slider {
+  margin: 17px 0;
+  .marquee {
+    //width: 100vw;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .marquee-inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(calc(-25% + 20vw), 0, 0);
+    animation: marquee 30s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+    pointer-events: none;
+  }
+
+  .marquee .marquee-inner {
+    animation-play-state: running;
+    opacity: 1;
+    transition-duration: 0.4s;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .login-slider-item {
+    width: 90px;
+    margin: 0 10px;
+
+    img {
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      cursor: default;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin: 20px 0;
+    .login-slider-item {
+      width: 40px;
+      margin: 0 5px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

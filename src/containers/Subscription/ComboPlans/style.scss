@@ -1,0 +1,811 @@
+.combo-plan {
+  padding-bottom: 30px;
+
+  .lg-d-grid {
+    display: grid;
+  }
+
+  .netflix-width {
+    max-width: 70% !important;
+    margin: 0px auto;
+  }
+
+  .netflix-full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .netflix-730-width {
+    max-width: 70%;
+    margin: auto;
+    text-align: start;
+    // width: 730px;
+    display: flex;
+  }
+
+  .partner-desc {
+    font-size: 12px;
+    color: #d6c6f4;
+    text-align: start;
+    padding: 0px 15px;
+    font-family: $font-family-regular;
+  }
+
+  .channels-view {
+    display: inline-grid;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 15px;
+    width: 180px;
+    height: 90%;
+  }
+
+  .comboinfo-verbiage {
+    font-family: $font-family-regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.188422px;
+    color: $purple-25;
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 3px;
+  }
+
+  .net-flix-comboinfo-verbiage {
+    margin: 10px 15%;
+    text-align: start;
+  }
+
+  .ottchanels {
+    font-family: $font-family-regular;
+    color: $white-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .channel-name {
+    border: solid #f3cbe3 3px;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #f3cbe3;
+    padding: 5px 13px;
+    margin-left: 6px;
+    margin-right: 16px;
+    font-weight: bolder;
+  }
+
+  .lg-mt-29 {
+    margin-top: 29px;
+  }
+
+  .border-image-plus {
+    position: relative;
+    margin-top: 4%;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 10px;
+      background: #0a0017;
+    }
+
+    .first-img {
+      background: #140028;
+    }
+  }
+
+  .channel-count {
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .verbiage-text {
+    color: #d6c6f4;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: start;
+    padding: 0px 15px;
+  }
+
+  .renewal-text {
+    color: #d6c6f4;
+    font-style: normal;
+    font-family: $font-family-regular;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .product-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: $white-color;
+    text-align: start;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-family-medium;
+    margin-bottom: 19.5px;
+
+    div:first-child {
+      width: 70%;
+    }
+  }
+
+  .inline-center {
+    .product-name-price {
+      font-family: $font-family-regular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      letter-spacing: -0.5px;
+      color: $white-color;
+      text-align: left;
+
+      opacity: 0.75;
+    }
+  }
+
+  .product-name-price {
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: $white-color;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 71px;
+    align-items: center;
+    background-color: $background-page;
+    mix-blend-mode: normal;
+
+    border: 1px solid $bingeBlue-75;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 16px 15px 17px;
+    margin: 20px 0;
+    cursor: pointer;
+
+    div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      padding-left: 3px;
+
+      img {
+        width: 29px;
+        height: auto;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        padding-left: 24px;
+        font-family: $font-family-medium;
+        color: $white-color;
+      }
+    }
+  }
+
+  .myplan-bgimage-container {
+    padding-bottom: 30px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .netflix-container {
+    width: 300px;
+    height: 89px;
+    margin: 10px 26px;
+
+    .nextflix-sub-title {
+      width: 100%;
+
+      p {
+        font-family: $font-family-regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $purple-25;
+        text-align: start;
+        margin-top: 5px;
+      }
+    }
+
+    .netflix-sub-conatiner {
+      border: 1px solid #564372;
+      border-radius: 5px;
+      padding: 10px 15px;
+      background: linear-gradient(91.54deg,
+          #000000 2.87%,
+          rgba(0, 0, 0, 0.902) 36.94%,
+          rgba(0, 0, 0, 0.624) 100.5%,
+          rgba(0, 0, 0, 0.92) 100.51%);
+
+      .card-image {
+        width: 80px;
+        height: 21px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-text {
+        p {
+          font-family: $font-family-regular;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          margin-top: 6px;
+          color: $white-color;
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .expired {
+    border: 1px solid #e56c6c !important;
+  }
+
+  .my-plans-wrapper {
+    margin: 25px auto;
+    text-align: center;
+    max-width: 730px;
+    position: relative;
+
+    h3:nth-child(1) {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 120%;
+      font-family: $font-family-medium;
+      text-align: center;
+
+      color: $white-color;
+    }
+
+    .cancel-button {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 120%;
+      font-family: $font-family-medium;
+      text-align: center;
+
+      color: $pink-25;
+      cursor: pointer;
+      margin-top: 60px;
+    }
+
+    .my-plans-container {
+      background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+      margin-top: 30px;
+      padding: 20px 4px 19px 6px;
+      border-radius: 20px;
+      border: 1px solid $bingeBlue-75;
+      display: flex;
+
+      .footer-msg {
+        font-family: $font-family-regular;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0px 5px;
+        padding: 0 8px;
+      }
+
+      .error-msg {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        font-family: $font-family-medium;
+        text-align: center;
+        color: #e56c6c;
+      }
+
+      .auto-renew {
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+
+    .footer-text-container {
+      padding: 25px 0;
+      opacity: 0.75;
+
+      .footer-text-first {
+        color: $purple-25;
+        font-size: 20px;
+        font-family: $font-family-regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .footer-text-second {
+        color: $purple-25;
+        font-size: 20px;
+        font-family: $font-family-regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        padding: 20px 0;
+
+        .footer-text-first {
+          font-size: 12px;
+          margin-top: 10px;
+          line-height: 120%;
+        }
+
+        .footer-text-second {
+          font-size: 12px;
+          margin-top: 10px;
+          line-height: 120%;
+          padding: 0 10px;
+        }
+      }
+    }
+
+    .border-line {
+      border: 1px solid $purple-10;
+      height: 85%;
+    }
+
+    .my-plans-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+
+      .active {
+        background: linear-gradient(270deg, #ffa800 0%, #fff389 45.31%, #ffa800 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .left-heading {
+        display: flex;
+        align-items: center;
+
+        .img-wrapper {
+          width: 29px;
+          height: 23px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p:nth-child(2) {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 120%;
+          padding-left: 23px;
+          color: $white-color;
+          font-family: $font-family-medium;
+        }
+      }
+
+      .right-heading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        font-family: $font-family-medium;
+        color: $white-color;
+
+        .apps-count {
+          font-family: $font-family-regular;
+          color: $white-color;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          margin-left: 12px;
+        }
+      }
+    }
+
+    .content-wrapper {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      margin: 12px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: normal;
+        border-radius: 136px;
+      }
+    }
+
+    .partner-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      // justify-content: center;
+      margin: 4px 0px 8px 0px;
+    }
+
+    .button-wrapper {
+      background: linear-gradient(294.99deg, #020005 0%, #220046 100%) !important;
+    }
+
+    .btn-wrapper {
+      padding: 9px 52px;
+
+      width: 420px;
+      height: 45px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      margin: 20px auto;
+
+      .button-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+      }
+    }
+
+    .other-option {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      cursor: pointer;
+      font-family: $font-family-medium;
+      color: $pink-25;
+    }
+  }
+
+  .myplan-bgimage-container-combo {
+    padding-bottom: 30px;
+  }
+}
+
+// @media only screen and (max-width: 1050px) {
+//   .combo-plan {
+//     .netflix-width {
+//       width: 90% !important;
+//     }
+//     .netflix-container {
+//       width: 200px;
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 1024px) {
+  .combo-plan {
+    .my-plans-wrapper {
+      margin: 0 auto;
+      width: 90%;
+      padding-top: 20px;
+
+      h3:nth-child(1) {
+        font-size: 22px;
+      }
+
+      .cancel-button {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      .my-plans-container {
+        .error-msg {
+          font-size: 16px;
+        }
+      }
+
+      .border-line {
+        margin: 15px 0px;
+      }
+
+      .my-plans-heading {
+        padding: 0px;
+
+        .left-heading {
+          display: flex;
+          align-items: center;
+
+          .img-wrapper {
+            width: 19px;
+            height: 15px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          p:nth-child(2) {
+            font-size: 16px;
+            padding-left: 10px;
+            font-weight: 400;
+          }
+        }
+
+        .right-heading {
+          .apps-count {
+            margin-left: 0;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .content-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 136px;
+        margin: 5px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 136px;
+        }
+      }
+
+      .partner-container {
+        padding: 0px;
+        margin: 12px 0 11px 0;
+        justify-content: center;
+      }
+
+      .btn-wrapper {
+        padding: 9px 52px;
+
+        width: 90%;
+        height: 44px;
+
+        margin: 15px auto;
+
+        .button-text {
+          font-size: 16px;
+          font-family: $font-family-semiBold;
+        }
+      }
+
+      .other-option {
+        font-size: 16px;
+        font-family: $font-family-medium;
+        color: $pink-25;
+      }
+    }
+
+    .border-image-plus {
+      position: relative;
+      margin-top: 0%;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0px 10px;
+        background: #14002a;
+        height: 18px;
+      }
+    }
+
+    .my-plans-container {
+      display: block !important;
+      padding: 13px 15px 14px 15px !important;
+      margin-top: 16px !important;
+    }
+
+    .channel-count {
+      color: #fff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .ottchanels {
+      display: block;
+      justify-content: start;
+    }
+
+    .lg-d-grid {
+      display: block;
+    }
+
+    .lg-mt-29 {
+      margin-top: 0px;
+    }
+
+    .channel-name {
+      border: solid #f3cbe3 1px;
+      border-radius: 2px;
+      font-size: 12px;
+      color: #f3cbe3;
+      padding: 3px 7px;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+
+    .product-name {
+      font-size: 19px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: start;
+      margin-top: 20px;
+      margin-bottom: 12px;
+
+      div:first-child {
+        width: 100%;
+      }
+    }
+
+    .renewal-text {
+      margin-top: 0px;
+      color: #fff;
+    }
+
+    .channels-view {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 0 4px;
+    }
+
+    .button-wrapper {
+      height: 56px;
+
+      padding: 16px 15px 17px;
+      margin: 15px 0;
+
+      div:nth-child(1) {
+        padding-left: 3px;
+
+        img {
+          width: 19px;
+          height: 15px;
+        }
+
+        p {
+          font-size: 16px;
+
+          padding-left: 10.67px;
+        }
+      }
+    }
+
+    .partner-desc {
+      padding: 0;
+    }
+
+    .netflix-container {
+      width: 100%;
+      margin: 0;
+      padding: 0 4px;
+    }
+
+    .comboinfo-verbiage {
+      font-size: 12px;
+      text-align: initial;
+      padding: 0 4px;
+    }
+
+    .inline-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+.more-options-container {
+  .popupSec {
+    width: 640px;
+    max-height: 351px;
+    background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+    border-radius: 20px;
+    padding: 58px 110px 30px;
+    border: 1px solid $bingeBlue-75;
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .modal-header {
+      padding: 0;
+
+      h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 120%;
+        font-family: $font-family-medium;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .not-now {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      cursor: pointer;
+      color: $pink-25;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .more-options-container {
+    .popupSec {
+      width: 90%;
+      max-height: 178px;
+      border-radius: 20px 20px;
+      padding: 20px;
+
+      .modal-header {
+        h3 {
+          font-size: 22px;
+        }
+      }
+
+      .not-now {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .amazon-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

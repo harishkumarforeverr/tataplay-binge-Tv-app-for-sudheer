@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@apiService": ["./src/services/apiService.js"],
+      "@utils/*": ["./src/utils/*"],
+      "@config/*": ["./src/config/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@common/*": ["./src/common/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@routeConstants": ["./src/utils/constants/routeConstants.js"],
+      "@constants/*": ["./src/utils/constants/*"],
+      "@src/*": ["./src/*"],
+      "@environment/*": ["./src/config/environment/*"],
+      "@services": ["./src/services/api.js"],
+      "@constants": ["./src/utils/constants/index.js"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

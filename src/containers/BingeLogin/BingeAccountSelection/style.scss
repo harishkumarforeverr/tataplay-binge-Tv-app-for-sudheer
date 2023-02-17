@@ -1,0 +1,112 @@
+.binge-subscriber-screen {
+  .title {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 20px 15px 21px 15px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 17px;
+    text-align: center;
+    color: #cdcee5;
+    line-height: 1.41;
+    margin-bottom: 23px;
+  }
+
+  .binge-account-listing-container {
+    width: 100%;
+    padding: 0 14%;
+    background-color: #1d1e30;
+
+    .binge-account-listing {
+      overflow-y: auto;
+      max-height: 276px;
+      /*width: 370px;*/
+      width: 100%;
+      .binge-user {
+       /* width: 358px;*/
+        width: 98%;
+        height: 59px;
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+        background-color: #2b2d41;
+        cursor: pointer;
+        margin-bottom: 10px;
+        -webkit-tap-highlight-color:transparent;
+        -moz-tap-highlight-color:transparent;
+        -o-tap-highlight-color:transparent;
+        tap-highlight-color:transparent;
+
+        .sub-block {
+          height: inherit;
+          width: 90%;
+          align-items: center;
+          display: flex;
+
+          span {
+            font-size: 18px;
+            color: #ffffff;
+            padding: 0;
+            width: 90%;
+          }
+
+          .arrow {
+            margin: 22px 20px 22px 0;
+          }
+
+          .binge-asset {
+            padding: 0 12px 0 20px;
+          }
+        }
+
+        .radio-block {
+          height: inherit;
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .button-block{
+    position: absolute;
+    bottom: 0;
+    padding: 0 18px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape){
+    .title {
+      font-size: 28px;
+      padding: 10px 18px 21px 18px;
+    }
+    .binge-account-listing-container {
+      padding: 0 18px;
+
+      .binge-account-listing {
+        max-height: 240px;
+        width: 100%;
+
+        .binge-user {
+          width: 98%;
+          height: 55px;
+          margin: 4px auto;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 420px) and (max-device-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape){
+    .binge-account-listing.for-mobile{
+      margin: 0 auto;
+    }
+    .button-block{
+      position: relative;
+      width: 60%;
+      margin: 50px auto;
+    }
+  }
+}

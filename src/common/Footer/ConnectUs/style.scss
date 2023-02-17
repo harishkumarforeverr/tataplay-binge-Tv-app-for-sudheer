@@ -1,0 +1,27 @@
+.connect-link {
+    display: flex;
+    flex-direction: column;
+
+    .connect-us-title {
+        margin-bottom: 8px;
+        font-family: $font-family-medium;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+        color: $white-color;
+    }
+
+    .connect-us-btn {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 25px;
+
+            img{
+              /*  width: 19px;
+                height: 19px;*/
+            }
+        }
+    }
+}

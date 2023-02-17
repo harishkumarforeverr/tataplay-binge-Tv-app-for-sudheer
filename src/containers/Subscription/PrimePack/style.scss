@@ -1,0 +1,216 @@
+.amazon-container {
+    margin: 0px auto;
+    text-align: center;
+    width: 642px;
+    position: relative;
+    // padding-bottom: 30px;
+
+    .add-on {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 29px 0;
+
+        .hr {
+            width: 100px;
+            border: 0.5px solid #444764;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+
+            text-align: center;
+
+            color: #a3a6c2;
+        }
+    }
+
+    .amazon-subscription {
+        background: $background-page;
+        border-radius: 20px;
+        border: 1px solid $bingeBlue-75;
+
+        padding: 20px 27px;
+
+        .amazon-subscription-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .amazon-validity {
+                display: flex;
+                align-items: center;
+
+                div:nth-child(1) {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 136px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                div:nth-child(2) {
+                    padding-left: 40px;
+
+                    p:nth-child(1) {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 26px;
+                        line-height: 120%;
+                        display: flex;
+                        align-items: center;
+                        color: #ffffff;
+                        font-family: $font-family-regular;
+                    }
+
+                    p:nth-child(2) {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 120%;
+                        display: flex;
+                        align-items: center;
+                        color: #a3a6c2;
+                        font-family: $font-family-regular;
+                        text-align: start;
+                    }
+                }
+            }
+
+            .amazon-price {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 120%;
+                color: #a3a6c2;
+                font-family: $font-family-regular;
+            }
+        }
+
+        .amazon-prime-footer {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-family: $font-family-regular;
+            padding-left: 120px;
+        }
+
+        .error-msg {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            font-family: $font-family-medium;
+            text-align: center;
+            color: #e56c6c;
+        }
+
+        .border-line {
+            display: block;
+            border: 1px solid #444764;
+            background: #444764;
+            opacity: 0.5;
+            margin: 20px 0px 28px 0px;
+        }
+
+        .other-option {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            text-align: center;
+            cursor: pointer;
+            // color: $white-color;
+            font-family: $font-family-medium;
+            color: $pink-25;
+            margin-top: 30px;
+          }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .amazon-container {
+        width: 100%;
+        .add-on {
+            margin: 15px 0;
+
+            .hr {
+                width: 50px;
+                border: 0.5px solid #444764;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .amazon-subscription {
+            padding: 20px 20px;
+
+            hr {
+                border: 1px solid #444764;
+                margin-top: 17px;
+                margin-bottom: 11px;
+            }
+
+            .amazon-prime-footer {
+                font-size: 14px;
+                padding-left: 21.5%;
+                text-align: left;
+            }
+
+            .amazon-subscription-wrapper {
+                .amazon-validity {
+                    div:nth-child(1) {
+                        width: 50px;
+                        height: 50px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    div:nth-child(2) {
+                        padding-left: 15px;
+
+                        p:nth-child(1) {
+                            font-size: 16px;
+                        }
+
+                        p:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .amazon-price {
+                    font-size: 16px;
+                }
+            }
+
+            .other-option {
+                font-size: 16px;
+                font-family: $font-family-medium;
+                color: $pink-25;
+            }
+
+            .error-msg {
+                font-size: 16px;
+                margin-top: 22px;
+            }
+
+            .border-line {
+                display: none;
+            }
+        }
+    }
+}

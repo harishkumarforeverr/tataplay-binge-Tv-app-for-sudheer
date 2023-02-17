@@ -1,0 +1,62 @@
+.side-bar-overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  transition: 850ms;
+  background-color: rgba(2, 0, 5, 0.75);
+}
+
+.nav-menu {
+  height: 100vh;
+  width: 83%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 1001;
+  transition: 850ms;
+  background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu-active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-menu-inactive {
+  left: -100%;
+  transition: 850ms;
+}
+
+@media only screen and (min-width: 480px) {
+  .side-bar-overlay {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .nav-menu {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    .bottom-menu-wrapper {
+      ul {
+        li {
+          padding: 17px 0 17px 0;
+        }
+      }
+
+      .download-link-wrapper {
+        //padding-top: 10px;
+      }
+    }
+  }
+}

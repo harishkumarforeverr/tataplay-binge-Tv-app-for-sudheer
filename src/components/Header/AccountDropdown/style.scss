@@ -1,0 +1,29 @@
+.account-dropdown-list {
+  background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+  .bottom-menu-wrapper {
+    ul {
+      padding: 0;
+      li {
+        &.top-margin {
+          padding: 22px 0 14px 0 !important;
+        }
+        padding: 14px 0 14px 0 !important;
+        margin: 0 29px 0 29px !important;
+
+        &:last-child {
+          border-bottom: 0;
+          padding: 14.5px 0 21.5px 0 !important;
+        }
+
+        i {
+          font-size: 24px;
+          margin-right: 19px;
+          margin-top: -1.5px;
+        }
+        .crown-icon {
+          margin-right: 17px;
+        }
+      }
+    }
+  }
+}

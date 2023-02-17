@@ -1,0 +1,42 @@
+.logituit_closeTooltip {
+    visibility: hidden;
+    /* width: 100%; */
+    width: fit-content;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 4px;
+    /* Position the tooltip */
+    position: absolute;
+    /* left: -121%; */
+    right: 3vw;
+    /* bottom: -2%; */
+    bottom: 0%;
+    z-index: 1;
+    max-width: unset;
+  }
+.logituit_close  {
+  position: absolute;
+  background-size: contain !important;
+  outline: none;
+  height: 4.4%;
+  width: 2.5%;
+  display: block;
+  transform: rotate(0deg);
+  z-index: 1;
+  cursor: pointer;
+  background-repeat: no-repeat !important; 
+  background-position: center !important;
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+.logituit_close:hover .logituit_closeTooltip {
+    visibility: visible;
+  }
+  .logituit_close:hover{
+    transform: scale(1.1) !important;
+    transition: none !important;
+  }
+}

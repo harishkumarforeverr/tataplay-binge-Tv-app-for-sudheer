@@ -1,0 +1,235 @@
+.form-data {
+  position: relative;
+
+  > label {
+    display: block;
+    margin-bottom: 6px;
+    font-family: $font-family-medium;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #a3a6c2;
+  }
+
+  div {
+    position: relative;
+  }
+
+  input {
+    display: block;
+    font-family: $font-family-medium;
+    padding: 13px 10px 13px 15px;
+    color: $white-color;
+    background: $background-page;
+    border-radius: 2px;
+    border: solid 1px $bingeBlue-75;
+    box-sizing: border-box;
+    line-height: 18px;
+
+    &.show-text {
+      font-family: $font-family-medium;
+    }
+
+    &:focus {
+      border: solid 2px #a3a6c2;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &.error {
+      border: 2px solid $error-color;
+    }
+
+    &::placeholder {
+    }
+
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+    }
+
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+    }
+  }
+
+  input[type="tel"] {
+    padding: 13px 14px 13px 35px;
+  }
+
+  input[type="password"] {
+    padding: 13px 40px 13px 15px;
+  }
+
+  .asterick {
+    position: absolute;
+    right: 10px;
+    top: -2px;
+  }
+
+  .error-message {
+    font-size: 14px;
+    display: block;
+    color: $error-color;
+    margin-top: 10px;
+    position: relative;
+    top: -5px;
+    line-height: normal;
+  }
+
+  .num-to-words {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 0.8rem;
+  }
+
+  span.optional-text {
+    color: $pink-25;
+    position: relative;
+    left: 5px;
+    font-size: 0.89rem;
+  }
+
+  &.prefill-input {
+    input {
+      padding-left: 48px;
+    }
+
+    .text {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .show-password {
+    position: absolute;
+    top: 45px;
+    right: 18px;
+    cursor: pointer;
+  }
+
+  &.text-password {
+    input[type="text"] {
+      padding: 13px 40px 13px 15px;
+    }
+  }
+}
+
+.initialVal {
+  position: absolute;
+  top: 43px;
+  font-family: $font-family-medium;
+  // font-size: 18px;
+  color: $initialInputColor;
+  left: 6px;
+  display: block;
+  line-height: 18px;
+  padding: 16px 0;
+}
+
+span.req-field {
+  position: relative;
+  left: 4px;
+  color: $error-color;
+}
+
+.login-modal
+  .modal-body
+  .login-container
+  .login-tab-header
+  .form-data
+  input.initial-val-input,
+.signup-parent .signup form .form-data input.initial-val-input {
+  padding: 10px 0 10px 37px;
+}
+
+.login-modal .modal-body .login-container .password__show {
+  top: 44px;
+
+  &:before {
+    font-size: 16px;
+  }
+}
+
+input {
+  &::placeholder {
+    color: $color-placeholder;
+    font-family: $font-family-medium;
+    font-size: 16px;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color-placeholder;
+    font-family: $font-family-medium;
+    font-size: 16px;
+  }
+
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $color-placeholder;
+    font-family: $font-family-medium;
+    font-size: 16px;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-placeholder;
+    font-family: $font-family-medium;
+    font-size: 16px;
+  }
+
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #acafca !important;
+    font-family: sky_med;
+    font-size: 16px;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-placeholder;
+    font-family: $font-family-medium;
+    font-size: 16px;
+  }
+}
+
+i {
+  &.icon-visibility_on,
+  &.icon-visibility_off {
+    color: #a3a6c2 !important;
+    font-size: 18px;
+  }
+}
+
+@-moz-document url-prefix() {
+  @media only screen and (min-width: 200px) and (max-width: 730px) {
+    .initialVal {
+      line-height: inherit;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .initialVal {
+    top: 45px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  input {
+    &:focus {
+      border: 2px solid #a3a6c2;
+    }
+  }
+}

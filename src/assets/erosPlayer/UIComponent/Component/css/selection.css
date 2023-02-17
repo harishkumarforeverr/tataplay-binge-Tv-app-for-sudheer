@@ -1,0 +1,33 @@
+/**
+ * @license
+ * logix player
+ * @version 1.0
+ * @copyright © 2020 Emtarang Techlabs Private Limited All Rights Reserved
+ */
+.select_subtitle {
+    /* background-image:url(assets/player_assets/ic-backbuttontv/ic_tick.png); */
+    background-repeat: no-repeat;
+    background-position: 94%;
+    color: #fff!important;
+    padding-right: 3px;
+    /* / margin-right: -48px; /
+    / font-size: 18px; / */
+    background-color: #0a2d3d;
+    width: 100%!important;
+}
+.select_audio {
+    /* background-image:url(assets/player_assets/ic-backbuttontv/ic_tick.png); */
+    background-repeat: no-repeat;
+    background-position: 94%;
+    color: #fff!important;
+    padding-right: 3px;
+    /* / margin-right: -48px; /
+    / font-size: 18px; / */
+    background-color: #0a2d3d;
+    width: 100%!important;
+}
+.border-subtitle{
+    border:2px solid white;
+    width: 100%;
+}
+

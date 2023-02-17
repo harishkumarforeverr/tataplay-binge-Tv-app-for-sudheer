@@ -1,0 +1,116 @@
+.logituit_fullscreenRecommendedUI{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-image: linear-gradient(to left, rgba(13, 17, 24, 0) 100%, rgba(13, 17, 24, 0.86) 45%, rgba(13, 17, 24, 0.99) 6%, #0d1118 6%);
+}
+.imgContainer{
+    min-height: 100vh;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.detailContainer{
+    margin-top: 48px;
+    margin-bottom: 5%;
+    color: #eeeeee;
+}
+.fullscreenRecommendedPopup{
+    display: block;   
+    outline: none;
+}
+.innerFullscreenContainer{
+    /* margin: 3.3% 3.4%;
+    display: flex;
+    position: absolute;
+    top: 0; */
+    padding: 3.3% 3.4%;
+    display: flex;
+    top: 0;
+}
+.leftContainer{
+    text-align: left;
+    width: 40%;
+}
+.rightContainer{
+    text-align: right;
+    /* width: 60%; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3.3% 2.5%;
+}
+.dotSpace{
+    padding: 2px;
+    justify-content: center;
+}
+.closeIconRecommended{
+    cursor: pointer;
+}
+.recommendedText{
+    font-size: 24px;    
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #eeeeee;
+    /* margin-bottom: 20px; */
+}
+.recommendedgenre{
+    font-size: 16px;
+    color: #00b8f8;
+    display: inline-flex;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+.dotSpace{
+    font-size: 10px;
+    color: #00b8f8;
+}
+.recommendedTitle{
+    font-size: 32px;
+    margin: 12px 0 12px 0;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #eeeeee;
+}
+.recommendedDescription{
+    font-size: 16px;
+    opacity: 0.7;
+    color: #eeeeee;
+}
+.recommendedWatchNowBtn,.recommendedWatchTrailer,.recommendedWatchList{
+    font-size: 16px;
+    margin: unset;
+}
+.watchTrailerContainer{
+    margin: 2.2% 0;
+}
+.watchNowRecommendedContainer,.watchTrailerContainer,.watchListContainer{
+    display: flex;
+    grid-gap: 16px;
+    /* width: fit-content;
+    width: -moz-fit-content; */
+    width: 45%;
+    padding: 12px 16px 12px 16px;
+    align-items: center;
+    color: #eeeeee;
+    min-width: 200px;
+}
+.watchNowRecommendedContainer:hover{
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #0aa1ea, #00ade4, #00b7d8, #00c0c8, #40c6b6);
+}
+.watchTrailerContainer:hover{
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #0aa1ea, #00ade4, #00b7d8, #00c0c8, #40c6b6);
+}
+.watchListContainer:hover{
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #0aa1ea, #00ade4, #00b7d8, #00c0c8, #40c6b6);
+}
+

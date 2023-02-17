@@ -1,0 +1,171 @@
+
+
+.otp-container {
+  width: 320px;
+  margin: auto;
+
+  .hide-timer {
+    justify-content: end !important;
+  }
+
+  .otp-resend-container {
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+
+    .timer-container {
+      font-family: $font-family-medium;
+      color: $white-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    .resend-btn {
+      a {
+        font-family: $font-family-semiBold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        color: $pink-25;
+        cursor: pointer;
+      }
+    }
+
+    .disabled-resend-button {
+      a {
+        cursor: default;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .otp-placeholder {
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $white-color;
+    display: flex;
+  }
+
+  .otp-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    input,
+    .editable-container {
+      background: $background-page;
+      border: solid 1px $bingeBlue-75;
+      // width: 44px;
+      // height: 44px;
+      width: 38px;
+      height: 40px;
+      color: $white-color;
+      border-radius: 12px;
+      text-align: center;
+      margin-right: 11px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 120%;
+      font-family: sky_reg;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      position: relative;
+      font-family: $font-family-mask; //otp mask
+      &:focus{
+        outline: 0;
+      }
+      &.editable-container {
+        line-height: 152%;
+      }
+      &.cursor-moz{
+        text-align: justify;
+        padding-left: 18px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::placeholder {
+        font-size: 23px;
+      }
+     
+    }
+  }
+
+  .incorrect-otp {
+
+    input,
+    .editable-container {
+      border: 1px solid #e56c6c;
+    }
+  }
+
+  .error-message {
+    font-family: $font-family-medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #e56c6c;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .otp-container {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 14px;
+
+    .otp-input-wrapper {
+
+      input,
+      .editable-container {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .otp-container {
+    width: 90%;
+
+    .otp-input-wrapper {
+
+      input,
+      .editable-container {
+        width: 32px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .otp-container {
+    margin-top: 20px;
+    margin-bottom: 18px;
+
+    .otp-input-wrapper {
+
+      input,
+      .editable-container {
+        border-radius: 8px;
+        width: 12%;
+      }
+    }
+  }
+}

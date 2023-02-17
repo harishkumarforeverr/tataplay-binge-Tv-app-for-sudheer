@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TataPlayBinge- Watch TV Shows, Movies, Specials, Live Cricket & Football</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <meta name="google-site-verification" content="xQuUua9_xLVNDLgQ3xevkhMalfdSjH5f-FISi8-e8lg" />
+    <meta name="description"
+          content="Tata Play Binge is a newly launched app open to everyone, with all the entertainment from 14+ OTTs in one app. No DTH Connection is required to use the Tata Play Binge App. It is your one stop destination for the best premium content across all OTT entertainment apps. Enjoy the latest movies, web series, Originals, TV shows, live sports and more from 14+ OTT apps all in one app" />
+    <link rel="icon" href="/assets/images/tatasky-fav.png" sizes="400*40">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"></script>
+    <!-- Script for S360 chatbot start -->
+        <!-- Script for S360 chatbot start FOR PROD start-->
+        <Link rel="stylesheet" href="https://helpchat.tataplay.com/simplify360Style.css">
+        <script src="https://helpchat.tataplay.com/Simplify360Chat.js"> </script>    
+        <!-- Script for S360 chatbot start FOR PROD ends-->
+    <!-- Script for S360 chatbot end -->
+    
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m, n) {
+            i['moengage_object'] = r;
+            t = {};
+            q = function (f) {
+                return function () {
+                    (i['moengage_q'] = i['moengage_q'] || []).push({ f: f, a: arguments });
+                };
+            };
+            f = ['track_event', 'add_user_attribute', 'add_first_name', 'add_last_name', 'add_email', 'add_mobile',
+                'add_user_name', 'add_gender', 'add_birthday', 'destroy_session', 'add_unique_user_id', 'moe_events', 'call_web_push', 'track', 'location_type_attribute'];
+            for (k in f) {
+                t[f[k]] = q(f[k]);
+            }
+            a = s.createElement(o);
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+            i['moe'] = i['moe'] || function () {
+                n = arguments[0];
+                return t;
+            };
+            a.onload = function () {
+                if (n) {
+                    i[r] = moe(n);
+                }
+            };
+        })(window, document, 'script', 'https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js', 'Moengage');
+
+    </script>
+    <script>
+        !function (t, e, n, s, a, c, i, o, p) {
+            t.AppsFlyerSdkObject = a, t.AF = t.AF || function () {
+                (t.AF.q = t.AF.q || []).push([Date.now()].concat(Array.prototype.slice.call(arguments)))
+            },
+                t.AF.id = t.AF.id || i, t.AF.plugins = {}, o = e.createElement(n), p = e.getElementsByTagName(n)[0], o.async = 1,
+                o.src = "https://websdk.appsflyer.com?" + (c.length > 0 ? "st=" + c.split(",").sort().join(",") + "&" : "") + (i.length > 0 ? "af_id=" + i : ""),
+                p.parentNode.insertBefore(o, p)
+        }(window, document, "script", 0, "AF", "pba", { pba: { webAppId: "<%= htmlWebpackPlugin.options.appsflyerWebId %>" } })
+    </script>
+    <!-- <script src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js" async></script> -->
+    <!-- <script src="/assets/hungamaPlayer/moment.min.js" type="text/javascript"></script>
+    <script src="/assets/hungamaPlayer/client.min.js" type="text/javascript"></script>
+    <script src="/assets/hungamaPlayer/hls.min.js" type="text/javascript"></script>
+    <script src="/assets/hungamaPlayer/crypto-js.min.js" type="text/javascript"></script>
+    <script src="/assets/hungamaPlayer/native-shim.js" type="text/javascript"></script>
+    <script src="/assets/hungamaPlayer/ha.min.js" type="text/javascript"></script> -->
+    <!-- <script src="/assets/hungamaPlayer/hungamaplayer.min.js" type="text/javascript"></script> -->
+    <!-- <script src="/assets/erosPlayer/en-web-sdk.js" type="text/javascript"></script> -->
+    <!-- <link href="/assets/erosPlayer/en-web-sdk.css" rel="stylesheet"> -->
+    <!-- <script
+        src="https://static-assets.sonyliv.com/filesystem/platform/web/tatasky/1.55.032103/spn-partner-sdk-debug.js"></script> -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '<%= htmlWebpackPlugin.options.fbId %>');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src='https://www.facebook.com/tr?id=<%= htmlWebpackPlugin.options.fbId %>&ev=PageView&noscript=1' /></noscript>
+
+    <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '<%= htmlWebpackPlugin.options.gtmId %>');</script>
+    <!-- End Google Tag Manager -->
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.googleConversionKey %>"></script>
+    <script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '<%= htmlWebpackPlugin.options.googleConversionKey %>');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=<%= htmlWebpackPlugin.options.gtmId %>'
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="app">
+    </div>
+    <div id="portal"></div>
+</body>
+
+</html>

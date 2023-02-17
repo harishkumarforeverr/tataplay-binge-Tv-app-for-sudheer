@@ -1,0 +1,41 @@
+.account-notification-settings {
+  .form-group {
+    margin: 14px auto;
+
+    .form-data {
+      min-width: 350px;
+    }
+  }
+
+  .checkbox {
+    font-family: sky_med;
+  }
+
+  .toggle-switch span.label-text {
+    font-family: sky_med;
+  }
+
+  .notification-settings-head {
+    color: $white-color;
+    font-size: 20px;
+    font-family: sky_med;
+  }
+
+  .notification-settings-sub-head {
+    color: $white-color;
+    font-size: 15px;
+    margin: 6px 0 25px 0;
+  }
+
+  .email-notification-settings {
+    margin-top: 50px;
+
+    h6 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .email-block {
+    margin-top: 15px;
+  }
+}

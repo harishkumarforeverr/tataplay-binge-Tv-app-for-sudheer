@@ -1,0 +1,262 @@
+.my-account-mobile-container {
+  .top-section {
+    display: flex;
+    width: 100%;
+    min-height: 167px;
+    max-height: 167px;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.28);
+    background-color: #33354d;
+    padding: 18px;
+
+    .img-section {
+      width: 24%;
+      margin-right: 20px;
+
+      // css for avatar image
+      .avatar-block {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(to right, #f08300, #e3000f 43%, #a72879 101%);
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        text-align: center;
+        color: #ffffff;
+
+        p {
+          width: inherit;
+          position: relative;
+          text-align: center;
+          margin: auto;
+          font-size: 60px;
+        }
+      }
+
+      .profile-img-section {
+
+        .profile-img {
+          &.add-border {
+            max-width: 78px;
+            max-height: 78px;
+            display: block;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background-image: linear-gradient(#33354d, #33354d), linear-gradient(121deg, #f08300 8%, #e3000f 31%, #a72879 73%, #064497 99%);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+          }
+          img {
+            max-width: 68px;
+            max-height: 68px;
+            margin: 3px;
+            background: white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .profile-img-icon {
+          position: relative;
+          right: 21px;
+          bottom: 4px;
+          font-size: 40px;
+
+          &.with-avatar {
+            bottom: 0;
+            top: 40px;
+          }
+        }
+
+        // css for avatar image
+        .avatar-image {
+          &.sb-avatar__text {
+            width: 72px;
+            height: 72px;
+            margin: 25px 0 35px 0;
+            display: inline-block;
+          }
+
+          &.sb-avatar.sb-avatar--text {
+            position: relative;
+            top: -15px;
+            display: inline-block;
+
+            div {
+              font-size: 60px;
+              position: relative;
+              top: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    .detail-section {
+      width: 76%;
+      p {
+        display: block;
+        font-family: sky_med;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #a3a6c2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        //white-space: nowrap;
+
+        .binge-asset {
+          margin-right: 10px;
+          position: relative;
+          top: 3px;
+        }
+
+        &:first-child {
+          font-size: 24px;
+          color: $white-color;
+          line-height: normal;
+        }
+
+        &.current-pack-details {
+          margin-top: 18px;
+
+          .pack-name {
+            width: 80px;
+          }
+        }
+
+        span {
+          &:first-child {
+
+          }
+
+          &.date {
+            font-family: sky_reg;
+            margin-left: 10px;
+            &.expired{
+              color: $error-color;
+            }
+          }
+        }
+        i.icon-device {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .flex-active {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .balance-block {
+    text-align: center;
+    height: 150px;
+    box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.28);
+    background-color: #33354d;
+    margin: 12px 18px;
+    padding: 18px;
+
+    p {
+      display: block;
+      font-family: sky_med;
+      font-size: 14px;
+      line-height: 1.43;
+      color: #a3a6c2;
+
+      &:nth-child(2) {
+        font-family: sky_reg;
+        font-size: 22px;
+        color: $white-color;
+
+        i {
+          &.icon-inr {
+            font-size: 18px;
+            margin-right: 5px;
+          }
+
+          &.icon-refresh {
+            font-size: 15px;
+            margin-left: 10px;
+
+            &:before {
+              color: #a3a6c2;
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        font-family: sky_reg;
+        font-size: 12px;
+        color: $white-color;
+        line-height: normal;
+      }
+    }
+
+    button.btn.primary-btn {
+      width: 100%;
+      margin-top: 6px;
+      font-size: 16px;
+    }
+  }
+
+  .subscription-block, .switch-account-block {
+    display: flex;
+    padding: 14px;
+    margin: 18px;
+    align-items: center;
+    box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.28);
+    background-color: #33354d;
+    color: $white-color;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+
+    span {
+      width: 83%;
+      margin-left: 14px;
+    }
+  }
+
+  .switch-account-block {
+    margin-top: -14px;
+  }
+
+  .button-block {
+    width: 100%;
+    padding: 18px;
+    position: absolute;
+    bottom: 0;
+
+    .btn {
+      font-size: 16px;
+      color: #ffffff;
+      box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.28);
+      background-color: #33354d;
+      border: none;
+      width: 100%;
+      padding: 14px 0;
+      margin: 0;
+    }
+    .blue-text{
+      font-family: sky_med;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      color: #5087c7;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+  }
+
+  @media only screen and  (min-device-width: 320px) and (max-device-height: 650px){
+    .button-block {
+      position: relative;
+      margin-top: 15%;
+    }
+  }
+}

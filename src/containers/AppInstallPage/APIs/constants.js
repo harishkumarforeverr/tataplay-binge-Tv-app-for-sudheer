@@ -1,0 +1,3 @@
+export const ACTION = {
+    GET_APP_INSTALL_DETAILS: 'GET_APP_INSTALL_DETAILS',
+}

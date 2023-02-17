@@ -1,0 +1,246 @@
+.seeall-content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  // top: 2.2em;
+  padding: 0 1% 50px 5.3%;
+  margin-bottom: 33px;
+
+  .scroll-loader {
+    display: block;
+  }
+  .container-top .grid-view .listing-block  {
+    display: inline-flex;
+    // padding: 10px 0 0 0px !important;
+  }
+  h3 {
+    width: 100%;
+    font-family: sky_med;
+    margin-bottom: 7px;
+    font-size: 22px;
+    line-height: 120%;
+    color: #eeeeff;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 14px;
+      line-height: 110%;
+      color: #ffffff;
+    }
+  }
+
+  .divider {
+    width: 100%;
+
+    &:before {
+      content: "";
+      background-image: url("../../assets/images/divider.png");
+      height: 2px;
+      background-size: cover;
+      display: inline-block;
+      width: 97%;
+      margin-right: 8px;
+    }
+  }
+  .set-hover-seeall{
+    margin-top: 0px;
+    width: 210px;
+  }
+  .seeall {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+    .infinite-scroll-component__outerdiv {
+      width: 100%;
+    }
+
+    li {
+
+      .subscribed {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        right: 9px;
+        top: 8px;
+        z-index: 1;
+      }
+    }
+
+    &.listing-landscape {
+      li, &.card-image, &.place-holder-image {
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 39px;
+
+        .card-image, .place-holder-image {
+          width: 200px;
+          height: 111px;
+         // background-color:$white-color;
+        }
+      }
+
+      .tvod-listing-item {
+        height: 196px !important;
+      }
+    }
+
+    &.listing-circular {
+      li {
+        width: 215px;
+        height: 215px;
+        margin-right:20px;
+        margin-bottom:10px;
+      }
+
+      .item-detail {
+        display: none;
+      }
+
+      .tvod-listing-item {
+        height: 196px !important;
+      }
+      @media(max-width:480px){
+        li{
+          width:47%;
+          margin-right:10px;
+          height:170px;
+        }
+      }
+    }
+
+    &.listing-portrait {
+      margin-bottom: 21px;
+
+      li {
+        width: 200px;
+        height: 313px;
+        margin-right: 20px;
+        margin-bottom: 18px;
+
+        .card-image, .place-holder-image {
+          width: 200px;
+          height: 266px;
+        }
+      }
+
+      .tvod-listing-item {
+        height: 319px !important;
+      }
+    }
+  }
+
+  .load-more {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .app-view {
+    width: 100%;
+    margin-top: 20px;
+
+    .seeall {
+      &.listing-circular {
+        li {
+          margin: 7px 20px 13px 0;
+        }
+      }
+    }
+
+    &.no-subscribers {
+      div {
+        color: #bec1d9;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .grid-view .listing-block  {
+    display: inline-flex;
+    position: relative;
+    padding: 10px 0 0 0px !important;
+  }
+  .listing-landscape {
+    .listing-block {
+      position: relative;
+    }
+  }
+  .listing-block {
+    text-align: inherit;
+    color: inherit;
+    line-height: inherit;
+
+    .listing-item {
+      .item-detail {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    top: 8px;
+    padding: 0 1% 19px 6.9%;
+    .app-view {
+      .seeall {
+        .listing-circular {
+          li {
+            margin: 7px 7px 5px 0;
+          }
+        }
+      }
+    }
+
+    .seeall {
+      &.listing-circular {
+        li {
+          width: 110px;
+          height: 110px;
+
+          .subscribed {
+            width: 18px;
+            height: 18px;
+            right: 6px;
+            top: 6px;
+          }
+        }
+      }
+
+      &.listing-landscape {
+        li, &.card-image, &.place-holder-image {
+          width: 156px;
+          height: 110px;
+          margin-right: 7px;
+          margin-bottom: 20px;
+
+          .card-image, .place-holder-image {
+            width: 156px;
+            height: 89px;
+          }
+        }
+      }
+
+      &.listing-portrait {
+        margin-bottom: -5px;
+
+        li {
+          width: 101.64px;
+          height: 175px;
+          margin-right: 7px;
+          margin-bottom: 20px;
+
+          .card-image, .place-holder-image {
+            width: 101.64px;
+            height: 153px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logituit_MuteMobileVolumePanel{
+    position: absolute;
+    background-size: contain !important;
+    outline: none;
+    height: 4.4%;
+    width: 6.5%;
+    display: block;
+    transform: rotate(0deg);
+    z-index: 1;
+    cursor: pointer;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  

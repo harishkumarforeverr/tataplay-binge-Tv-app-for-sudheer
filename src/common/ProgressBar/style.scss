@@ -1,0 +1,21 @@
+.progress-bar-container {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+
+  .progress-dots {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #52547a;
+    display: inline-block;
+    margin: 0 2px;
+
+    &.active {
+      width: 28px;
+      height: 8px;
+      border-radius: 5px;
+      background-color: #5087c7;
+    }
+  }
+}

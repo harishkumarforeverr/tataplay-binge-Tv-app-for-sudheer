@@ -1,0 +1,213 @@
+.logituit_miniPlayerTooltip {
+    visibility: hidden;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 64px;
+    max-width: unset;
+    /* Position the tooltip */
+    position: absolute;
+    right: -16px;
+    bottom: 90%;
+    z-index: 1;
+  }
+  .logituit_miniPlayer{
+    position: absolute;
+    background-size: contain !important;
+    outline: none;
+    height: 5%;
+    width: 2.5%;
+    display: block;
+    transform: rotate(0deg);
+    z-index: 1;
+    cursor: pointer;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+.logituit_miniPlayer:hover {
+    transform: scale(1.05);
+}
+@media (hover: hover) and (pointer: fine) {
+.logituit_miniPlayer:hover .logituit_miniPlayerTooltip {
+    visibility: visible;
+  }
+  .logituit_miniPlayer:hover {
+    transform: scale(1.1) !important;
+    transition: none !important;
+  }
+}
+
+.logituit_miniplayer_close {
+  display: none !important;
+  height: 10%;
+  width: 5.6%;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  z-index: 2;
+}
+
+.logituit_miniplayer_episode_title_recommendation{
+  /* display: none !important; */
+  display:block;
+  position: absolute;
+  outline: none;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.logituit_miniplayer_episode_title {
+  display: none !important;
+  position: absolute;
+  outline: none;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.logituit_miniplayer_expand {
+  display: none !important;
+  height: 11.7%;
+  width: 6.6%;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  z-index: 2;
+}
+.logituit_miniplayer_play {
+  display: none !important;
+  height: 10%;
+  width: 5.6%;
+  background-repeat: no-repeat !important;
+  position: absolute;
+}
+.logituit_miniplayer_title_recommendation {
+  /* display: none !important; */
+  display:block;
+  position: absolute;
+  outline: none;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.logituit_miniplayer_title {
+  display: none !important;
+  position: absolute;
+  outline: none;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.miniplayer_error_msg{
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  background-size: contain !important;
+  background: #000000 !important;
+  position: absolute;
+  top: 0;
+  outline: none;
+  z-index: 1;
+}
+.visible{
+  visibility: visible;
+}
+.miniplayer_error_text{
+  top: 40%;
+  font-weight: bold;
+}
+.miniplayer_error_text_msg{
+  position: relative;
+  font-size: 14px;
+  top: 50%;
+}
+.miniplayer_error_text,.minplayer_error_text_msg{
+  position: relative;
+  font-size: 16px;
+  top: 50%;
+  text-align: center;  
+}
+@media only screen and (max-width:900px){
+  .miniplayer_error_text,.miniplayer_error_text_msg{
+    font-size: 16px  !important;
+  }
+}
+.logituit_miniplayer_watchnow {
+  /* display: none !important; */
+  display:block;
+  position: absolute;
+  outline: none;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_title {
+  display: block !important;
+}
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_close {
+  display: block !important;
+
+}
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_episode_title {
+  display: block !important;
+}
+
+/* .logituit_miniplayer_container:hover
+.logituit_miniplayer_watchnow {
+  display: block !important;
+} */
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_expand {
+  display: block !important;
+
+}
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_play {
+  display: block !important;
+
+}
+
+.logituit_miniplayer_container:hover 
+.logituit_miniplayer_container_video {
+  background: black !important;
+  opacity: 0.4 !important;
+}
+
+.miniplayer_error_msg:hover
+.logituit_miniplayer_close {
+  display: block !important;
+}
+
+.miniplayer_error_msg:hover
+.logituit_miniplayer_expand {
+  display: block !important;
+}

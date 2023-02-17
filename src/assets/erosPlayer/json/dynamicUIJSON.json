@@ -1,0 +1,3882 @@
+{
+  "desktopjson":[
+    {
+      "control":"divider",
+      "styleCSS": {
+         "style": {
+            "bottom": "2%;",            
+            "right": "21.3%;"            
+         }
+      }
+    },
+    {
+      "control": "settingsPopup",
+      "styleCSS": {
+         "style": {
+            "bottom": "1%;",            
+            "right": "12.2%;",
+            "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-settings/ic-settings.svg);"
+         }
+      },
+      "styleCSSQuality": {
+         "style": {
+            "border-radius": "4px",
+            " -webkit-backdrop-filter": "blur(10px);",
+            "backdrop-filter": "blur(10px);",
+            "background-color": "#171f2c;",
+            "color": "#ffffff;",
+            "padding": "34px;",
+            "position": "absolute;",
+            "height": "fit-content;",
+            "width": "209px;",
+            "bottom": "58px;",
+            "left": "72.1%;",
+            "font-size": "25px;",
+            "margin-top": "-109px;",
+            "padding-left": "unset;",
+            "padding-right": "unset;",
+            "padding-bottom": "5%;",
+            "z-index ": "1;",
+            "opacity": "1;"
+         }
+      },
+      "text": "",
+      "icon": "imagpath",
+      "hovertext": ""
+   },
+   {
+      "control": "audioQuality",
+      "styleCSS": {
+         "style": {
+            "bottom": "0.2%;",
+            "position": "absolute;",
+            "background-size": "contain;",
+            "outline": "none;",
+            "right": "12.2%;",
+            "height": "8.1%;",
+            "width": "2.5%;",
+            "display": "block;",
+            "transform": "rotate(0deg);",
+            "z-index": "1;",
+            "cursor": "pointer;",
+            "background-repeat": "no-repeat;",
+            "background-position": "center;",
+            "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-settings/ic-settings.svg);",
+            "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)"
+         }
+      },
+      "styleCSSQuality": {
+         "style": {
+            "border-radius": "4px",
+            " -webkit-backdrop-filter": "blur(10px);",
+            "backdrop-filter": "blur(10px);",
+            "background-color": "#171f2c;",
+            "color": "#ffffff;",
+            "padding": "34px;",
+            "position": "absolute;",
+            "height": "fit-content;",
+            "width": "209px;",
+            "bottom": "58px;",
+            "left": "72.1%;",
+            "font-size": "25px;",
+            "margin-top": "-109px;",
+            "padding-left": "unset;",
+            "padding-right": "unset;",
+            "padding-bottom": "5%;",
+            "z-index ": "1;",
+            "opacity": "1;"
+         }
+      },
+      "text": "",
+      "icon": "imagpath",
+      "hovertext": ""
+   },
+
+    {
+        "control":"recommendedUI",
+        "icons" : {"play":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/play.svg",
+                  "watchleast":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/watchlist.svg",
+                   "share":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/share.svg",
+                   "info":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/info.svg"},
+        "styleCSS":{
+        "style":
+            {
+                
+                "position":"absolute;",
+                "right":"0%;",
+                "left":"0%;",
+                "bottom":"0%;",
+                "background-color": "#171f2c;"                
+                
+            }
+        },
+        "text":"",
+        "icon":"imagpath",
+        "hovertext":""
+    },
+    {
+      "control":"fullscreenRecommendedUI",
+      "icons" : {"play":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/play.svg",
+                "watchleast":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/watchlist.svg",
+                 "share":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/share.svg",
+                 "info":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-recommended/info.svg"},
+      "styleCSS":{
+      "style":
+          {                                         
+          }
+      },
+      "text":"",
+      "icon":"imagpath",
+      "hovertext":""
+  },
+      {
+         "control": "allEpisodeIcon_ui",
+         "styleCSS": {
+            "style": {
+               "bottom": "2%;",
+               "right": "23.3%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-allEpisode/all-episodes.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "allEpisode_ui",
+         "styleCSS": {
+            "style": {
+               "top": "0%;",
+               "right": "0%;",
+               "height": "100%"
+            }
+         },    
+         "icons":{
+            "play":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-play/ic-play-copy-3.svg",
+            "close": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.svg"
+         },  
+         "text": "",
+         "hovertext": ""
+      },
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "bottom": "6.1%;",
+               "right": "3.4%;"
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.svg)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "videoplaypause_button",
+         "styleCSS": {
+            "style": {
+               "top": "11%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "playpause_animation",
+         "styleCSS": {
+            "style": {
+               "height": "20%;",
+               "width": "10%;",
+               "left": "45%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pause/cta-pause.svg);",
+               "position": "relative;",
+               "outline": "none;",
+               "top": "-35%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "rewindbutton",
+         "icons": {
+            "rewind": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-back-10-secs/ic-back-10-secs.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "41.5%;",
+               "left": "38.9%;",
+               "background-position":"center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-back-10-secs/ic-back-10-secs.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "forwardbutton",
+         "icons": {
+            "forward": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-forward-10-secs/ic-forward-10-secs.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "41.5%;",
+               "left": "56.2%;",
+               
+               "background-position":"center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-forward-10-secs/ic-forward-10-secs.svg);"               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "title",
+         "styleCSS": {
+            "style": {
+               "top": "3.5%;",
+               "left": "43.6%;"
+            }
+         },
+         "text": "Thor: The Dark World",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerErrorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },   
+      {
+         "control": "episode_title",
+         "styleCSS": {
+            "style": {
+               "top": "calc(7% + 15px);",
+               "left": "3.4%;"
+            }
+         },
+         "text": "Thor: The Dark World",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "10.4%;",   
+               "left": "3.4%;",            
+               "right": "13%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "volume",
+         "volumeicon":{
+                        "moreVolume":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-morevolume.svg",
+                         "volumeImage": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume.svg"
+                         },
+        
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",
+                
+               "right": " 20.9%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "volumeSlider",
+         "styleCSS": {
+            "style": {
+               "bottom": "calc(16% - 18px);",               
+                              
+               "right": " 19.5%;",
+               "transform":"rotate(-90deg);",
+               "margin-left": "0.6em;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "muteVolume",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",
+               
+               "right": " 20.9%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume-mute.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "muteVolumeSlider",
+         "styleCSS": {
+            "style": {
+               "bottom": "15.8%;",               
+                              
+               "right": " 22rem;",
+               "transform":"rotate(-90deg);",
+               "margin-left": "0.6em;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "41.5%;",
+               "left": "47.5%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-play/cta-play.svg);"
+               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "41.5%;",
+               "left": "47.5%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/cta-pause/cta-pause.svg);"
+               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",              
+               "right": "3.4%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",              
+               "right": "3.4%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-exit-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "videoQuality",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.2%;",
+               "position": "absolute;",
+               "background-size": "contain;",
+               "outline": "none;",
+               "right": "12.2%;",
+               "height": "8.1%;",
+               "width": "2.5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-settings/ic-settings.svg);",
+               "background-videoimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-video/icon-video.svg)",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)",
+               "background-issuereportimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.svg)"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "4px",
+               " -webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "background-color": "#171f2c;",
+               "color": "#ffffff;",
+               "padding": "34px;",
+               "position": "absolute;",
+               "height": "fit-content;",
+               "width": "209px;",
+               "bottom": "58px;",
+               "left": "72.1%;",
+               "font-size": "25px;",
+               "margin-top": "-109px;",
+               "padding-left": "unset;",
+               "padding-right": "unset;",
+               "padding-bottom": "5%;",
+               "z-index ": "1;",
+               "opacity": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "duration",
+         "styleCSS": {
+            "style": {     
+               "display": "block;",          
+               "bottom": "9.2%;",
+               "left": "93.2%;",
+               "font-size":"16px;",
+               "padding": "unset;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "9.2%;",
+               "left": "calc(93.5% - 28px);",
+               "font-size":"16px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "46%;",               
+               "left": "50%;",
+               "height":"7%;",
+               "width":"5%;",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",               
+               "left": "85.8%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/en-logo-overlay/en-logo-overlay.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "close",
+         "styleCSS": {
+            "style": {
+               "top": "2.8%;",               
+               "left": "3.4%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-back/icon-back.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "favoriteStar",
+         "styleCSS": {
+            "style": {
+               "bottom": "1.8%;",               
+               "right": "16.4%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/star.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "previousContent",
+         "styleCSS": {
+            "style": {
+               "bottom": "1.8%;",               
+               "left": "3.4%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/previous.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "nextContent",
+         "styleCSS": {
+            "style": {
+               "bottom": "1.8%;",               
+               "right": "24.4%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/next.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "replayButton",
+         "styleCSS": {
+            "style": {
+               "top": "39.6%;",               
+               "left": "47.6%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-replay/ic-replay.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "currentTime",
+         "styleCSS": {
+            "style": {    
+               "display": "block;",            
+               "bottom": "9.2%;",               
+               "right": "6.5%;",
+               "font-size":"16px;"           
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPalyer",
+         "styleCSS": {
+            "style": {
+               "bottom": "2%;",               
+               "right": "7.8%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/ic-miniplayertv/cta-pip.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }, 
+      {
+         "control": "miniPlayerExpand",
+         "styleCSS": {
+            "style": {
+               "background-repeat": "no-repeat;",
+               "left": "3.7%;",
+               "top": "6.7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/ic-expand.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPlayerClose",
+         "styleCSS": {
+            "style": {
+               "background-repeat": "no-repeat;",
+               "right": "3.7%;",
+               "top": "6.7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/icon-close.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPlayerPlay",
+         "miniplayerPlayPause":{
+            "miniplayerPlay": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/cta-pause.svg",
+            "miniplayerPause": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/ic-play.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "left": "3.5%;",
+               "bottom": "6.7%;",
+               "background": "center;"               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerWatchingNow",
+         "styleCSS": {
+            "style": {               
+               "left": "3.5%;",
+               "bottom": "34%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerEpisodeTitle",
+         "styleCSS": {
+            "style": {               
+               "left": "3.5%;",
+               "bottom": "25%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerTitle",
+         "styleCSS": {
+            "style": {
+               "left": "3.5%;",
+               "bottom": "35.4%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "skipRecap",
+         "styleCSS": {
+            "style": {
+               "top": "89.4%;",               
+               "right": "3.4%;",
+               "font-size": "16px;"               
+            }
+         },
+         "text": "Skip Recap",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "skipIntro",
+         "styleCSS": {
+            "style": {
+               "top": "89.4%;",               
+               "right": "3.4%;",
+               "font-size": "16px;"           
+            }
+         },
+         "text": "Skip Intro",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      
+      {
+         "control": "subtitle",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.2%;",   
+               "right": "16.9%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/TataSkyIcons/icon-subtitles/ic-subtitles-ts.svg);"
+            }
+         },
+         "styleCSSWebSubtitle": {
+            "style": {
+               "border-top-right-radius": "6px;",
+               "border-bottom-right-radius": "6px;",
+               "-webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "border": "unset;",
+               "outline": "unset;",
+               "background-color": "#171f2c;",
+               "padding": "47px;",
+               "position": "absolute;",
+               "width": "14%;",
+               "height": "36%;",
+               "bottom": "58px;",
+               "left": "69.5%;",
+               " font-size": "25px;",
+               "z-index": "1;",
+               "opacity": "1;"
+            }
+         },
+         "styleCSSWebAudio": {
+            "style": {
+               "border-top-left-radius": "6px;",
+               "border-bottom-left-radius": "6px;",
+               "-webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "border": "unset;",
+               "outline": "unset;",
+               "background-color": "#171f2c;",
+               "padding": "47px;",
+               "position": "absolute;",
+               "width": "14%;",
+               "height": "36%;",
+               "bottom": "58px;",
+               "left": "56%;",
+               " font-size": "25px;",
+               "z-index": "1;",
+               "opacity": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "livejson": [
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "bottom": "14%;",
+               "right": "3.4%;",
+               "height": "300px;",
+               "width": "23.3%;"
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.svg)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "46%;",               
+               "left": "50%;",
+               "height":"7%;",
+               "width":"5%;",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerErrorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },   
+      {
+         "control": "videoplaypause_button",
+         "styleCSS": {
+            "style": {
+               "top": "11%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "audioQuality",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.2%;",
+               "position": "absolute;",
+               "background-size": "contain;",
+               "outline": "none;",
+               "right": "12.2%;",
+               "height": "8.1%;",
+               "width": "2.5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-settings/ic-settings.svg);",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "4px",
+               " -webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "background-color": "#171f2c;",
+               "color": "#ffffff;",
+               "padding": "34px;",
+               "position": "absolute;",
+               "height": "fit-content;",
+               "width": "209px;",
+               "bottom": "58px;",
+               "left": "72.1%;",
+               "font-size": "25px;",
+               "margin-top": "-109px;",
+               "padding-left": "unset;",
+               "padding-right": "unset;",
+               "padding-bottom": "5%;",
+               "z-index ": "1;",
+               "opacity": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "10.4%;",              
+               "left": "3.4%;",
+               "right": "13%;",
+               "width": "calc(100% - 10% - 64px)"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "title",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;"
+            }
+         },
+         "text": "Thor: The Dark World",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "volume",
+         "volumeicon":{
+            "moreVolume":"{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-morevolume.svg",
+             "volumeImage": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume.svg"
+             },
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",
+               
+               "left": "16.2%;",
+               
+               "right": " 1rem;"
+               
+               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "volumeSlider",
+         "styleCSS": {
+            "style": {
+               "bottom": "calc(5% - 18px);",
+               "left": "19.1%;",
+               "right": " 1rem;",
+               "margin-left": "0.6em;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "muteVolume",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",
+               
+               "left": "16.2%;",
+               
+               "right": " 1rem;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume-mute.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "muteVolumeSlider",
+         "styleCSS": {
+            "style": {
+               "bottom": "calc(5% - 18px);",
+               "left": "19.1%;",
+               "right": " 1rem;",
+               "margin-left": "0.6em;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",         
+               "left": "3.4%;",            
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-play/ic-play.svg);"               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",         
+               "left": "3.4%;",            
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pause/cta-pause.svg);"               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",               
+               "left": " 94.1%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",              
+               "right": "3.4%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/asset-fullscreen-exit/ic-exit-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "videoQuality",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.2%;",
+               "position": "absolute;",
+               "background-size": "contain;",
+               "outline": "none;",
+               "right": "12.2%;",
+               "height": "8.1%;",
+               "width": "2.5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",                
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-settings/ic-settings.svg);",
+               "background-videoimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-video/icon-video.svg)",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)",
+               "background-issuereportimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.svg)"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "4px",
+               " -webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "background-color": "#171f2c;",
+               "color": "#ffffff;",
+               "padding": "34px;",
+               "position": "absolute;",
+               "height": "fit-content;",
+               "width": "209px;",
+               "bottom": "58px;",
+               "left": "71.6%;",
+               "font-size": "25px;",
+               "margin-top": "-109px;",
+               "padding-left": "unset;",
+               "padding-right": "unset;",
+               "padding-bottom": "5%;",
+               "z-index ": "1;",
+               "opacity": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "subtitle",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.2%;",               
+               "left": "80.9%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/icon-subtitles/icon-subtitles.svg);"
+            }
+         },
+         "styleCSSWebSubtitle": {
+            "style": {
+               "border-top-right-radius": "6px;",
+               "border-bottom-right-radius": "6px;",
+               "-webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "border": "unset;",
+               "outline": "unset;",
+               "background-color": "#171f2c;",
+               "padding": "47px;",
+               "position": "absolute;",
+               "width": "14%;",
+               "height": "36%;",
+               "bottom": "58px;",
+               "left": "69.5%;",
+               " font-size": "25px;",
+               "z-index": "1;",
+               "opacity": "1;"
+            }
+         },
+         "styleCSSWebAudio": {
+            "style": {
+               "border-top-left-radius": "6px;",
+               "border-bottom-left-radius": "6px;",
+               "-webkit-backdrop-filter": "blur(10px);",
+               "backdrop-filter": "blur(10px);",
+               "border": "unset;",
+               "outline": "unset;",
+               "background-color": "#171f2c;",
+               "padding": "47px;",
+               "position": "absolute;",
+               "width": "14%;",
+               "height": "36%;",
+               "bottom": "58px;",
+               "left": "56%;",
+               " font-size": "25px;",
+               "z-index": "1;",
+               "opacity": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",               
+               "left": "85.8%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/en-logo-overlay/en-logo-overlay.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "close",
+         "styleCSS": {
+            "style": {
+               "top": "2.8%;",
+               "right": "3.4%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-close/icon-close.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath"
+      },
+      {
+         "control": "live_button",
+         "styleCSS": {
+            "style": {
+               "bottom": "0.1%;",               
+               "left": "76vw;",              
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-live/ic-live.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "Golive_button--",
+         "styleCSS": {
+            "style": {
+               "bottom": "2.2%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "75%;",
+               "height": "32px;",
+               "width": "46px;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-golive/ic-live.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPalyer",
+         "styleCSS": {
+            "style": {
+               "bottom": "1.8%;",               
+               "right": "7.8%;",               
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/cta-pip.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPlayerExpand",
+         "styleCSS": {
+            "style": {                             
+               "left": "3.7%;",
+               "top": "6.7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/ic-expand.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPlayerClose",
+         "styleCSS": {
+            "style": {      
+               "background-repeat": "no-repeat;",         
+               "right": "3.7%;",
+               "top": "6.7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/icon-close.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPlayerPlay",
+         "miniplayerPlayPause":{
+            "miniplayerPlay": "UIComponent/Component/assets/LogiPlayer_icons/cta-pip/cta-pause.svg",
+            "miniplayerPause": "UIComponent/Component/assets/LogiPlayer_icons/cta-pip/ic-play.svg"
+         },
+         "styleCSS": {
+            "style": {               
+               "left": "3.5%;",
+               "bottom": "6.7%;", 
+               "background": "center;",           
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-pip/ic-play.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerWatchingNow",
+         "styleCSS": {
+            "style": {               
+               "left": "3.5%;",
+               "bottom": "34%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerEpisodeTitle",
+         "styleCSS": {
+            "style": {     
+               "left": "3.5%;",
+               "bottom": "25%;"            
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniplayerTitle",
+         "styleCSS": {
+            "style": {               
+               "left": "3.5%;",
+               "bottom": "35.4%;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "mobilejson": [
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "rgb(0 0 0 / 80%);",
+               "position": "absolute;",
+               "height": "100%;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "align-items":"center;",
+               "top":"0;"              
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.png)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",               
+               "left": "49.5%;",
+               "height":"11%;",
+               "width":"6%;",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "episode",
+         "icons": {
+            "nextEpisode_button": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-nextButton/prev.png);"
+         },
+         "styleCSS": {
+            "style": {
+               "bottom": "4.5%;",
+               "right": "calc(2.6% + 52%);",
+               "width": "25px;",
+               "height": "25px;",
+               "z-index": "1;",
+               "background-position":"center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-nextButton/prev.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "MobileMuteVolume",
+         "styleCSS": {
+            "style": {
+               "position":"absolute;",
+               "outline":"none;",
+               "font-weight":"bold;",
+               "left":"2%;",
+               "height":"7.3%;",
+               "width":"17.7%;",
+               "display":"block;",
+               "z-index":"1;",
+               "top":"21.6%;",
+               "cursor":"pointer;",
+               "padding-left":"4%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/ic-volume-mute/ic-volume-mute1.svg);",
+               "color": "#ffffff;",
+               "background-color":"rgb(255,255,255,0.2);",
+               "font-size": "97%;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;",
+               "background-size":"20% !important;",
+               "background-position":"left !important;",
+               "border":"2px solid rgb(255,255,255,0.3);"
+            }
+         },
+         "text": "Tap to Unmute",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "rewindbutton",
+         "icons": {
+            "rewind": "{$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-bck.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "43.4%;",
+               "position": "absolute;",
+               "left": "22.8%;",
+               "height": [
+                  "fit-content;",
+                  "-moz-fit-content;"
+               ],
+               "width": [
+                  "fit-content;",
+                  "-moz-fit-content;"
+               ],
+               "z-index": "1;",
+               "display": "block;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               " background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-bck.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "forwardbutton",
+         "icons": {
+            "forward": "{$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "43%;",
+               "position": "absolute;",
+               "left": "68.5%;",
+               "height": "fit-content;",
+               "width": "fit-content;",
+               "z-index": "1;",
+               "display": "block;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg);"
+
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "title",
+         "styleCSS": {
+            "style": {
+               "top": "6.4%;",
+               "position": "absolute;",
+               "left": "2.7%;",
+               "font-size": "24px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "Title",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "episode_title",
+         "styleCSS": {
+            "style": {
+               "top": "16%;",
+               "left": "2.7%;",
+               "font-size": "20px;"
+            }
+         },
+         "text": "Thor: The Dark World",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "16.1%;",
+               "position": "absolute;",
+               "left": "2.7%;",
+               "margin": "unset;",
+               "height": "0.5%;",
+               "width": "94.6%;",
+               "right": "-.5em!important;;",
+               "z-index": "1!important; "
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "48.5%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "9.6%;",
+               "width": "4.7%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_02/cta-play.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "48.5%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "9.6%;",
+               "width": "4.7%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_03/cta-pause.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "10.8%;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "10.8%;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/asset-fullscreen-exit/ic-exit-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "videoQuality",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "bottom": "4.4%;",
+               "right": "2.7%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_CTA_Quality/drawable-mdpi/cta_setting.svg);",
+               "background-videoimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-video/icon-video.svg)",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)",
+               "background-issuereportimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.svg)"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "45.3%;",
+               "display": "grid;",
+               "left": "27.4%;",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSSubtitle": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "50%!important;",
+               "display": "grid;",
+               "left": "50%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSAudio": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "50%!important;",
+               "display": "grid;",
+               "left": "50%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSReportIssue": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "40.2%!important;",
+               "display": "grid;",
+               "left": "48.5%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": "",
+         "mobile_setting_option": [
+            {
+               "setting_id": 1,
+               "setting_title": "Video Quality",
+               "setting_selected_op": "Auto",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-video.svg')"
+            },
+            {
+               "setting_id": 2,
+               "setting_title": "Audio Quality",
+               "setting_selected_op": "Default",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg')"
+            },
+            {
+               "setting_id": 3,
+               "setting_title": "Subtitles",
+               "setting_selected_op": "English",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-subs.svg')"
+            },
+            {
+               "setting_id": 4,
+               "setting_title": "Audio Language",
+               "setting_selected_op": "Hindi",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/ic-audio.svg')"
+            },
+            {
+               "setting_id": 5,
+               "setting_title": "Report an issue",
+               "setting_icon": "url('UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_REPORT/icon-help.svg')"
+            }
+         ]
+      },
+      {
+         "control": "volume--",
+         "styleCSS": {
+            "style": {
+               "top": "82%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "8%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": " 1rem;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/group-7.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      
+      {
+         "control": "duration",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "6.5% !important;",
+               "height": [
+                  "fit-content;",
+                  "-moz-fit-content;"
+               ],
+               "left": "9.1%;",
+               "padding": "unset;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "color": "#86888b;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "6.5% !important;",
+               "right": "calc(92.5% - 20px);",
+               "padding": "unset;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "currentTime",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "6.5% !important;",
+               "right": "92.1%;",
+               "padding": "unset;",
+               "height": [
+                  "fit-content;",
+                  "-moz-fit-content;"
+               ],
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "color": "#ffffff;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "close",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "2.7%;",
+               "opacity": "1;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_05_Close/icon-close.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "episode--",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "41%;",
+               "height": "15px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "bottom": "5.8%;",
+               "width": "18px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/prev/prev.png);",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "share---",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "89%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-size": "35px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/share-icon.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "left": "84.5%;",
+               "height": "3.3%;",
+               "outline": "none;",
+               "width": "13%;",
+               "z-index": "1;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "transition": "transform 500ms linear;",
+               "background-repeat": "no-repeat;",
+               " background-position": "center;",
+               " background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/drawable-mdpi/en_logo_overlay.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "skipRecap",
+         "styleCSS": {
+            "style": {
+               "bottom": "22.1%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "right": "2.5%;",
+               "height": "9%;",
+               "width": "13.8%;",
+               "font-size": "14px;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "border-radius": "3px;",
+               "color": "#11161f;",
+               "background-repeat": "no-repeat;",
+               "box-shadow": "0 2px 4px 0 rgba(0, 0, 0, 0.5);",
+               "background-color": "rgba(255, 255, 255, 0.9);",
+               "background-position": "center;"
+            }
+         },
+         "text": "Skip Recap",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "skipIntro",
+         "styleCSS": {
+            "style": {
+               "bottom": "22.1%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "right": "2.5%;",
+               "height": "9%;",
+               "width": "13.8%;",
+               "font-size": "14px;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "border-radius": "3px;",
+               "color": "#11161f;",
+               "background-repeat": "no-repeat;",
+               "box-shadow": "0 2px 4px 0 rgba(0, 0, 0, 0.5);",
+               "background-color": "rgba(255, 255, 255, 0.9);",
+               "background-position": "center;"
+            }
+         },
+         "text": "Skip Intro",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "mobilelivejson": [
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "rgb(0 0 0 / 80%);",
+               "position": "absolute;",
+               "height": "100%;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "top":"0;"
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.png)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",               
+               "left": "49.5%;",
+               "height":"11%;",
+               "width":"6%;",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "MobileMuteVolume",
+         "styleCSS": {
+            "style": {
+               "position":"absolute;",
+               "outline":"none;",
+               "font-weight":"bold;",
+               "left":"2%;",
+               "height":"7.3%;",
+               "width":"17.7%;",
+               "display":"block;",
+               "z-index":"1;",
+               "top":"21.6%;",
+               "cursor":"pointer;",
+               "padding-left":"2.8%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/ic-volume-mute/ic-volume-mute1.svg);",
+               "color": "#ffffff;",
+               "background-color":"rgb(255,255,255,0.2);",
+               "font-size": "120%;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;",
+               "background-size":"20% !important;",
+               "background-position":"left !important;",
+               "border":"2px solid rgb(255,255,255,0.3);"
+            }
+         },
+         "text": "Tap to Unmute",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "title",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "left": "2.7%;",
+               "font-size": "20px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "Title",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "16.1%;",
+               "position": "absolute;",
+               "left": "2.7%;",
+               "margin": "unset;",
+               "height": "0.5%;",
+               "width": "94.6%;",
+               "right": "-.5em!important;;",
+               "z-index": "1!important; "
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "9.6%;",
+               "width": "4.7%;",               
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_02/cta-play.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "9.6%;",
+               "width": "4.7%;",               
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_03/cta-pause.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "10.8%;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/ic-fullscreen/ic-fullscreen.svg);"
+               
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "10.8%;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/asset-fullscreen-exit/ic-exit-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "videoQuality",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "bottom": "4.4%;",
+               "right": "2.7%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_CTA_Quality/drawable-mdpi/cta_setting.svg);",
+               "background-videoimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-video/icon-video.svg)",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)",
+               "background-issuereportimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.svg)"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "45.3%;",
+               "display": "grid;",
+               "left": "27.4%;",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSSubtitle": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "width": "50%!important;",
+               "display": "grid;",
+               "left": "50%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSAudio": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "50%!important;",
+               "display": "grid;",
+               "left": "50%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSReportIssue": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "40.2%!important;",
+               "display": "grid;",
+               "left": "48.5%;",
+               "transform": "translate(-50%, 0%);",
+               "z-index": "2;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": "",
+         "mobile_setting_option": [
+            {
+               "setting_id": 1,
+               "setting_title": "Video Quality",
+               "setting_selected_op": "Auto",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-video.svg')"
+            },
+            {
+               "setting_id": 2,
+               "setting_title": "Audio Quality",
+               "setting_selected_op": "Default",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg')"
+            },
+            {
+               "setting_id": 3,
+               "setting_title": "Subtitles",
+               "setting_selected_op": "English",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-subs.svg')"
+            },
+            {
+               "setting_id": 4,
+               "setting_title": "Audio Language",
+               "setting_selected_op": "Hindi",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/ic-audio.svg')"
+            },
+            {
+               "setting_id": 5,
+               "setting_title": "Report an issue",
+               "setting_icon": "url('UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_REPORT/icon-help.svg')"
+            }
+         ]
+      },
+      {
+         "control": "volume--",
+         "styleCSS": {
+            "style": {
+               "top": "82%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "8%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": " 1rem;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/group-7.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "live_button",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "2.8%;",
+               "height": "4.9%;",
+               "width": "5.7%;",
+               "padding": "0.5%;",
+               "display": "block;",
+               "z-index": "1;",
+               "bottom": "4.4%;",
+               "cursor": "pointer;",
+               "background-color": "#5cb617;",
+               "background-repeat": "no-repeat;",
+               "color": "#ffffff;",
+               "font-size": "12px;",
+               "border-radius": "2px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "LIVE",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "Golive_button--",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "2.8%;",
+               "height": "4.5%;",
+               "width": "9.4%;",
+               "display": "none;",
+               "z-index": "1;",
+               "bottom": "5%;",
+               "cursor": "pointer;",
+               "background-color": "#00b8f8;",
+               "background-repeat": "no-repeat;",
+               "color": "#ffffff;",
+               "font-size": "12px;",
+               "border-radius": "2px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "GO LIVE",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "duration--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "5.8%;",
+               "height": "fit-content;",
+               "left": "9.6%;",
+               "padding": "unset;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "line-height": "1.17;",
+               "color": "#86888b;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "5.8%;",
+               "left": "6.6%;",
+               "padding": "unset;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "currentTime--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "bottom": "5.8%;",
+               "right": "92.5%;",
+               "padding": "unset;",
+               "height": "fit-content;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "color": "#ffffff;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "close",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "2.7%;",
+               "opacity": "1;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_05_Close/icon-close.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "episode--",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "41%;",
+               "height": "15px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "bottom": "5.8%;",
+               "width": "18px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/prev/prev.png);",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "share---",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "89%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-size": "35px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/share-icon.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "left": "84.5%;",
+               "height": "3.3%;",
+               "outline": "none;",
+               "width": "13%;",
+               "z-index": "1;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "transition": "transform 500ms linear;",
+               "background-repeat": "no-repeat;",
+               " background-position": "center;",
+               " background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/drawable-mdpi/en_logo_overlay.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "protrait": [
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "rgb(0 0 0 / 80%);",
+               "position": "absolute;",
+               "height": "100%;",
+               "width": "100%!important;",
+               "display": "flex;",
+               "align-items":"center;",
+               "justify-content":"center;",
+               "top":"0;"
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.png)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "52%",
+               "left": "49.5%",
+               "height": "16%",
+               "width": "11%",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "MobileMuteVolume",
+         "styleCSS": {
+            "style": {
+               "position":"absolute;",
+               "outline":"none;",
+               "font-weight":"bold;",
+               "left":"2.2%;",
+               "height":"11.9%;",
+               "width":"30.6%;",
+               "display":"block;",
+               "z-index":"1;",
+               "top":"21.6%;",
+               "cursor":"pointer;",
+               "padding-left":"7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/ic-volume-mute/ic-volume-mute1.svg);",
+               "color": "#ffffff;",
+               "background-color":"rgb(255,255,255,0.2);",
+               "font-size": "94%;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;",
+               "background-size":"20% !important;",
+               "background-position": "left !important;",
+               "border": "2px solid rgb(255,255,255,0.3);"
+            }
+         },
+         "text": "Tap to Unmute",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "15.8%;",
+               "width": "7.8%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_02/cta-play.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "15.8%;",
+               "width": "7.8%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_03/cta-pause.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "rewindbutton",
+         "icons": {
+            "rewind": "{$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-bck.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "42%;",
+               "position": "absolute;",
+               "left": "10.6%;",
+               "height": [
+                  "fit-content;",
+                  "moz-fit-content;"
+               ],
+               "width": [
+                  "fit-content;",
+                  "moz-fit-content;"
+               ],
+               "z-index": "1;",
+               "display": "block;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               " background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-bck.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "forwardbutton",
+         "icons": {
+            "forward": "{$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg"
+         },
+         "styleCSS": {
+            "style": {
+               "top": "42%;",
+               "position": "absolute;",
+               "left": "74%;",
+               "height": [
+                  "fit-content;",
+                  "moz-fit-content;"
+               ],
+               "width": [
+                  "fit-content;",
+                  "moz-fit-content;"
+               ],
+               "z-index": "1;",
+               "display": "block;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "left": "77.4%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "17.9%",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/ic-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "left": "77.4%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "17.9%",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/asset-fullscreen-exit/ic-exit-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "more_button",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "89%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets-more/ic-more.svg);"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSSubtitle": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSAudio": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "2;"
+            }
+         },
+         "styleCSSReportIssue": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "2;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": "",
+         "mobile_setting_option": [
+            {
+               "setting_id": 1,
+               "setting_title": "Video Quality",
+               "setting_selected_op": "Auto",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-video.svg')"
+            },
+            {
+               "setting_id": 2,
+               "setting_title": "Audio Quality",
+               "setting_selected_op": "Default",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg')"
+            },
+            {
+               "setting_id": 3,
+               "setting_title": "Subtitle",
+               "setting_selected_op": "English",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-subs.svg')"
+            },
+            {
+               "setting_id": 4,
+               "setting_title": "Audio Language",
+               "setting_selected_op": "Hindi",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/ic-audio.svg')"
+            },
+            {
+               "setting_id": 5,
+               "setting_title": "Report an issue",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_REPORT/icon-help.svg')"
+            }
+         ]
+      },
+      {
+         "control": "vq",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "91%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-size": "45px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_popup/drawable-mdpi/ic_more.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "duration",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "left": "12.6%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "line-height": "1.17;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "left": "11%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "currentTime",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "right": " 84%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "line-height": "1.17;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "0%;",
+               "position": "absolute;",
+               "width": "100%;",
+               "left":"0%;",
+               "z-index": "1!important; ",
+               "margin": "unset;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "left": "73%;",
+               "height": "10%;",
+               "outline": "none;",
+               "width": "25%;",
+               "z-index": "1;",
+               "display": "none;",
+               "background-repeat": "no-repeat;",
+               " background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/drawable-mdpi/en_logo_overlay.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "skipRecap",
+         "styleCSS": {
+            "style": {
+               "top": "81.5%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "right": "2.5%;",
+               "height": "9%;",
+               "width": "13.8%;",
+               "font-size": "7px;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "border-radius": "3px;",
+               "color": "#11161f;",
+               "background-repeat": "no-repeat;",
+               "box-shadow": "0 2px 4px 0 rgba(0, 0, 0, 0.5);",
+               "background-color": "rgba(255, 255, 255, 0.9);",
+               "background-position": "center;"
+            }
+         },
+         "text": "Skip Recap",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "protraitLiveJson": [
+      {
+         "control": "watchNext_popup",
+         "styleCSS": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "rgb(0 0 0 / 80%);",
+               "position": "absolute;",
+               "height": "100%;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "1;",
+               "top":"0;"
+            }
+         },
+         "text": "",
+         "icon": {
+            "play":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-play/cta-play2.png)",
+            "close":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/cta-close/ic-close.png)"
+         },
+         "hovertext": ""
+      },
+      {
+         "control": "loadingSpinner",
+         "styleCSS": {
+            "style": {
+               "top": "52%",
+               "left": "49.5%",
+               "height": "16%",
+               "width": "11%",
+               "display": "block !important;",
+               "position": "absolute;",
+               "opacity": "1;",
+               "border":"0px;"
+            }
+         },
+         "text": "",
+         "icon": "{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-loader/buffer-ic.png",
+         "hovertext": ""
+      },
+      {
+         "control": "MobileMuteVolume",
+         "styleCSS": {
+            "style": {
+               "position":"absolute;",
+               "outline":"none;",
+               "font-weight":"bold;",
+               "left":"2.2%;",
+               "height":"12.3%;",
+               "width":"30.7%;",
+               "display":"block;",
+               "z-index":"1;",
+               "top":"21.6%;",
+               "cursor":"pointer;",
+               "padding-left":"7%;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/ic-volume-mute/ic-volume-mute1.svg);",
+               "color": "#ffffff;",
+               "background-color":"rgb(255,255,255,0.2);",
+               "font-size": "102%;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;",
+               "background-size":"25% !important;",
+               "background-position": "left !important;",
+               "border": "2px solid rgb(255,255,255,0.3);"
+            }
+         },
+         "text": "Tap to Unmute",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "errorMsg",
+         "styleCSS": {
+            "style": {
+               "top": "3.3%;",
+               "left": "3.4%;",
+               "visibility":"hidden;"
+            }
+         },
+         "retryImage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/forwardRewind/cta-10-frw.svg)",
+         "text": "Internet Connection Lost",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "4.4%;",
+               "position": "absolute;",
+               "left": "73%;",
+               "height": "10%;",
+               "outline": "none;",
+               "width": "25%;",
+               "z-index": "1;",
+               "display": "none;",
+               "background-repeat": "no-repeat;",
+               " background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/drawable-mdpi/en_logo_overlay.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "15.8%;",
+               "width": "7.8%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_02/cta-play.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "50%;",
+               "position": "absolute;",
+               "left": "50%;",
+               "height": "15.8%;",
+               "width": "7.8%;",
+               "display": "block;",
+               "transform": "translate(-50%,-50%);",
+               "z-index": "0;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsMobile/assets_03/cta-pause.svg);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "left": "77.4%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "17.9%",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/ic-fullscreen/ic-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "exit-fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "left": "77.4%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "17.9%",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/asset-fullscreen-exit/ic-exit-fullscreen.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+
+      {
+         "control": "more_button",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "89%;",
+               "height": "24px;",
+               "width": "24px;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets-more/ic-more.svg);"
+            }
+         },
+         "styleCSSQuality": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "1;"
+            }
+         },
+         "styleCSSSubtitle": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "1;"
+            }
+         },
+         "styleCSSAudio": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "1;"
+            }
+         },
+         "styleCSSReportIssue": {
+            "style": {
+               "border-radius": "16px 16px 0px 0px;",
+               "background-color": "#2d3f5c;",
+               "position": "fixed;",
+               "bottom": "0;",
+               "height": "auto;",
+               "width": "100%!important;",
+               "display": "grid;",
+               "z-index": "1;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": "",
+         "mobile_setting_option": [
+            {
+               "setting_id": 1,
+               "setting_title": "Video Quality",
+               "setting_selected_op": "Auto",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-video.svg')"
+            },
+            {
+               "setting_id": 2,
+               "setting_title": "Audio Quality",
+               "setting_selected_op": "Default",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg')"
+            },
+            {
+               "setting_id": 3,
+               "setting_title": "Subtitle",
+               "setting_selected_op": "English",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/icon-subs.svg')"
+            },
+            {
+               "setting_id": 4,
+               "setting_title": "Audio Language",
+               "setting_selected_op": "Hindi",
+               "setting_icon": "url('{$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/Setting_Pop_Up/ic-audio.svg')"
+            },
+            {
+               "setting_id": 5,
+               "setting_title": "Report an issue",
+               "setting_icon": "url('UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_REPORT/icon-help.svg')"
+            }
+         ]
+      },
+      {
+         "control": "live_button",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "4.4%;",
+               "height": "7.9%;",
+               "width": "11.7%;",
+               "display": "block;",
+               "z-index": "1;",
+               "bottom": "7.9%;",
+               "cursor": "pointer;",
+               "background-color": "#5cb617;",
+               "color": "#ffffff;",
+               "font-size": "12px;",
+               "border-radius": "2px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "LIVE",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "Golive_button--",
+         "styleCSS": {
+            "style": {
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "17.5%;",
+               "height": "7.9%;",
+               "width": "18%;",
+               "display": "none;",
+               "z-index": "1;",
+               "bottom": "7.9%;",
+               "cursor": "pointer;",
+               "background-color": "#00b8f8;",
+               "color": "#ffffff;",
+               "font-size": "12px;",
+               "border-radius": "2px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "GO LIVE",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "vq",
+         "styleCSS": {
+            "style": {
+               "top": "6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "91%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-size": "45px;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_iconsPortrait/assets_popup/drawable-mdpi/ic_more.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "duration--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "left": "9.6%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "line-height": "1.17;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "left": "8%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "color": "#86888b;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "currentTime--",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "86.5%;",
+               "right": " 87.3%;",
+               "position": "absolute;",
+               "font-size": "12px;",
+               "font-weight": "normal;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "line-height": "1.17;",
+               "letter-spacing": "normal;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "bottom": "0%;",
+               "position": "absolute;",
+               "width": "inherit;",
+               "z-index": "1!important; ",
+               "margin": "unset;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ],
+   "TVjson": [
+      {
+         "control": "rewindbutton",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "left": "10%;",
+               "height": "10%;",
+               "outline": "none;",
+               "width": "5%;",
+               "right": "15rem;",
+               "z-index": "1;",
+               "display": "none;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-back-10-secs/ic-back-10-secs.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "forwardbutton",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "left": "16%;",
+               "height": "10%;",
+               "outline": "none;",
+               "width": "5%;",
+               "right": "15rem;",
+               "z-index": "1;",
+               "display": "none;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-forward-10-secs/ic-forward-10-secs.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "title",
+         "styleCSS": {
+            "style": {
+               "top": "19.4%;",
+               "outline": "none;",
+               "position": "absolute;",
+               "left": "5.6%;",
+               "font-size": "24px;",
+               "font-stretch": "normal;",
+               "font-style": "normal;",
+               "line-height": "normal;",
+               "letter-spacing": "normal;",
+               "color": "#ffffff;"
+            }
+         },
+         "text": "Thor: The Dark World",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "seekbar",
+         "styleCSS": {
+            "style": {
+               "top": "90.8%;",
+               "pointer-events": "auto;",
+               "outline": "none;",
+               "width": "72.1%;",
+               "position": "absolute;",
+               "left": "9.8%;",
+               "height": "0.7%;",
+               "right": "13%;",
+               "z-index": "2!important; ",
+               "font-size": "25px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "volume",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "22%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": " 1rem;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "muteVolume",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "22%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": " 1rem;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-volume/ic-volume-mute.svg);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "play_pause",
+         "styleCSS": {
+            "style": {
+               "top": "86.3%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "4.6%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogixPlayer_iconsTV/assets_Focus_States_TV_Play/drawable-mdpi/icon_play_broad.png);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "pauseButton",
+         "styleCSS": {
+            "style": {
+               "top": "86.3%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "4.6%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogixPlayer_iconsTV/assets_Focus_States_TV_Pause/drawable-mdpi/icon_pause_broad.png);",
+               "font-size": "20px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "fullScreen",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "93%;",
+               "height": "10%;",
+               "width": "5%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": " 1rem;",
+               "background-position": "center;",
+               "background-repeat": "no-repeat;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-fullscreen/ic-fullscreen.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "videoQuality",
+         "styleCSS": {
+            "style": {
+               "top": "88%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "81%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-settings/ic-settings.svg);",
+               "background-videoimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-video/icon-video.svg)",
+               "background-audioimage": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-audio/icon-audio.svg)",
+               "background-issuereportimage":"url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.svg)"
+
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "subtitle",
+         "styleCSS": {
+            "style": {
+               "top": "72.6%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "5.2%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-subtitleTV/icon_subtitlesTV.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "backbutton",
+         "styleCSS": {
+            "style": {
+               "top": "9.3%;",
+               "position": "absolute;",
+               "left": "5.3%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "bottom": "45%;",
+               "right": " 1rem;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-backbuttontv/ic_back.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "videotitle",
+         "styleCSS": {
+            "style": {
+               "top": "17.4%;",
+               "font-size": "1.56vw;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "5.2%;",
+               "height": "10%;",
+               "width": "20%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "duration",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "89%;",
+               "left": "92%;",
+               "position": "absolute;",
+               "font-size": "24px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "timeDivider",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "89%;",
+               "left": "90.5%;",
+               "position": "absolute;",
+               "font-size": "24px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "waterMark",
+         "styleCSS": {
+            "style": {
+               "top": "2%;",
+               "position": "absolute;",
+               "left": "76%;",
+               "height": "10%;",
+               "outline": "none;",
+               "width": "22%;",
+               "right": "15rem;",
+               "z-index": "1;",
+               "display": "none;",
+               "transform": "rotate(0deg);",
+               "transition": "transform 500ms linear;",
+               "cursor": "pointer;",
+               "background-repeat": "no-repeat;",
+               " background-position": "center;",
+               " background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/en-logo-overlay/en-logo-overlay@2x.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "currentTime",
+         "styleCSS": {
+            "style": {
+               "display": "block;",
+               "top": "89%;",
+               "left": "86%;",
+               "position": "absolute;",
+               "font-size": "24px;"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      },
+      {
+         "control": "miniPalyer",
+         "styleCSS": {
+            "style": {
+               "top": "10%;",
+               "position": "absolute;",
+               "outline": "none;",
+               "left": "92.5%;",
+               "height": "10%;",
+               "width": "10%;",
+               "display": "block;",
+               "transform": "rotate(0deg);",
+               "z-index": "1;",
+               "cursor": "pointer;",
+               "right": "24rem;",
+               "bottom": "45%;",
+               "background-repeat": "no-repeat;",
+               "background-position": "center;",
+               "background-image": "url({$basePath}UIComponent/Component/assets/LogiPlayer_icons/ic-miniplayertv/miniplayertv.png);"
+            }
+         },
+         "text": "",
+         "icon": "imagpath",
+         "hovertext": ""
+      }
+   ]
+}

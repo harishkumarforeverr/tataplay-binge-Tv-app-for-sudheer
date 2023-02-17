@@ -1,0 +1,17 @@
+p.in-progress {
+    width: 100%;
+    color: white;
+    position: relative;
+    // margin: 200px auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    font-family: $font-family-medium !important;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 480px) {
+    p.in-progress {
+        padding-top: 80px;
+    }
+}

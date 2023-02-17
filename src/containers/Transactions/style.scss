@@ -1,0 +1,15 @@
+.transaction-header {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  margin: auto;
+}
+.pdf-viewer-block {
+  margin: auto;
+}
+.pdf-pages {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

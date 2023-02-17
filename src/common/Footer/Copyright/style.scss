@@ -1,0 +1,22 @@
+.copyright-text {
+    display: inline-block;
+    margin-top: 15px;
+
+    span {
+        &:first-child {
+            font-size: 12px;
+            margin-bottom: 8px;
+            font-family: $font-family-medium;
+            font-weight: 500;
+        }
+
+        display: block;
+        font-size: 10px;
+        line-height: 120%;
+        font-family: $font-family-regular;
+        color: #D7C6F4;
+    }
+    @media only screen and (max-width: 480px) {
+        margin-top: 8px;
+    }
+}

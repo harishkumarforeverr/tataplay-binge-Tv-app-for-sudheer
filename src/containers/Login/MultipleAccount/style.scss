@@ -1,0 +1,139 @@
+.account-list-header {
+    margin: 20px 0 10px 0;
+    font-family: $font-family-medium;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+   color:$white-color;
+}
+
+.account-subheader {
+    font-family: $font-family-medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: #a3a6c2;
+    margin: 0px auto 20px auto;
+    width: 90%;
+}
+.account-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        padding: 7px 15px;
+        height: 54px;
+        width: 420px;
+        border-radius: 10px;
+        // background: #33354d;
+        border: 1px solid $bingeBlue-75;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+
+        .account-item {
+            display: flex;
+            align-items: center;
+
+            .account-name {
+                font-family: $font-family-medium;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                color: #ffffff;
+                margin-left: 24px;
+            }
+            .active-binge {
+                font-family: $font-family-medium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                color: $pink-25;
+            }
+        }
+    }
+}
+
+.button-container {
+    .login-btn {
+        margin: 10 0 20px 0;
+        height: 44px;
+        width: 280px;
+        border-radius: 22px;
+        padding: 12.5px 40px;
+
+        .button-text {
+            font-family: $font-family-medium;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+}
+
+.acc-not-now {
+    cursor: pointer;
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: $pink-25;
+    margin-bottom: 30.5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .account-list-header {
+        font-size: 22px;
+        margin: 20px 0 5px 0;
+    }
+    .account-subheader {
+        font-size: 16px;
+    }
+    .account-list {
+        li {
+            width: 320px;
+        }
+    }
+    .acc-swipe-screen {
+        max-height: 140px;
+        overflow: auto;
+    }
+    .button-container {
+        .login-btn {
+            width: 320px !important;
+            margin: 10px 0 36px 0;
+        }
+    }
+    .acc-not-now {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .account-list {
+        li {
+            width: 300px;
+        }
+    }
+    .button-container {
+        .login-btn {
+            width: 300px !important;
+        }
+    }
+}

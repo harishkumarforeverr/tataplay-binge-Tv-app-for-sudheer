@@ -1,0 +1,122 @@
+.preferred-content-language {
+  width: 100%;
+  flex: 1 0 0;
+  margin-top: 3.5em;
+  .content-header {
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .content-subtitle {
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #a3a6c2;
+    line-height: 20px;
+  }
+
+  .languageId-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .languageId-innercontainer {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    // .language-symbol {
+    //   top: 56.5%;
+    // }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 480px) {
+    .languageId-container {
+      display: flex;
+
+      .languageId-innercontainer {
+        width: calc(50% - 20px);
+        height: 48px;
+      }
+
+      .selected-language {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .content-header {
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    .content-subtitle {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    .selection-container {
+      margin-top: -2px;
+      padding: 0;
+    }
+
+    .languageId-innercontainer {
+      width: 154px;
+      height: 48px;
+      display: flex;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-right: 10px;
+
+      .language-symbol {
+        top: 32.5%;
+      }
+    }
+
+    .save-prefernces-button {
+      width: 205px;
+      height: 44px;
+      cursor: pointer;
+      z-index: 1000;
+      position: relative;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    .languageId-container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media only screen and (max-device-width: 320px) {
+    .languageId-innercontainer {
+      width: 140px;
+    }
+
+    .languageId-container {
+      width: 290px;
+    }
+  }
+}

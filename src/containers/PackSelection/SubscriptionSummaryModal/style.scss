@@ -1,0 +1,772 @@
+.sub-summary-background {
+  width: 100%;
+  position: relative;
+
+  .sub-summary-parent {
+    width: 90%;
+    position: relative;
+    padding-left: 6.9%;
+    padding-bottom: 40px;
+    top: 6.5em;
+  }
+
+  .sub-summary-header {
+    margin-bottom: 30px;
+
+    .back-block {
+      background: #1d1e30;
+      height: 20px;
+
+      &.for-web {
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        top: -7px;
+        cursor: pointer;
+        left: -15px;
+      }
+
+      i.icon-back-2 {
+        position: relative;
+        top: 20px;
+        left: 16px;
+        height: fit-content;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+    }
+
+    h4 {
+      font-size: 35px;
+      color: $white-color;
+      margin-bottom: 15px;
+      font-family: sky_med;
+    }
+
+    p {
+      font-size: 17px;
+      color: #cdcee5;
+      font-family: sky_med;
+
+      &.recharge-text {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #d3d4e9;
+      }
+    }
+  }
+
+  .sub-summary-body {
+    display: flex;
+    flex-direction: row;
+    background: #2b2d41;
+    padding: 35px 40px 40px;
+
+    .sub-summary-body-left {
+      flex: .65;
+      border-right: 1px solid grey;
+      padding-right: 14px;
+
+      .amazon-eligible {
+        font-size: 17px;
+        color: #cdcee5;
+        font-family: sky_med;
+        margin: 0 0 35px 0;
+      }
+
+      .pack-detail {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        .pack-detail-left {
+          display: inline-block;
+          flex: .97;
+          padding-right: 5px;
+
+          h5 {
+            font-size: 20px;
+            color: $white-color;
+            font-family: sky_med;
+            margin-bottom: 5px;
+          }
+
+          span {
+            font-size: 14px;
+            display: block;
+            color: $white-color;
+            font-family: sky_med;
+          }
+
+          .hide {
+            display: none;
+          }
+        }
+
+        .pack-detail-right {
+          font-size: 20px;
+          color: $white-color;
+          display: inline-block;
+          font-family: sky_med;
+          padding-left: 5px;
+
+          .pack-price {
+            span {
+              display: inline;
+            }
+          }
+
+          span.proRataAmount {
+            display: block;
+            font-family: sky_reg;
+            font-size: 14px;
+            margin-top: 5px;
+          }
+
+          i {
+            margin-left: 12px;
+            position: relative;
+            top: 2px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .app-list {
+        img {
+          width: 77px;
+          height: 47px;
+          margin-right: 5px;
+        }
+      }
+
+    }
+
+    .sub-summary-body-right {
+      flex: .35;
+      padding-left: 30px;
+
+      .icon-check {
+        vertical-align: bottom;
+        margin-right: 4px;
+
+        &:before {
+          color: #7ed321;
+        }
+      }
+
+      .dth-balance {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .total-payment {
+        font-family: sky_med;
+        font-size: 20px;
+        flex: 1;
+        text-align: left;
+      }
+
+      p:first-child {
+        font-size: 20px;
+        text-align: center;
+        font-family: sky_med;
+        color: $white-color;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #52547a;
+      }
+
+      p:nth-child(2) {
+        font-size: 15px;
+        font-family: sky_med;
+        color: #bec1d9;
+        line-height: 1.07;
+        margin: 30px 0;
+
+        &.for-mobile-view {
+          text-align: center;
+        }
+      }
+
+      & > span {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+
+        span {
+          font-size: 14px;
+          font-family: sky_med;
+          color: #dddfef;
+          line-height: 1.14;
+        }
+      }
+
+      .btn {
+        width: 100%;
+        padding: 14.51px;
+        font-size: 16px;
+      }
+
+      .recommend-recharge {
+        border-bottom: none !important;
+        text-align: left !important;
+        padding-bottom: 5px !important;
+
+        span.req-field {
+          position: relative;
+          left: 2px;
+          color: $error-color;
+        }
+      }
+
+      .input-div {
+        display: block;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .form-data {
+          width: 90%;
+          display: inline-block;
+
+          .initialVal {
+            position: absolute;
+            top: 2px;
+            font-family: sky_med;
+            font-size: 14px;
+           color:$white-color;
+            left: 21px;
+            display: block;
+            line-height: 1;
+            padding: 15px 0;
+          }
+
+          input {
+            width: 100%;
+            padding-left: 34px;
+            font-size: 16px;
+          }
+        }
+
+        .icon-block {
+          width: 10%;
+          display: inline-block;
+          position: absolute;
+
+          i {
+            position: relative;
+            top: 10px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .billing-period {
+    font-family: sky_reg !important;
+  }
+
+}
+
+.sub-summary-body-left button.btn {
+  padding: 0;
+  margin-top: 17px;
+  font-size: 16px;
+  color: #5087c7;
+  background: none;
+  border: none;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.downgrade {
+  .icon-alert-upd {
+    font-size: 82px;
+  }
+
+  .popupSec {
+    //min-height: 497px;
+    height: auto;
+
+    .modal-body {
+      padding: 99px 10% 34px;
+    }
+
+    .secondary-btn {
+      margin: 0;
+      background: inherit;
+      border: 0;
+      color: $pink-25;
+      padding: 14.5px;
+      // text-decoration: underline;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .popupSec {
+      width: 75%;
+      height: auto;
+      min-height: auto;
+      overflow-y: auto;
+
+      .modal-body {
+        padding: 11% 10%;
+      }
+    }
+  }
+}
+
+.cancel-resume {
+  .popupSec {
+    .modal-body {
+      padding: 44px 10% 34px;
+      .alert-icon {
+        font-size: 49px;
+        .get-icon-success-tick{
+          i {
+            &::before {
+              top:6px;
+            }
+          }
+        } 
+      }
+    }
+
+  }
+}
+
+.for-web {
+  display: block;
+}
+
+.for-mobile {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+(min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+(max-device-width: 892px) and (orientation: landscape) {
+  .for-web {
+    display: none;
+  }
+  .for-mobile {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  .downgrade {
+    .popupOuter {
+      .popupSec {
+        .modal-body {
+          //padding: 38px 10% 132px;
+          //padding: 38px 10% 75px;
+
+          .alert-icon {
+            margin-bottom: 19px;
+
+            i {
+              font-size: 52px;
+            }
+          }
+
+          .instructions-text {
+            margin: 5px 0 18px 0;
+          }
+
+          /*.btn-group {
+            // margin: 0 0 71px 0;
+          }*/
+        }
+      }
+    }
+  }
+
+  .payment-success-modal {
+    .popupOuter {
+      .popupSec {
+        height: auto;
+
+        .modal-body {
+          .alert-icon {
+            .get-icon-success-tick {
+              .icon-check {
+                font-size: 27px;
+              }
+            }
+          }
+
+          .instructions-text {
+            color: #c6c8de;
+            margin: 5px 0 10px 0;
+          }
+        }
+      }
+
+    }
+  }
+
+  .sub-summary-background {
+    align-items: initial;
+
+    .sub-summary-parent {
+      padding: 0 20px 0 20px;
+      overflow: auto;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .sub-summary-header {
+        margin-bottom: 0;
+
+        .back-block {
+          i.icon-back-2 {
+            left: -4px;
+          }
+        }
+
+        .web-small-logo {
+          display: block;
+          text-align: center;
+
+          img {
+            margin-top: 20px;
+          }
+        }
+
+        h4 {
+          font-size: 28px;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+
+      .sub-summary-body {
+        margin-bottom: 50px;
+        flex-direction: column;
+        padding: 0;
+        background: none;
+
+        .sub-summary-body-left {
+          border-right: none;
+          width: auto;
+          height: 100%;
+          padding: 14px 30px 8px 16px;
+          background-color: #2b2d41;
+
+          .pack-detail {
+            margin-bottom: 12px;
+
+            &.free-pack-detail {
+              margin-bottom: 15px;
+            }
+
+            .pack-detail-left {
+              h5 {
+                font-size: 18px;
+              }
+
+              .hide {
+                display: none;
+              }
+
+              .billing {
+                line-height: 1.83;
+                font-size: 12px;
+                margin-bottom: 5px;
+                display: block;
+              }
+
+              .billing-period {
+                font-size: 14px;
+              }
+
+              .free-pack {
+                color: #adb0ca;
+              }
+            }
+
+            .pack-detail-right {
+              .pack-price {
+                font-size: 18px;
+
+                .price {
+                  padding-left: 3px;
+                }
+              }
+
+              span {
+                &.for-web {
+                  display: none;
+                }
+
+                &.proRataAmount {
+                  margin-top: 32px;
+                }
+              }
+            }
+          }
+
+          .app-list {
+            img {
+              width: 65px;
+              height: 39px;
+            }
+          }
+
+          .amazon-eligible {
+            margin: 8px 0 15px 0;
+            font-family: 'sky_reg';
+            color: #a3a6c2;
+            font-size: 12px;
+          }
+        }
+
+        .sub-summary-body-right {
+          border-bottom: none;
+          padding-left: 0;
+          margin-top: 16px;
+
+          .input-div {
+            margin-bottom: 0;
+          }
+
+          a {
+            text-align: center;
+            display: block;
+            color: #5087c7;
+            font-family: sky_med;
+          }
+
+          .for-web {
+            display: none;
+          }
+
+          .free-trail-desc {
+            color: #bec1d9;
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: center;
+          }
+
+          .hide {
+            visibility: hidden;
+          }
+
+          .show {
+            visibility: visible;
+          }
+
+          .recommend-recharge {
+            font-size: 14px !important;
+            padding-left: 0 !important;
+          }
+
+          .input-div {
+            .form-data {
+              input {
+                width: 97%;
+              }
+            }
+          }
+
+          .upgrade {
+            text-align: center;
+          }
+
+          p:first-child {
+            font-size: 16px;
+            padding-left: 18px;
+            padding-right: 40px;
+            border-bottom: none;
+            padding-bottom: 0;
+          }
+
+          .total-payment {
+            font-size: 16px;
+          }
+
+          .sub-summary-right-amount {
+            .price {
+              padding-right: 5px;
+            }
+          }
+
+          p:nth-child(3) {
+            color: #dddfef;
+            font-size: 14px;
+            font-family: inherit;
+            text-align: center;
+            margin: 30px 0 15px 0;
+          }
+
+          .icon-check {
+            font-size: 15px;
+          }
+
+          & > span {
+            margin-bottom: 0;
+
+            span {
+              font-size: 12px;
+              font-family: inherit;
+            }
+          }
+
+          .btn {
+            font-size: 16px;
+            margin: 40px 0 25px 0;
+          }
+
+          .skip-btn {
+            margin: 0 0 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+(max-device-width: 892px) and (orientation: landscape) {
+  .sub-summary-background {
+    height: 100%;
+
+    .sub-summary-parent {
+      min-height: 100%;
+      /*padding: 0 120px;*/
+
+      .sub-summary-body {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .downgrade {
+    .popupOuter {
+      position: fixed;
+
+      .popupSec {
+        height: auto;
+
+        .modal-body {
+          .btn-group {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.icon-info {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.icon-info:focus, .icon-info:active {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+.sub-summary-background {
+  .recharge-expires-span {
+    color: #a3a6c2 !important;
+    font-family: sky_med !important;
+  }
+
+  .recharge-expired-span {
+    color: #e56c6c !important;
+    font-family: sky_med !important;
+  }
+
+  .cancel {
+    text-align: center;
+    font-family: sky_med;
+    font-size: 16px;
+    text-decoration: underline;
+    color: #5087c7;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sub-summary-background {
+    .sub-summary-header {
+      h4 {
+        font-size: 30px;
+      }
+    }
+
+    .sub-summary-body {
+      padding: 20px;
+      margin-bottom: 15%;
+
+      .sub-summary-body-left {
+        .pack-detail {
+          .pack-detail-left {
+            h5 {
+              font-size: 16px;
+            }
+          }
+
+          .pack-detail-right {
+            font-size: 16px;
+          }
+        }
+
+        .amazon-eligible {
+          font-size: 16px;
+          margin: 0 0 20px 0;
+          line-height: 18px;
+        }
+      }
+
+      .sub-summary-body-right {
+        margin-top: 0;
+        padding-left: 20px;
+
+        .form-data .error-message {
+          font-size: 12px;
+        }
+
+        .total-payment {
+          font-size: 16px;
+        }
+
+        p:first-child {
+          font-size: 18px;
+        }
+
+        .btn {
+          padding: 12px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .downgrade {
+    .popupSec {
+      width: 75%;
+      height: auto;
+      overflow-y: auto;
+    }
+  }
+}

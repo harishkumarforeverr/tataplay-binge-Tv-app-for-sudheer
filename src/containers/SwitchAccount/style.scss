@@ -1,0 +1,224 @@
+.switch-account-dropdown-list {
+  .switch-head {
+    padding: 4px;
+    font-size: 18px;
+
+    i {
+      &.icon-left-arrow {
+        cursor: pointer;
+
+        &:before {
+          color: $white-color;
+          font-size: 12px;
+          position: relative;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  &.switch-account-dropdown-list {
+    position: absolute;
+    top: 41px;
+    width: 335px;
+    //height: 350px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    right: 0;
+    background-color: #2b2d41;
+    padding: 8px;
+    text-align: left;
+
+    &.profile-img {
+      top: 45px;
+    }
+
+    .available-account {
+      .selected-account-img {
+        // background: #404254 !important;
+      }
+    }
+
+    .acc {
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        margin: 5px 0;
+        display: inline-block;
+        color: #a3a6c2;
+        font-size: 16px;
+
+        &.acc-detail {
+          position: relative;
+          left: 12px;
+          display: flex;
+          align-items: center;
+          width: 170px;
+
+          i {
+            vertical-align: bottom;
+          }
+
+          p {
+            width: 100%;
+            /*word-break: break-all;*/
+            line-height: normal;
+
+            span {
+              &.acc-id {
+                font-size: 14px;
+              }
+            }
+
+          }
+        }
+
+        &.selected-account-img {
+          width: 47px;
+          background: red;
+          border-radius: 50%;
+          height: 47px;
+          text-align: center;
+          background: linear-gradient(121deg, #f08300 8%, #e3000f 31%, #a72879 73%, #064497 99%);
+          //margin: 25px 0 35px 0;
+          display: flex;
+
+          img {
+            max-width: 84%;
+            min-width: 84%;
+            //max-height: 85%;
+            margin: 4px;
+            background: white;
+            border-radius: 50%;
+
+          }
+        }
+
+        &.active-tick {
+          left: 30px;
+          position: relative;
+          right: 0;
+          float: right;
+          top: 8px;
+
+          .get-icon-success-tick {
+            background-color: #ffffff;
+            padding: 2px 4px;
+            border: 1px solid #7ed321;
+            border-radius: 50%;
+
+            i.icon-check {
+              font-size: 14px;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
+      }
+    }
+
+    .selected-account {
+      padding: 6px 30px;
+      border-bottom: 1px solid $bingeBlue-75;
+
+      .binge-asset {
+        height: 32px;
+
+        img {
+          position: relative;
+          top: 8px;
+        }
+      }
+    }
+
+    .available-account {
+      padding: 0 4px;
+      // css for avatar image
+      .avatar-image {
+        &.sb-avatar__text {
+          padding: 2px;
+          background: #2b2d41;
+          border: 4px solid #404254;
+        }
+      }
+
+      &.acc div.acc-detail {
+        width: 240px;
+      }
+
+      .binge-asset {
+        height: 45px;
+
+        img {
+          position: relative;
+          top: 14px;
+        }
+      }
+    }
+
+    li {
+      padding: 0 10px;
+      background-color: #272840;
+      margin: 9px 0;
+      display: block;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      &:hover {
+        background-color: #1d1e30;
+      }
+
+      span {
+        &.icon {
+          &.left-icon {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &.hide {
+      display: none;
+    }
+
+    .sign-out-text {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px 6px 6px 6px;
+      width: fit-content;
+    }
+
+    // css for avatar image
+    .avatar-image {
+      &.sb-avatar__text {
+        height: 47px;
+        width: 47px;
+        padding: 5px;
+      }
+
+      &.sb-avatar.sb-avatar--text {
+        top: 0;
+
+        div {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+
+  p {
+
+
+    span.white-text {
+      position: relative;
+      bottom: 2px;
+      font-size: 18px;
+    }
+  }
+}

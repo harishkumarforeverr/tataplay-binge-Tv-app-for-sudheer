@@ -1,0 +1,69 @@
+.important-links {
+    display: flex;
+    width: 33%;
+    margin: 0 40px;
+    justify-content: space-evenly;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 10px 10px;
+
+            div {
+                color: $white-color;
+                text-decoration: none;
+                font-family: $font-family-medium;
+                font-size: 16px;
+                outline: none;
+                cursor: pointer;
+                font-weight: 500;
+                line-height: 120%;
+            }
+
+            &:first-child {
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: "";
+                    background-image: url("../../../assets/images/crown-icon.svg");
+                    height: 24px;
+                    background-size: cover;
+                    display: inline-block;
+                    width: 24px;
+                    margin-right: 8px;
+                    // margin-top: -4px;
+                }
+
+                div {
+                    background: linear-gradient(270deg, #ffa800 0%, #fff389 45.31%, #ffa800 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+
+    // @media only screen and (max-width: 1024px) {
+    //     flex-direction: column;
+    // }
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 29px 0;
+
+        ul {
+            li {
+                margin: 0 0 14px 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

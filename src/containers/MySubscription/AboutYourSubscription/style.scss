@@ -1,0 +1,513 @@
+.about-subscription-block {
+
+  &.combo-subscription {
+    .about-subscription {
+      .about-subscription-left {
+        .combo-pack-header {
+          margin: 20px 0 10px 0;
+        }
+
+        .de-active-subscription {
+          margin-top: 0;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .back-block {
+    background: #1d1e30;
+    height: 20px;
+
+    &.for-web {
+      float: left;
+      margin-right: 20px;
+      position: relative;
+      top: -7px;
+      cursor: pointer;
+      left: -15px;
+    }
+
+    i.icon-back-2 {
+      position: relative;
+      top: 15px;
+      left: 16px;
+      height: fit-content;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .progress-bar-container {
+    margin-bottom: 12px;
+  }
+
+  .about-subscription {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .for-web {
+      display: block;
+    }
+
+    .for-mobile {
+      display: none;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .about-subscription-left {
+      width: 40.5%;
+
+      .de-active-subscription {
+        color: #cdcee5;
+        font-size: 17px;
+        font-family: 'sky_med';
+        margin-bottom: 27px;
+        margin-top: -12px;
+      }
+
+      .my-subscription-top,
+      .my-subscription-bottom {
+        width: 100%;
+      }
+
+      .combo-block {
+        margin: 0;
+      }
+    }
+
+    .about-subscription-right {
+      width: 59.5%;
+      box-sizing: border-box;
+
+      .low-balance {
+        padding-left: 14.2%;
+
+        .paid-pack-low-balance {
+          border-top: 1px solid #52547a;
+          padding-top: 15px;
+        }
+
+        .input-div {
+          .form-data {
+            width: 56.5%;
+          }
+        }
+
+        .btn {
+          width: 44.1%;
+        }
+      }
+
+      .dth-balance-block {
+        padding-left: 8%;
+        width: 76.6%;
+        box-sizing: border-box;
+
+        & > span {
+          display: block;
+          text-align: center;
+          margin-bottom: 29px;
+
+          span {
+            font-size: 14px;
+            font-family: sky_med;
+            color: #dddfef;
+            line-height: 1.14;
+          }
+        }
+
+        .button-group {
+          width: 100%;
+          text-align: center;
+
+          .btn {
+            width: 54.7%;
+          }
+        }
+      }
+
+      .free-trial {
+        padding-left: 100px;
+
+        .free-trail-desc {
+          font-size: 15px;
+          font-family: sky_med;
+          color: #bec1d9;
+          line-height: 1.07;
+          margin: 30px 0;
+          text-align: inherit;
+          border-bottom: inherit;
+          padding-bottom: 0;
+        }
+
+        .button-group {
+          width: 100%;
+          text-align: center;
+
+          .btn {
+            width: 43.7%;
+          }
+        }
+      }
+
+      .icon-check {
+        vertical-align: bottom;
+        margin-right: 4px;
+
+        &:before {
+          color: #7ed321;
+        }
+      }
+
+      .dth-balance {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .upgrade-total-amount {
+        margin: 15px 0 21px 0;
+        display: flex;
+        color: #ffffff;
+        font-size: 20px;
+
+        .icon-info {
+          font-size: 20px;
+          margin-left: 5px;
+          position: relative;
+          top: 2px;
+        }
+      }
+
+      .upgrade-text {
+        color: #b6b9d2;
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: sky_med;
+      }
+
+      p:first-child.upgrade-journey {
+        flex-direction: column;
+        padding-bottom: 16px;
+
+        div:first-child {
+          margin-bottom: 10px;
+        }
+
+        .total-payment {
+          float: left;
+        }
+
+        .sub-summary-right-amount {
+          font-size: 20px;
+          float: right;
+        }
+      }
+
+      .total-payment {
+        font-family: sky_med;
+        font-size: 20px;
+        flex: 1;
+        text-align: left;
+      }
+
+      /*p:first-child {
+        font-size: 20px;
+        text-align: center;
+        font-family: sky_med;
+        color: $white-color;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #52547a;
+      }*/
+
+      .dth-instructions {
+        font-size: 15px;
+        font-family: sky_med;
+        color: #bec1d9;
+        line-height: 1.07;
+        margin: 30px 0;
+        text-align: center;
+
+        &.dth-top {
+          margin: 0 0 30px 0;
+        }
+
+        &.for-mobile-view {
+          text-align: center;
+        }
+
+        &.recommend-recharge {
+          border-bottom: none !important;
+          text-align: left !important;
+          padding-bottom: 5px !important;
+          margin: 20px 0 0 0;
+
+          span.req-field {
+            position: relative;
+            left: 2px;
+            color: $error-color;
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        padding: 14.51px;
+        font-size: 16px;
+        margin-top: 0;
+      }
+
+      .recommend-recharge-info {
+        font-size: 18px;
+        line-height: 1.22;
+        color: #ffffff;
+      }
+
+      .input-div {
+        display: block;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .form-data {
+          width: 90%;
+          display: inline-block;
+
+          .initialVal {
+            position: absolute;
+            top: 2px;
+            font-family: sky_med;
+            font-size: 14px;
+           color:$white-color;
+            left: 21px;
+            display: block;
+            line-height: 1;
+            padding: 15px 0;
+          }
+
+          input {
+            width: 100%;
+            padding-left: 34px;
+            font-size: 16px;
+          }
+        }
+
+        .icon-block {
+          width: 10%;
+          display: inline-block;
+          position: absolute;
+
+          i {
+            position: relative;
+            top: 10px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape) {
+    .about-subscription {
+      display: block;
+      width: 100%;
+
+      .for-mobile {
+        display: block;
+      }
+
+      .about-subscription-left {
+        width: 90%;
+        margin: auto;
+
+        .my-subscription-top,
+        .my-subscription-bottom {
+          width: 100%;
+          margin: auto;
+        }
+      }
+
+      .about-subscription-right {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 18px;
+
+        p {
+          &.upgrade-journey {
+            font-size: 16px;
+
+            .total-payment {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .upgrade-total-amount {
+          font-size: 16px;
+
+          .total-payment {
+            font-size: 16px;
+          }
+        }
+
+        .upgrade-text {
+          font-size: 14px;
+        }
+
+        .low-balance {
+          width: 100%;
+          padding: 0 18px;
+
+          .input-div {
+            .form-data {
+              width: 86%;
+            }
+          }
+
+          .btn {
+            width: 100%;
+          }
+        }
+
+        .dth-balance-block, .low-balance, .free-trial {
+          width: 100%;
+          padding-left: 0;
+
+          .button-group {
+            width: 100%;
+            text-align: center;
+            margin-top: 70px;
+            .btn {
+              width: 100%;
+
+              a {
+                position: relative;
+                bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 430px) and (max-width: 768px) {
+    .about-subscription {
+      display: block;
+      width: 100%;
+
+      .about-subscription-left {
+        width: 100%;
+      }
+
+      .about-subscription-right {
+        //width: 422px;
+        width: 100%;
+        margin-top: 20px;
+
+        .my-subscription-bottom {
+          width: 85%;
+        }
+
+        .dth-balance-block, .low-balance, .free-trial {
+          padding-left: 0;
+          width: 85%;
+
+          .button-group {
+            width: 100%;
+            text-align: center;
+
+            .btn {
+              // width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 925px) {
+    .about-subscription {
+      display: block;
+      width: 100%;
+
+      .about-subscription-left {
+        width: 90%;
+        transition: 0.5s;
+      }
+
+      .about-subscription-right {
+        width: 100%;
+        margin-top: 20px;
+
+        .my-subscription-bottom {
+          width: 85%;
+        }
+
+        .dth-balance-block, .low-balance, .free-trial {
+          padding-left: 0;
+          width: 85%;
+
+          .button-group {
+            width: 100%;
+            text-align: center;
+
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    .about-subscription {
+
+      .about-subscription-left {
+        width: 475px;
+
+        .my-subscription-top,
+        .my-subscription-bottom {
+          width: 100%;
+        }
+      }
+
+      .about-subscription-right {
+        width: 59.5%;
+        box-sizing: border-box;
+
+        .low-balance {
+          padding-left: 100px;
+
+          .input-div {
+            width: 338px;
+
+            .form-data {
+              width: 100%;
+            }
+          }
+
+          .btn {
+            width: 263px;
+          }
+        }
+
+        .dth-balance-block {
+          width: 534px;
+        }
+      }
+    }
+  }
+}

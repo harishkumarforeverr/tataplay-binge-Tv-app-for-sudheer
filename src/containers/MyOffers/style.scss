@@ -1,0 +1,25 @@
+.my-offers-container {
+  width: 100%;
+
+  .card {
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin: 0 1%;
+    background: #33354d;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .card-image {
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+      }
+    }
+
+    .card-content {
+      margin-top: 5px;
+    }
+  }
+}

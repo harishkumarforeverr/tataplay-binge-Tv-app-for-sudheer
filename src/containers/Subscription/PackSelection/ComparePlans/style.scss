@@ -1,0 +1,254 @@
+.compare-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .compare-plan-title {
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .compare-plan-listing {
+    display: flex;
+    justify-content: center;
+    width: 72%;
+    margin: auto;
+
+    .arrow-nav {
+     display: flex;
+     align-items: center;
+     height: 100vh;
+
+       .icon-Path::before {
+        color: $pink-25;
+        font-size: 20px;
+      }
+    }
+
+    .provider-list {
+      margin-right: 25px;
+
+      .list {
+        position: absolute;
+        top: 4.15em;
+        display: block;
+
+        div {
+          color: $white-color;
+          width: 90px;
+          height: 64px;
+          font-family: $font-family-medium;
+          font-weight: 500;
+          font-size: 14px;
+          padding-left: 1px;
+          margin-left: 10px;
+          justify-content: center;
+          border-top: 0.5px solid $bingeBlue-75;
+        }
+      }
+
+      li {
+        width: 110px;
+        height: 64px;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+
+        div {
+          margin: auto;
+          display: flex;
+          align-items: center;
+
+          p {
+            color: $white-color;
+            font-family: $font-family-medium;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 10px;
+          }
+
+          p::first-letter {
+            text-transform: capitalize;
+          }
+        }
+
+        .hr {
+          border-bottom: 0.5px solid $bingeBlue-75;
+          width: 90px;
+        }
+
+        &:first-child {
+          height: 149px;
+
+          div {
+            position: absolute;
+            bottom: 4px;
+            left: 15px;
+          }
+
+          .hr {
+            border: none;
+          }
+        }
+
+
+        // &:first-child {
+        //   height: 150px;
+
+        //   div {
+        //     position: absolute;
+        //     left: 20px;
+
+        //     p {
+        //       padding: 10px;
+        //     }
+        //   }
+
+        //   .hr {
+        //     border: none;
+        //   }
+        // }
+
+        // &:last-child {
+        //   border-bottom: none;
+        // }
+
+        .provider-item {
+          // padding-top: 7px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          .place-holder-image {
+            position: absolute;
+          }
+
+          .listing-item-image {
+            position: relative;
+          }
+        }
+      }
+
+      .pack-footer-item {
+        height: 128px;
+
+        .provider-item {
+          border-bottom: 0.5px solid $bingeBlue-75;
+          padding-bottom: 4px;
+        }
+
+        .last-icon {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .plan-container {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      background: none;
+      border: none;
+      padding: 0px 0px 20px 0px;
+    }
+  }
+
+  .pack-footer-message {
+    color: $purple-25;
+    width: 53%;
+    margin-top: 5px;
+
+    div {
+      padding: 5px;
+      font-size: 14px;
+      font-family: $font-family-medium;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.1px;
+    }
+  }
+
+  .pack-action {
+    margin-top: 50px;
+    margin-bottom: 44px;
+
+    .btn {
+      width: 420px;
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .compare-plan-container {
+    .compare-plan-listing {
+      width: 96%;
+    }
+
+    .pack-action {
+      .btn {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .compare-plan-container {
+
+    // top: 36px;
+    .compare-plan-title {
+      margin-bottom: 10px;
+    }
+
+    .compare-plan-listing {
+      width: 85%;
+
+      .provider-list {
+        margin-right: 5px;
+        .list{
+          div{
+          height: 63px;
+          }
+        }
+      }
+      
+    }
+
+    .pack-action {
+      .btn {
+        width: 94vw;
+        position: fixed;
+        top: 90vh;
+        left: 15px;
+        border: 20px solid black;
+        border-radius: 70px;
+        z-index: 1000;
+      }
+    }
+
+    .pack-footer-message {
+      width: 85%;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .pack-action {
+    .btn {
+      top: 89vh !important;
+    }
+  }
+}

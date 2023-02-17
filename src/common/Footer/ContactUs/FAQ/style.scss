@@ -1,0 +1,105 @@
+.faq-container {
+  color: $white-color;
+  padding-left: 50px;
+  width: 71.31%; /* equivalent to 855px i.e. panel width*/
+  height: 100%;
+
+  .heading {
+    line-height: 16px;
+    font-size: 20px;
+    font-family: $font-family-medium;
+    padding-top: 10px;
+  }
+
+  .accordion {
+    scrollbar-width: thin;
+    overflow: auto;
+    margin-top: 25px;
+    padding-right: 26px;
+    cursor: pointer;
+    height: 82%;
+
+    .panel {
+      width: 100%;
+      min-height: 55px;
+      max-height: fit-content;
+      // background: #2b2d41;
+      background-color: none;
+      border: 1px solid $bingeBlue-75;
+      padding: 18.5px 37px 18.5px 20px;
+      margin-bottom: 6px;
+      cursor: pointer;
+
+      &.panel-active {
+        height: auto;
+
+        .acc-body {
+          display: block;
+        }
+
+        .acc-header {
+          .icon-down {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .acc-header {
+        font-size: 16px;
+        font-family: $font-family-medium;
+
+        span {
+          &:first-child {
+            width: 93%;
+            display: inline-block;
+            line-height: normal;
+            margin-right: 1%;
+          }
+
+          &:nth-child(2) {
+            width: 6%;
+          }
+        }
+
+        .icon-down {
+          width: 16px;
+          height: 9px;
+          float: right;
+
+          &:before {
+            color: #a3a6c2;
+          }
+        }
+      }
+
+      .acc-body {
+        font-family: $font-family-medium;
+        line-height: 1.54;
+        letter-spacing: 0.34px;
+        color: $pink-25;
+        display: none;
+        margin-top: 20px;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 860px) {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    margin-top: 40px;
+    .accordion {
+      height: 549px;
+    }
+  }
+}
+

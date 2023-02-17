@@ -1,0 +1,12 @@
+{
+  "gcm_sender_id": "540868316921",
+  "icons": [
+    {
+      "src": "https://moengagewebsdk.imgix.net/images/favicon.png",
+      "sizes": "192x192"
+    }
+  ],
+  "name": "TestAppBingeMoeTest",
+  "short_name": "TestAppBingeMoeTest",
+  "display": "standalone"
+}

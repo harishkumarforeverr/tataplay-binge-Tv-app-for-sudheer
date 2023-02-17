@@ -1,0 +1,43 @@
+.logituit_exitScreenTooltip {
+    visibility: hidden;
+    /* width: 88px; */
+    width: 80px;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 2px;
+    /* Position the tooltip */
+    position: absolute;
+    /* right: -16px; */
+    right: -30px;
+    bottom: 90%;
+    z-index: 1;
+    max-width: none !important;
+  }
+  /* .logituit_fullscreen:hover {
+        transform: scale(1.05);
+    } */
+  .logituit_exitscreen{
+    position: absolute;
+    background-size: contain !important;
+    outline: none;
+    height: 4.4%;
+    width: 2.5%;
+    display: block;
+    transform: rotate(0deg);
+    z-index: 1;
+    cursor: pointer;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }  
+  @media (hover: hover) and (pointer: fine) {
+  .logituit_exitscreen:hover .logituit_exitScreenTooltip {
+    visibility: visible;
+  }
+  .logituit_exitscreen:hover{
+    transform: scale(1.1) !important;
+    transition: none !important;
+  }
+}

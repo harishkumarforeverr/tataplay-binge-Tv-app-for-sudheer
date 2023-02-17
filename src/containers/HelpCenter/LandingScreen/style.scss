@@ -1,0 +1,107 @@
+
+.ticket-card-container{
+      background: rgba(34, 0, 70, 0.1);
+    margin-bottom: -20px ;
+    padding-top: 30px ;
+}
+.outage-banner-section {
+    
+    .slick-track {
+        background-color: #eaebef;
+    }
+
+    .slick-arrow {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+
+        &:before {
+            content: "";
+             border: solid #fff;  
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 3px;
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+            box-shadow: none ; 
+
+        }
+  
+        &.slick-prev,
+        &.slick-next {
+            background-color: transparent !important;    
+        }   
+    }
+
+    .slick-prev {
+        left: 10%;
+        top: 45%;
+    }
+    .slick-next {
+        right: 10%;
+        top: 45%;
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+        width: 8px;
+        height: 8px;
+    }
+    .slick-prev:before {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    .slick-next:before {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .slick-next:hover:before {
+        margin-left: 0;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #ffffff;
+    }
+    ul.slick-dots {
+        z-index: 10;
+        display: block;
+        position: absolute;
+        bottom: 2px;
+        li {
+            margin: 0;
+            &.slick-active {
+                button:before {
+                    color: $pink-100;
+                }
+            }
+            button:before {
+                color: #ccc;
+            }
+        }
+    }
+    p {
+        width: 100%;
+        padding: 40px 10px 40px 10px;
+        text-align: center;
+        span {
+            width: 60%;
+            display: block;
+            text-align: center;
+            margin: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 20px;
+            cursor: pointer;
+            font-family: $font-family-regular, Tahoma;
+            font-weight: 600;
+        }
+    }
+}
+.icon-Partner-apps{
+    padding-right: 5px;
+    }
+
+    .icon-Content-related{
+        padding-right:5px;
+    }

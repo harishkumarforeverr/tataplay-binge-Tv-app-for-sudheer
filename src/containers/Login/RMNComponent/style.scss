@@ -1,0 +1,238 @@
+.rmn-input-container {
+  .form-data {
+    width: 420px;
+    height: 44px;
+    margin: auto;
+
+    .initialVal {
+      font-size: 16px;
+      font-family: $font-family-medium;
+      color: $initialInputColor;
+      top: -1px;
+      left: 0;
+      padding: 10px 8px 10px 10px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    input {
+      width: 100%;
+      height: 44px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      outline: none;
+
+      // background-color: #33354d;
+
+      font-family: $font-family-medium;
+      color: $white-color;
+      background: $background-page;
+      border: solid 1px $bingeBlue-75;
+
+      &::placeholder {
+        color: #8a8ba7;
+      }
+
+      &:focus {
+        outline: none;
+        border: 1px solid #444764;
+      }
+    }
+
+    .error-message {
+      margin-top: 8px;
+      font-family: $font-family-medium;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .form-data input[type="tel"] {
+    padding: 8px 10px 10px 43px;
+  }
+
+  .button-container {
+    .get-otp-btn {
+      margin-bottom: 20px;
+      width: 280px;
+      height: 44px;
+      border-radius: 24px;
+      margin-right: 0;
+      cursor: pointer;
+      padding: 12.5px;
+
+      .button-text {
+        font-family: $font-family-semiBold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .login-license {
+    padding: 20px 0;
+
+    p {
+      color: $white-color;
+      font-family: $font-family-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 110%;
+      text-align: center;
+
+      span {
+        text-decoration: none;
+
+        a {
+          padding-left: 1px;
+          text-decoration: none;
+          color: $pink-25;
+        }
+      }
+    }
+  }
+
+  .rmn-not-now {
+    cursor: pointer;
+    font-family: $font-family-semiBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: $pink-25;
+    margin-bottom: 18px;
+  }
+}
+
+.incorrect-input-container {
+  .form-data {
+    input {
+      border: 1px solid #e56c6c;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rmn-input-container {
+    .form-data {
+      width: 320px;
+    }
+
+    .login-license {
+      padding: 20px 0;
+    }
+
+    .button-container {
+      margin-bottom: 20px;
+
+      .get-otp-btn {
+        width: 320px;
+        height: 44px;
+        border-radius: 22px;
+        line-height: 18px;
+        padding: 0;
+        margin: 0;
+
+        .button-text {
+          line-height: 18px;
+        }
+      }
+    }
+
+    // .rmn-not-now{
+    //     line-height: 24px;
+    //     margin-bottom: 15px;
+    // }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .rmn-input-container {
+    .form-data {
+      width: 90%;
+    }
+
+    .button-container .get-otp-btn {
+      width: 90%;
+    }
+  }
+}
+
+.login-fail {
+  display: flex;
+  align-items: center;
+  border: 2px solid $bingeBlue-75;
+  // background-color: #33354d !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.login-not-now {
+  display: flex;
+  align-items: center;
+
+  .text-fail {
+    display: flex;
+    font-family: $font-family-medium ;
+    font-style: normal;
+    flex: 1;
+    // justify-content: space-between;
+    letter-spacing: 0.8px;
+    font-weight: normal;
+    font-size: 20px ;
+    line-height: 120%;
+    color: $white-color;
+
+    div:nth-child(2) {
+      color: $pink-25;
+    }
+  }
+
+  i {
+    font-size: 36px;
+    margin-right: 31px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-fail {
+    align-items: center;
+    height: 48px !important;
+
+    .text-fail {
+      font-size: 14px ;
+      letter-spacing: 0.2px ;
+      line-height: 20px ;
+      font-weight: normal ;
+      flex: none;
+      div{
+        &:first-child{
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .login-not-now {
+      i {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

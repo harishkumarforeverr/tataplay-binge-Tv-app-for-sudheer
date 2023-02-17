@@ -1,0 +1,195 @@
+.provider-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    h3 {
+        padding-left: 6%;
+    }
+}
+
+.browse-listing-container {
+    .browse-rails-container {
+        margin: 15px;
+        border-radius: 8px;
+        height: 97px;
+
+        &:hover {
+            transition: all 0.15s ease-out;
+            transform: scale(1.2);
+            border-radius: 16px;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+            // border: solid 1.8px #ffffff;
+            z-index: 4;
+        }
+    }
+
+    ul {
+        .slick-slider .slick-arrow {
+            display: none !important;
+        }
+
+        .center {
+            .slick-center {
+                li {
+                    transition: all 0.15s ease-out;
+                    transform: scale(1.2);
+                    border-radius: 16px;
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+                    border: solid 1.8px #e7541a;
+                    z-index: 4;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -38px;
+        li {
+            width: 0px;
+            height: 0px;
+            bottom: 1.5px;
+        }
+        li.slick-active .slick-dot-container {
+            background-color: $pink-100;
+            width: 70px;
+            border-radius: 4px;
+            height: 8px;
+        }
+        .slick-divider {
+            border-bottom: 1px solid #444764;
+            position: relative;
+            bottom: 20px;
+            margin-right: 6.9%;
+        }
+    }
+}
+
+.browse-main-container {
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+    .browse-sub-container {
+        width: 100%;
+        margin-left: 6.9%;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            &:hover {
+                transition: all 0.15s ease-out;
+                transform: scale(1.2);
+                border-radius: 2.4px;
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+                // border: solid 1.8px #ffffff;
+                z-index: 4;
+            }
+        }
+
+        .portrait-block {
+            position: relative;
+            width: 167px;
+            height: 274px;
+            margin: 0px 15px 30px 0px;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .place-holder-image {
+                position: absolute;
+            }
+            .listing-item-image {
+                position: relative;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 75px;
+                height: 112px;
+            }
+
+            .content-info {
+                display: flex;
+                justify-content: end;
+                padding: 4px 0px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .landscape-block {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 300px;
+            margin: 0px 15px 30px 0px;
+
+            @media only screen and (max-width: 768px) {
+                width: 156px;
+            }
+
+            img {
+                width: 100%;
+                height: 200px;
+                border-radius: 8px;
+                @media only screen and (max-width: 768px) {
+                    height: 87px;
+                }
+            }
+            .place-holder-image {
+                position: absolute;
+            }
+            .listing-item-image {
+                position: relative;
+            }
+
+            span {
+                font-family: sky_reg;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: inherit;
+                color: #a3a6c2;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .browse-all-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        position: relative;
+        bottom: 15px;
+
+        .browse-all-image {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: sky_med;
+            color: #5087c7;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 21px;
+                height: 20px;
+                background: url("../../assets/images/arrow-see-all.svg") no-repeat;
+                position: relative;
+                left: 7px;
+                top: 4px;
+            }
+
+            &:hover {
+                color: #5087c7;
+            }
+        }
+    }
+}

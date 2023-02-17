@@ -1,0 +1,40 @@
+.not-found-page-container {
+  height: 100vh;
+  padding: 10% 0 0 25%;
+  background-color: #e6e6e6;
+  margin: 0;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  cursor: auto;
+
+  img {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 22.5px;
+    color: #202124;
+    font-weight: 500;
+    margin-block-start: 0.82em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    cursor: auto;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #5f6368;
+    display: block;
+    margin-block-start: 1.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    &.error-404 {
+      margin-block-start: 1.3em;
+    }
+  }
+}

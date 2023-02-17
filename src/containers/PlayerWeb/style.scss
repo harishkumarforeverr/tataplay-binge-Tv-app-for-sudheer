@@ -1,0 +1,1243 @@
+.player-container {
+  max-height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  .player-wrapper {
+    #spnPlayerIframe {
+      pointer-events: none;
+    }
+  }
+
+  .sony-wrapper {
+    height: 100%;
+  }
+  .reel-wrapper{
+    height: 100%;
+  }
+
+  #erose-none{
+    display: none;
+  }
+
+    .scroll-loader {
+    height: 200px;
+    max-width: 200px;
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 44%;
+  }
+
+  .user-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  i {
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:before {
+      opacity: .7;
+    }
+
+    cursor: pointer;
+  }
+
+  #player, #player-container {
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    /*
+        background-color: #1d1e30;*/
+
+    //@media (max-width: 1280px) {
+    //  width: 1280px !important;
+    //  height: calc(100% + 254px);
+    //}
+    //@media (min-width: 1920px) {
+    //  width: 1920px !important;
+    //  transform: translateX(-50%);
+    //  left: 50%;
+    //}
+    opacity: .5;
+    height: 100%;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  #playerContainer {
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    /*
+        background-color: #1d1e30;*/
+
+    //@media (max-width: 1280px) {
+    //  width: 1280px !important;
+    //  height: calc(100% + 254px);
+    //}
+    //@media (min-width: 1920px) {
+    //  width: 1920px !important;
+    //  transform: translateX(-50%);
+    //  left: 50%;
+    //}
+    opacity: .5;
+    height: 100%;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  .watchlist-parent, .replay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 85.7%;
+    //@media (max-width: 1280px) {
+    //  width: 1280px;
+    //}
+    //@media (min-width: 1920px) {
+    //  width: 1920px;
+    //}
+
+    p {
+      opacity: 0.7;
+      box-shadow: 0 3px 17px 7px rgba(0, 0, 0, 0.2);
+      background-color: #33354d;
+      font-family: $font-family-medium;
+      font-size: 30px;
+      color: $white-color;
+      padding: 11px 18px;
+      border-radius: 9px;
+      margin-top: -3%;
+    }
+  }
+
+  .replay {
+    p {
+      background: transparent;
+      box-shadow: unset;
+      cursor: pointer;
+      opacity: 1;
+
+      &:before {
+        background: url('../../assets/images/replay.png');
+        content: '';
+        display: block;
+        width: 51px;
+        height: 51px;
+        margin: auto auto 8px;
+      }
+    }
+  }
+
+  header {
+    position: relative;
+    top: 50px;
+    /* left: 0; */
+    width: 93.5%;
+    z-index: 2;
+    margin: auto;
+    //height: 100%;
+    h3 {
+      text-align: center;
+      font-family: $font-family-medium;
+      font-size: 33px;
+      line-height: 1.05;
+      color: #ffffff;
+      display: inline-block;
+      width: 100%;
+      display: -webkit-box;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+      margin: 0;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      padding: 0 47px;
+      float: left;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      //margin-left: 40px;
+    }
+  }
+}
+ 
+.select:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -28px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  margin: 0 16px 0 0;
+  border-radius: 2px;
+  background: url("../../assets/images/select-blue.svg") no-repeat top/100%;
+}
+
+.player-container li.select {
+  color: $white-color;
+}
+
+.play-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: $white-color;
+  font-family:$font-family-medium;
+  font-size: 30px;
+}
+
+.subtitleText {
+  //@media (max-width: 1280px) {
+  //  width: 1280px;
+  //  bottom: -17%;
+  //}
+  //@media (min-width: 1400px) {
+  //  bottom: 18%;
+  //}
+  //@media (min-width: 1920px) {
+  //  width: 1920px;
+  //  bottom: 16%;
+  //}
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+  font-family: $font-family-medium;
+  font-size: 35px;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+
+  &.subtitleText-no-footer {
+    bottom: 70px;
+  }
+
+  &.subtitleText-footer {
+    bottom: 150px;
+  }
+}
+
+.player-container .replay {
+  height: 100%;
+}
+
+.network-error, .partner-error {
+  main {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .icon-no-internet {
+      font-size: 82px;
+      margin-bottom: 32px;
+    }
+
+    h6 {
+      font-size: 35px;
+      font-family: $font-family-medium;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 26px;
+      color: #b6b7d4;
+      font-family: $font-family-medium;
+      margin-bottom: 35px;
+      text-align: center;
+      padding: 0 60px;
+    }
+  }
+
+  i.icon-back-2 {
+    cursor: pointer;
+
+    &:before {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    left: 49px;
+    top: 50px;
+  }
+
+  .btn {
+    padding: 8px 75px;
+    cursor: pointer;
+  }
+
+  .button-text {
+    font-size: 26px;
+    font-family: $font-family-semiBold;
+  }
+}
+
+.partner-error {
+  main {
+    .icon-alert-upd {
+      font-size: 82px;
+      margin-bottom: 32px;
+    }
+
+    .error-number {
+      text-align: center;
+      color: #b6b7d4;
+      font-size: 16px;
+      line-height: 1.38;
+      margin-top: 25px;
+      font-family: $font-family-medium;
+    }
+  }
+}
+
+i.icon-back-2 {
+  font-size: 2em;
+  position: absolute;
+  /* left: 48px; */
+  display: inline-block;
+  width: 4%;
+  float: left;
+  z-index: 2;
+  left: 0;
+}
+
+div#app:-webkit-full-screen {
+  //@media (max-width: 1280px) {
+  //  position: absolute !important;
+  //  overflow: auto;
+  //}
+  //.player-container footer {
+  //  @media (max-width: 1280px) {
+  //    bottom: 5%;
+  //  }
+  //  @media (min-width: 1400px){
+  //    bottom: 34%;
+  //  }
+  //  @media (min-width: 1920px) {
+  //    width: 1920px;
+  //    bottom: 25%;
+  //  }
+  //}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .player-container {
+    header {
+      top: 19px;
+      h3{
+        font-size: 16px !important;
+      }
+    }
+
+    .play-controls {
+      i {
+        font-size: 30px;
+        margin-right: 50px;
+      }
+    }
+
+    .playerProgressBar, .rangeslider-horizontal {
+      height: 5px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      width: 15px !important;
+      height: 15px !important;
+    }
+
+    .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    footer {
+      .seekbar {
+        .hr-case-seekbar {
+          width: 88%;
+        }
+
+        .min-case-seekbar {
+          width: 91%;
+        }
+
+        .endTime {
+          font-size: 14px;
+          margin-top: 12px;
+
+          &.hr-case {
+            width: 12%;
+          }
+
+          &.min-case {
+            width: 9%;
+          }
+        }
+      }
+    }
+
+    .controls {
+      top: 8px;
+
+      .controls-right i {
+        // margin-right: 20px;
+        margin: 0px 0px 0px 0px;
+    padding:0px 9px 0px 9px;
+    margin-top:12px;
+
+        .volume-parent {
+          top: -13px;
+        }
+      }
+    }
+
+    .controls-left i.icon-select-prev {
+      &:hover {
+        .prev-episode-detail {
+          display: none;
+        }
+      }
+    }
+
+    .controls-right {
+
+      i.icon-percent, i.icon-mute {
+        .seekbar {
+          display: none;
+        }
+
+        &:hover {
+          .volume {
+            display: none;
+          }
+        }
+      }
+
+      i.icon-select-prev {
+        &:hover {
+          .next-episode-detail {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .subtitleText {
+      &.subtitleText-no-footer {
+        bottom: 55px;
+      }
+
+      &.subtitleText-footer {
+        bottom: 95px;
+      }
+    }
+
+    .play-controls #loading {
+      left: -25px;
+      top: -24px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      .current-time {
+        font-size: 17px;
+        bottom: 20px;
+      }
+    }
+
+    .watchlist-parent, .replay {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .tracks {
+      width: 270px;
+      min-height: 190px;
+      max-height: 180px;
+      padding: 14px 0;
+      bottom: 20px;
+
+      .audio-tracks, .subtitles-tracks {
+        height: 165px;
+        overflow: auto;
+
+        ul {
+          max-height: 165px;
+        }
+
+        h4 {
+          font-size: 20px;
+          padding-left: 20px;
+        }
+
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .select:before {
+      width: 17px;
+      height: 17px;
+    }
+
+    .video-quality {
+      width: 190px;
+      padding: 12px 0;
+      bottom: 20px;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      li {
+        font-size: 18px;
+      }
+    }
+
+    i.icon-back-2 {
+      font-size: 16px;
+      margin-top: 0px;
+    }
+  }
+
+  .network-error, .partner-error {
+    main {
+      p {
+        padding: 0 50px;
+        font-size: 20px;
+      }
+
+      h6 {
+        font-size: 30px;
+      }
+
+      .icon-alert-upd {
+        font-size: 72px;
+      }
+
+      .icon-no-internet {
+        font-size: 64px
+      }
+
+      .error-number {
+        font-size: 14px;
+      }
+    }
+
+    .button-text {
+      font-size: 20px;
+      // font-family: $font-family-semiBold;
+    }
+
+    i.icon-back-2 {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .player-container {
+    header {
+      top: 20px;
+      h3{
+        font-size: 16px !important;
+      }
+    }
+
+    .play-controls {
+      i {
+        font-size: 32px;
+        margin-right: 80px;
+      }
+    }
+
+    .playerProgressBar, .rangeslider-horizontal {
+      height: 7px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    footer {
+      .seekbar {
+        .hr-case-seekbar {
+          width: 89%;
+        }
+
+        .min-case-seekbar {
+          width: 92%;
+        }
+
+        .endTime {
+          font-size: 12px;
+          margin-top: 10px;
+
+          &.hr-case {
+            width: 11%;
+          }
+
+          &.min-case {
+            width: 8%;
+          }
+        }
+      }
+    }
+
+    .controls {
+      top: 8px;
+
+      .controls-right i {
+        margin-right: 25px;
+
+        .volume-parent {
+          top: -13px;
+        }
+      }
+    }
+
+    .controls-left i.icon-select-prev {
+      &:hover {
+        .prev-episode-detail {
+          display: none;
+        }
+      }
+    }
+
+    .controls-right {
+
+      i.icon-percent, i.icon-mute {
+        .seekbar {
+          display: none;
+        }
+
+        &:hover {
+          .volume {
+            display: none;
+          }
+        }
+      }
+
+      i.icon-select-prev {
+        &:hover {
+          .next-episode-detail {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .subtitleText {
+      &.subtitleText-no-footer {
+        bottom: 55px;
+      }
+
+      &.subtitleText-footer {
+        bottom: 95px;
+      }
+    }
+
+    .play-controls #loading {
+      left: -25px;
+      top: -24px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      .current-time {
+        font-size: 20px;
+        bottom: 25px;
+      }
+    }
+
+    .watchlist-parent, .replay {
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .tracks {
+      width: 330px;
+      min-height: 210px;
+      max-height: 220px;
+      padding: 20px 0;
+      bottom: 20px;
+
+      .audio-tracks, .subtitles-tracks {
+        height: 185px;
+        overflow: auto;
+
+        ul {
+          max-height: 165px;
+        }
+
+        h4 {
+          font-size: 22px;
+          padding-left: 20px;
+        }
+
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .select:before {
+      width: 19px;
+      height: 19px;
+    }
+
+    .video-quality {
+      width: 210px;
+      padding: 20px 0;
+      bottom: 20px;
+
+      h4 {
+        font-size: 22px;
+      }
+
+      li {
+        font-size: 20px;
+      }
+    }
+
+    i.icon-back-2 {
+      font-size: 16px;
+      margin-top: 0px;
+    }
+  }
+
+  .network-error, .partner-error {
+    main {
+      p {
+        padding: 0 60px;
+        font-size: 22px;
+      }
+
+      h6 {
+        font-size: 32px;
+      }
+
+      .icon-alert-upd {
+        font-size: 76px;
+      }
+
+      .icon-no-internet {
+        font-size: 70px
+      }
+
+      .error-number {
+        font-size: 14px;
+      }
+    }
+
+    .button-text {
+      font-size: 22px;
+    }
+
+    i.icon-back-2 {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px),
+(min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /*and (pointer:coarse) (hover:hover)*/
+  .player-container {
+    header {
+      top: 30px;
+      h3{
+        font-size: 18px;
+      }
+    }
+
+    .play-controls {
+      i {
+        font-size: 35px;
+        margin-right: 90px;
+      }
+    }
+
+    .playerProgressBar, .rangeslider-horizontal {
+      height: 5px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      width: 25px !important;
+      height: 25px !important;
+    }
+
+    .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+      font-size: 15px;
+    }
+
+    footer {
+      .seekbar {
+        .hr-case-seekbar {
+          width: 84%;
+        }
+
+        .min-case-seekbar {
+          width: 93%;
+        }
+
+        .endTime {
+          font-size: 17px;
+          margin-top: 1px;
+
+          &.hr-case {
+            width: 16%;
+          }
+
+          &.min-case {
+            width: 7%;
+          }
+        }
+      }
+    }
+
+    .controls {
+      top: 10px;
+
+      .controls-right i {
+        margin-right: 30px;
+
+        .volume-parent {
+          top: -15px;
+        }
+      }
+    }
+
+    .controls-left i.icon-select-prev {
+      &:hover {
+        .prev-episode-detail {
+          display: none;
+        }
+      }
+    }
+
+    .controls-right {
+
+      i.icon-percent, i.icon-mute {
+        .seekbar {
+          display: none;
+        }
+
+        &:hover {
+          .volume {
+            display: none;
+          }
+        }
+      }
+
+      i.icon-select-prev {
+        &:hover {
+          .next-episode-detail {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .subtitleText {
+      &.subtitleText-no-footer {
+        bottom: 75px;
+      }
+
+      &.subtitleText-footer {
+        bottom: 105px;
+      }
+    }
+
+    .play-controls #loading {
+      left: -25px;
+      top: -24px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      .current-time {
+        font-size: 24px;
+        bottom: 30px;
+      }
+    }
+
+    .watchlist-parent, .replay {
+      p {
+        font-size: 22px;
+      }
+    }
+
+    .tracks {
+      width: 380px;
+      min-height: 250px;
+      max-height: 260px;
+      padding: 24px 0;
+      bottom: 32px;
+
+      .audio-tracks, .subtitles-tracks {
+        height: 220px;
+        overflow: auto;
+
+        ul {
+          max-height: 180px;
+        }
+
+        h4 {
+          font-size: 24px;
+          padding-left: 26px;
+        }
+
+        li {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .select:before {
+      width: 22px;
+      height: 22px;
+    }
+
+    .video-quality {
+      width: 230px;
+      padding: 24px 0;
+      bottom: 32px;
+
+      h4 {
+        font-size: 24px;
+      }
+
+      li {
+        font-size: 22px;
+      }
+    }
+
+    i.icon-back-2 {
+      font-size: 18px;
+      margin-top: -2px;
+    }
+  }
+
+  .network-error, .partner-error {
+    main {
+      p {
+        padding: 0 60px;
+      }
+    }
+
+    i.icon-back-2 {
+      font-size: 26px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .player-container {
+    header {
+      top: 40px;
+    }
+
+    .play-controls {
+      i {
+        font-size: 84px;
+        margin-right: 100px;
+      }
+    }
+
+    .playerProgressBar, .rangeslider-horizontal {
+      height: 9px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      width: 30px !important;
+      height: 30px !important;
+    }
+
+    .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+      font-size: 30px;
+      /*margin-top: 4px;*/
+    }
+
+    footer {
+      .seekbar {
+        .endTime {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .controls {
+      top: 16px;
+
+      .controls-right i {
+        margin-right: 35px;
+      }
+    }
+
+    .subtitleText {
+      &.subtitleText-no-footer {
+        bottom: 85px;
+      }
+
+      &.subtitleText-footer {
+        bottom: 135px;
+      }
+    }
+
+    .watchlist-parent, .replay {
+      p {
+        font-size: 24px;
+      }
+    }
+
+    i.icon-back-2 {
+      font-size: 30px;
+      margin-top: 2px;
+    }
+  }
+
+  .network-error, .partner-error {
+    i.icon-back-2 {
+      font-size: 28px;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .player-container {
+    header {
+      top: 50px;
+    }
+
+    .play-controls {
+      i {
+        font-size: 84px;
+        margin-right: 110px;
+      }
+    }
+
+    .playerProgressBar, .rangeslider-horizontal {
+      height: 10px;
+    }
+
+    .circular-span, .rangeslider__handle {
+      width: 38px !important;
+      height: 38px !important;
+    }
+
+    .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+      font-size: 30px;
+      margin-top: 1px;
+    }
+
+    footer {
+      .seekbar {
+        .endTime {
+          font-size: 30px;
+          margin-top: 1px;
+        }
+      }
+    }
+
+    .controls {
+      top: 23px;
+
+      .controls-right i {
+        margin-right: 40px;
+      }
+    }
+
+    .watchlist-parent, .replay {
+      p {
+        font-size: 26px;
+      }
+    }
+
+    i.icon-back-2 {
+      margin-top: 1px;
+    }
+  }
+
+  .network-error, .partner-error {
+    i.icon-back-2 {
+      font-size: 33px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .player-container {
+    header {
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    .subtitleText {
+      &.subtitleText-no-footer {
+        font-size: 22px;
+        padding: 0 10px;
+      }
+
+      &.subtitleText-footer {
+        font-size: 22px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+hungama-player-view#player-view {
+  background: none;
+}
+
+@media only screen and (min-width: 2500px) and (max-width: 3000px) {
+  .subtitleText {
+    &.subtitleText-footer {
+      bottom: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .player-container{
+    .scroll-loader{
+      left: 24%;
+      top: 35%;
+    }
+  }
+  .player-container i.icon-back-2{
+   font-size:14px;
+   margin-top: 0px;
+  }
+  .player-container .play-controls i {
+    font-size:24px !important;
+  }
+  .player-container header h3{
+    font-size:14px !important;
+  }
+  .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+    font-size: 10px !important;
+    /*margin-top: 4px;*/
+  }
+  .network-error, .partner-error{
+     .icon-alert-upd{
+       font-size:50px !important;
+     }
+     h6{
+       font-size:24px !important;
+     }
+     .btn{
+       margin-right: 0px !important;
+     }
+  }
+  footer {
+    .seekbar {
+      .endTime {
+        font-size:11px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:430px) {
+  footer {
+    .seekbar {
+      .endTime {
+        font-size:10px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width:390px) {
+  .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+    font-size: 9px !important;
+    /*margin-top: 4px;*/
+  }
+  footer {
+    .seekbar {
+      .endTime {
+        font-size:9px !important;
+        margin-top:13px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width:371px) {
+  .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+    font-size: 10px !important;
+    /*margin-top: 4px;*/
+  }
+  .player-container .controls .controls-right i{
+    margin: 0px 0px 0px 0px;
+    padding:0px 6px 0px 6px;
+  }
+  footer {
+    .seekbar {
+      .endTime {
+        font-size:8px !important;
+        margin-top:14px !important;
+      }
+    }
+   
+  }
+}
+
+@media only screen and (max-width:300px) {
+  .controls .controls-left i.icon-select-prev, .controls .controls-right i {
+    font-size: 8px !important;
+    /*margin-top: 4px;*/
+  }
+  .player-container .controls .controls-right i{
+    margin: 0px 0px 0px 0px;
+    padding:0px 3px 0px 3px;
+  }
+  .network-error, .partner-error {
+   h6{
+     font-size:22px !important;
+   }
+  }
+  footer {
+    .seekbar {
+      .endTime {
+        font-size:7px !important;
+        margin-top:15px !important;
+      }
+    }
+    
+  }
+}

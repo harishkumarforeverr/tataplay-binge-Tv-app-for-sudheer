@@ -1,0 +1,43 @@
+.help-center-container.category-page {
+  section.page-header {
+    .category-header {
+      .img-contr {
+        background: #594074 !important;
+      }
+    }
+  }
+  .category-helpful-tracker{
+           margin-top: 41px;
+           padding-bottom: 18px;
+  }
+  .container {
+    width: 996px;
+    max-width: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #594074 section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+    .img-contr {
+    }
+  }
+
+  .subCategory-faq-wrapper {
+    background: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    section {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+     .category-helpful-tracker{
+           margin-top: 30px;
+           padding-bottom: 10px;
+  }
+  }
+}

@@ -1,0 +1,8 @@
+.logituit_videoplaypause{
+    height: 75%;
+    width: 100%;
+    background-size: contain !important;
+    background: transparent;
+    position: absolute;
+    outline: none;
+}

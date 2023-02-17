@@ -1,0 +1,288 @@
+  .login-with-otp-modal {
+  .popupOuter {
+    background: transparent;
+  }
+  &.alert-modal {
+    .popupSec {
+      height: 456px;
+      width: 640px;
+      background: $background-popup-gradient;
+      background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      bottom: 1px solid $bingeBlue-75;
+      overflow: hidden;
+
+      .modal-body {
+        padding: 37px 0;
+        max-height: 456px;
+        overflow: auto;
+        // height: auto;
+      }
+
+      &.otp-container-block {
+        height: 357px;
+
+        .modal-body {
+          padding: 32.5px 0;
+        }
+      }
+    }
+  }
+}
+
+.login-details-container {
+  .back-arrow{
+    width: 18px;
+    height: 18px;
+    margin-left: 19px;
+    margin-top: -13px;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+  .scroll-loader {
+    height: 200px;
+    max-width: 200px;
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 34%;
+    z-index: 199999;
+
+  @media only screen and (max-width: 480px){
+      width: 150px;
+      height: 150px;
+      left: 35%;
+      top: 20%;
+  }
+}
+
+  .header-logo {
+    img {
+      height: 18px;
+      width: 80px;
+      object-fit: cover
+    }
+  }
+
+  .login-title-web {
+    display: block;
+    color: $white-color;
+    font-family: $font-family-medium;
+    font-size: 26px;
+    padding-top: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+  }
+
+  .login-title-small {
+    display: none;
+  }
+}
+
+.free-trial-toast {
+  border: 2px solid #ffa800 !important;
+}
+
+.Toastify__toast-container--bottom-center {
+  bottom: 50px !important;
+  border: none !important;
+  font-family: $font-family-medium;
+}
+
+.Toastify__toast {
+  display: flex !important;
+  align-items: center !important;
+  padding: 13px 25px 13px 15px !important;
+  border-radius: 6px !important;
+  font-family: $font-family-medium!important;
+  margin-top: 65px;
+
+  .Toastify__toast-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: $font-family-medium!important;
+    
+  }
+
+  .Toastify__close-button {
+    padding-top: 0 !important;
+    display: none;
+    font-family: $font-family-medium!important;
+  }
+
+  &.login-fail {
+    padding: 13px 61px 13px 15px !important;
+  }
+}
+
+.switch-toast {
+  bottom: 30px;
+}
+
+ 
+.login-toast-wrapper {
+  display: flex;
+  align-items: center;
+  border: 2px solid $bingeBlue-75;
+  bottom: -130px;
+  background-color: $background-toast !important;
+  font-family: $font-family-medium!important;
+
+  &:before {
+    background: linear-gradient(
+      270deg,
+      #ffa800 0%,
+      #fff389 45.31%,
+      #ffa800 100%
+    );
+  }
+
+  .Toastify__close-button {
+    padding-top: 0.8% !important;
+  }
+}
+
+.login-body-container {
+  display: flex;
+  align-items: center;
+  .login-success-image {
+    margin-right: 30px;
+  }
+
+  .icon-logout {
+    margin-right: 15px;
+    font-size: 22px;
+    margin-bottom:2px;
+    &:before{
+      color: $white-color;        
+    }
+  }
+  
+
+  .login-success-text {
+    display: flex;
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #ffffff;
+
+    .free-trail {
+      background: linear-gradient(
+        270deg,
+        #ffa800 0%,
+        #fff389 45.31%,
+        #ffa800 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .login-with-otp-modal {
+    &.alert-modal {
+      .popupSec {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ 
+  .switch-toast {
+    bottom: -13px !important;
+  }
+
+  .free-trial-toast {
+    width: 92% !important;
+    height: 48px !important;
+  }
+
+  .login-toast-wrapper {
+    bottom: -28%;
+    height: 48px!important;
+    width: 98%!important;
+
+    .Toastify__close-button {
+      display: none;
+    }
+  }
+ 
+  .login-details-container {
+    .back-arrow{
+      margin-top: 0px;
+      margin-left: 21px;
+      position: relative;
+      img{
+        position: absolute;
+        top: 5px;
+      }
+    }
+    .header-logo {
+      img {
+        height: 20px;
+        width: 85px;
+      }
+    }
+
+    .login-title-small {
+      display: block;
+      padding-top: 0;
+      font-size: 20px;
+      margin-bottom: 25px;
+      color: #ffffff;
+      font-family: $font-family-medium;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 120%;
+    }
+
+    .login-title-web {
+      display: none;
+    }
+  }
+
+  .login-body-container {
+    align-items: center;
+    height: 48px;
+
+    .login-success-image {
+      margin-right: 10px;
+      // margin-left: -5px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .icon-logout {
+      margin-right: 10px;
+      font-size: 16px;
+      margin-bottom:2px;
+      &:before{
+        color: $white-color;        
+      }
+    }
+
+    .login-success-text {
+      font-size: 14px;
+      font-weight: 400;
+      
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .login-details-container .login-title-small{
+    margin-bottom: 14px;
+  }
+}

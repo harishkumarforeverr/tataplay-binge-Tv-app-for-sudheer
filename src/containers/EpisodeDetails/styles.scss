@@ -1,0 +1,398 @@
+.seasons-number {
+  overflow-x: scroll;
+  margin-bottom: 29px;
+  white-space: nowrap; 
+
+  li {
+    &.active {
+      color: #ffffff;
+      border-bottom: 3px solid $pink-100;
+      padding-bottom: 10px;
+    }
+    &:hover{
+      color: $white-color;
+      opacity: 1;
+      font-weight: 500;
+    }
+    color: #a3a6c2;
+    display: inline-block;
+    font-size: 20px;
+    font-family: $font-family-semiBold;
+    margin-right: 42px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+  }
+
+  i {
+    position: absolute;
+    margin-top: -7px;
+    width: 34px;
+    height: 34px;
+    // border: solid 1px #ffffff;
+    background-color: $pink-100;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 20;
+
+    &:after {
+     color:$white-color;
+      top: 7px;
+      display: inline-block;
+      position: relative;
+      left: 11px;
+    }
+  }
+
+  .left-icon {
+    left: 5%;
+
+    &:after {
+      content: "\003c";
+    }
+  }
+
+  .right-icon {
+    right: 5%;
+
+    &:after {
+      content: "\003e";
+    }
+  }
+}
+
+.seasons-block {
+  padding-right: 5%;
+   &.left-arrow {
+     padding-left: 5%;
+   }
+}
+
+.seasons-margin {
+  margin-top: 45px;
+}
+
+.episode-list{
+  padding: 0 !important;
+
+  .infinite-scroll-container {
+    padding: 0;
+  }
+}
+.seeall-content .set-hover-search.popover{
+  margin-top: 0px;
+  width: 225px;
+}
+.infinite-scroll-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .season-container {
+    width: 200px;
+    height: 111px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.1, 1.2);
+      .bottom-desc-padding {
+        padding-top: 0;
+        background: rgba($main-background-color, 1);
+        box-shadow: 0px -6px 6px $main-background-color;
+      }
+    }
+    .time-line {
+      top: -6px;
+      margin: 0;
+    }
+  }
+  .season-image {
+    width: 100%;
+    height: 111px;
+    border-radius: 5px;
+    opacity: 1;
+  }
+}
+.place-top::before,
+.place-top::after {
+  left: 80% !important;
+}
+.image-season-container {
+  position: relative;
+  cursor: pointer;
+  .three-dots {	
+    display: none;
+    padding: 0 10px;
+  }
+  .three-dots-icon {	
+    width: 3px;	
+    height: 13px;	
+  }		
+  &:hover {	
+    .three-dots {
+      cursor: pointer;
+      display: block;
+      .three-dots-icon {	
+        width: 3px;	
+        height: 13px;	
+      }	
+    }	
+  }
+}
+.sports-rail-item {
+  .sports-duration-detail {
+    font-family: "sky_reg";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    position: absolute;
+    right: 0px;
+    margin: 8px 8px;
+    top: 0;
+  }
+  .sport-rail-detail {
+    display: flex;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    align-items: center;
+    padding: 4px 8px;
+    width: 100%;
+    .play-video-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .sports-video-title {
+      width: 85%;
+      margin-left: 4px;
+      color: #ffffff;
+      font-family: "sky_reg";
+      z-index: 999;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 14.4px;
+      letter-spacing: 1px;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+  .bottom-desc-padding {	
+    padding: 4px 5px;
+  }
+}
+.episode-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5.2%;
+
+  .back-arrow {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .text-input-block {
+    position: relative;
+    margin: auto;
+    width: 55%;
+    max-width: 83%;
+    border: 1px solid $bingeBlue-75;
+    border-radius: 10px;
+    .input-container {
+      // width: 98%;
+      height: 45px;
+      background-color: $background-page;
+      width: 95%;
+      padding-left: 15px;
+      color: white;
+      border-radius: 10px;
+      font-size: 14px;
+      padding-bottom: 0;
+      padding-top: 0;
+      border-bottom-width: 0;
+      border-top-width: 0;
+      border-right-width: 0;
+      border-left-width: 0;
+    }
+  }
+  .search-text-action {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .cross-text-action {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+  }
+}
+
+.section {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.search-section {
+  padding: 0 5.2%;
+  margin-top: 45px;
+  position: relative;
+  .total-season-list {
+    font-size: 22px;
+    color: #eeeeff;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  .search-no-result {
+    font-size: 22px;
+    color: $white-color;
+  }
+  // .overBottomContent {
+  //   .three-dots {
+  //     display: none;
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 480px) {
+  .page-cls-episode {
+    .main-container {
+      margin-top: 30px !important;
+    }
+  }
+  .infinite-scroll-container {
+    .season-container {
+      width: 42vw;
+      height: 89px;
+      margin-right: 7px;
+      margin-bottom: 30px;
+      &:hover {
+        transform: none;
+        .bottom-desc-padding {
+          padding-top: 0;
+          background: transparent;
+          box-shadow: none;
+        }
+      }
+      .sports-video-title{
+        bottom: 0px;
+      }
+    }
+  }
+  .sports-rail-item {
+    .sports-duration-detail {
+      font-size: 10px;
+    }
+    .sport-rail-detail {
+      .play {
+        width: 10%
+       }
+      .play-video-icon {
+        width: 15px;
+        height: 15px;
+        margin-top: 3px;
+      }
+       .three-dots {	
+        width: 5%;	
+        display: flex;	
+        flex-direction: row;	
+        justify-content: flex-end;	
+      }	
+      
+      .sports-video-title {
+        font-size: 10px;
+        position: relative;
+      }
+    }
+  }
+  .episode-details .mic-action {
+    width: 12px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+  }
+  .episode-details .cross-text-action {
+    width: 11px;
+    height: 11px;
+    left: auto;
+    right: 16px;
+    top: 9.5px;
+  }
+  .episode-details .search-text-action {
+    width: 14px;
+    height: 14px;
+    left: 12px;
+    right: 0;
+    top: 8px;
+  }
+  .episode-details .back-arrow {
+    width: 16px;
+    height: 16px;
+    margin-top: 9px;
+    margin-left: 0px !important;
+  }
+  .episode-details {
+    .text-input-block {
+      width: 100%;
+      margin-left: 20px;
+      overflow: hidden;
+      .input-container {
+        width: 77%;
+        height: 30px;
+        font-size: 14px;
+        padding-left: 35px;
+        padding-right: 30px; border-radius: 6px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        
+        &::placeholder{
+          font-size: 14px; color:#8A8BA7;
+        }
+      }
+    }
+  }
+  .search-section {
+    padding-top: 15px;
+    // z-index: 999;
+    position: relative;
+    // background: #1d1e30;
+    margin-top: 45px;
+    .search-no-result {
+      font-size: 14px;
+    }
+    .overBottomContent {
+      .three-dots {
+        display: inline-block;
+      }
+    }
+    .time-line{
+      margin-top: 84.5px;
+    }
+  }
+
+  .seasons-margin {
+    margin-top: 0;
+  }
+  .seasons-number {
+    margin-bottom: 20px;
+    li {
+      width: auto;
+    }
+  }
+}

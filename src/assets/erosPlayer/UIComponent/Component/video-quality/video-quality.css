@@ -1,0 +1,121 @@
+/* .settingLabel {
+    font-size: 16px!important;
+    color: #fff!important;
+    /* margin-left:-113px; */
+    /* margin-bottom: 3.3%;
+    margin-top: 4.5%;
+    display: flex;
+    margin-left: 12px;
+  } */
+
+/* .VideoQualityLabel {
+    font-size: 14px!important;
+    color: #fff!important;
+    margin-bottom: 5%!important;
+    opacity: 0.5;
+    display: flex;
+    margin-left: 12px; */
+    /* margin-left:-88px; */
+  /* }
+
+.dividerLine {
+    width: 89%;
+    margin-top: 10px;
+    margin-left: 12px;
+    border-radius: 0.5px;
+    bottom: 14.7%;
+    background-color: #2d3f5c!important;
+    height : 1px;
+    margin-bottom: 4px;
+  } */
+
+/* .reportIcon {
+    float: left;
+    margin-top: 3.5%;
+    margin-left: 11px;
+    bottom: 5.7%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0 !important; */
+    /* background-image: url(UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.png); */
+  /* }
+.reportElement {
+    /* float: left; */
+    /* margin-left: 3.8%; */
+    /* margin-top: 9px;
+    bottom: 5.7%;
+    font-size: 12px;
+    text-decoration: underline; */
+    /* margin-bottom: 14px; */
+    /*transform: translate(-20px,-23px);
+    margin-bottom: 0 !important;
+} */
+.VideoWebQualityLabel{
+  font-size: 16px!important;
+  color: #fff!important;
+  /* transform: translate(-18px,-4px); */
+  transform: translate(-11px,-4px);
+  /* font-family: ProximaNova-Bold; */
+}
+.ContainerVideoWebQuality{
+  visibility: visible;
+  /* width: 15.3%; */
+  width: max-content;
+  background-color: #171f2c;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 24px 45px 16px 5px;
+  /* right: calc(50% - 45px); */
+  right: -70%;
+  position: absolute;
+  bottom: 98%;
+  z-index: 1;
+  border-radius: 4px;
+  display: grid;
+}
+.ContainerWebQuality{
+  visibility: visible;
+  width: 220px;
+  background-color: #171f2c;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 20px 4px 0px 0px;
+  /* right: calc(90% - 64px); */
+  right: calc(-90% + 8px);
+  position: absolute;
+  bottom: 97%;
+  z-index: 1;
+  border-radius: 4px;
+  display: grid;
+}
+
+.popupLabel{
+  font-size: 14px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+.logituit_videoQualityButton{
+  position: absolute;
+  background-size: contain !important;
+  outline: none;
+  height: 8.1%;
+  width: 2.5%;
+  display: block;
+  transform: rotate(0deg);
+  z-index: 1;
+  cursor: pointer;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .logituit_videoQualityButton:hover{
+      /* transform: scale(1.1) !important; */
+      transition: none !important;
+  }
+  }

@@ -1,0 +1,157 @@
+.bread-crumb {
+  display: flex;
+  margin-right: 6px;
+  margin-top: 2px;
+  .first {
+    padding-right: 10px;
+
+
+    .icon-Path {
+      font-size: 12px;
+
+      &:before {
+        color: #a3a6c2;
+      }
+    }
+  }
+
+  .fetch {
+    text-decoration: none;
+  
+    .second {
+      width: max-content;
+      padding-right: 10px;
+      color: #a3a6c2;
+      cursor: pointer;
+      font-family: $font-family-medium;
+      &:hover{
+        color:#fff;
+      }
+    }
+  }
+
+}
+
+.change-colour {
+  color: white !important;
+  font-family: $font-family-medium;
+
+  .icon-Path::before {
+    color: #fff !important;
+  }
+}
+
+footer {
+  .footer-wrapper {
+    margin-top: -20px;
+    // background-color: #28293e;
+    border-top: 1px solid #564372;
+    padding: 20px 7% 30px 5.2%;
+    z-index: 1;
+
+    .horizontal-line {
+      width: 100%;
+      border: 0.6px solid #444764;
+      margin-top: 25px;
+    }
+  }
+
+  .footer-top-wrapper {
+    display: flex;
+    //margin-top: 20px;
+
+    .icon-home{
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .path-fetch {
+      display: flex;
+      margin-left: 21px;
+    }
+
+    // .path-fetch{
+    //   color: #A3A6C2;
+    //   font-size: 16px;
+    //   line-height: 19.2px;
+    //   margin: 10px;
+    //   padding: 10px;
+    //   display: flex;
+    //   margin-top: -49px;
+    //   margin-left: 28px;
+    //   text-align: center;
+    // }
+    // &:after {
+    //   content: " ";
+    //   display: block;
+    //   width: 100%;
+    //   border: 0.6px solid #444764;
+    //   margin-bottom: 25px;
+    //   margin-top: 15px;
+
+  }
+
+  .horizontal-line {
+
+    content: " ";
+    display: block;
+    width: 100%;
+    border: 0.6px solid #444764;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+
+
+  .footer-bottom-wrapper {
+    display: flex;
+    width: 100%;
+
+    .mobile-view {
+      display: none;
+    }
+
+    .web-view {
+      display: block;
+      // margin-right: 40px;
+      width: 33%;
+    }
+  }
+
+  .connection-details {
+    color: #a3a6c2;
+    display: flex;
+    flex-direction: column;
+    // margin-left: 40px;
+    width: 33%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .footer-wrapper {
+      bottom: 33px;
+      margin-top: 0;
+      padding: 20px 7% 85px 7%;
+    }
+    .second.shorttext{
+        width: 160px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+
+    .footer-bottom-wrapper {
+      flex-direction: column;
+
+      .web-view {
+        display: none;
+      }
+
+      .mobile-view {
+        display: block;
+      }
+    }
+    .connection-details {
+      width: 100%;
+    }
+  }
+}

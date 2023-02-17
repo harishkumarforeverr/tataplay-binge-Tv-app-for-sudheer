@@ -1,0 +1,63 @@
+.logituit_volumeTooltip {
+    visibility: hidden;
+    max-width: none !important;
+    width: 48px;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 2px;
+    /* Position the tooltip */
+    position: absolute;
+    /* left: 10px; */
+    left: -4px !important;
+    bottom: 90%;
+    z-index: 1;
+  }
+  .logituit_volumeSlider{
+    visibility: hidden;
+  }
+  .logituit_volumeSlider{
+    position: absolute !important;
+    outline: none;
+    width: 7.8% !important;
+    height: 0.6% !important;
+    display: block;  
+    z-index: 2;    
+    border-radius: 3.6px;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+.logituit_volumePanel{
+  position: absolute;
+  background-size: contain !important;
+  outline: none;
+  height: 4.4%;
+  /* width: 6.5%; */
+  width: 3.5%;
+  display: block;
+  transform: rotate(0deg);
+  z-index: 1;
+  cursor: pointer;
+  background-position: left !important;
+  background-repeat: no-repeat !important;
+}
+@media (hover: hover) and (pointer: fine) {
+.logituit_volumePanel:hover .logituit_volumeTooltip{
+    visibility: visible;
+     width: 48px; 
+  }
+  .logituit_volumePanel:hover ~ .logituit_volumeSlider{
+    visibility: visible !important;
+  }
+  .logituit_volumePanel:hover {
+    transform: scale(1.1) !important;
+    transition: none !important;
+  }  
+  .logituit_volumeSlider:hover{
+    visibility: visible !important;
+  }
+}

@@ -1,0 +1,56 @@
+section {
+        &.page-header {
+                background: #fff;
+                padding-top: 15px !important;
+                padding-bottom: 15px !important;
+                .category-header {
+                        display: flex;
+                        align-items: center;
+                        .icon-contr {
+                                display: flex;
+                               color:$white-color;
+                                align-items: center;
+                                margin-right: 10px;
+                                width: 25px;
+                                cursor: pointer;
+                                img {
+                                        max-width: 100%;
+                                }
+                        }
+                        .img-contr {
+                                height: 30px;
+                                width: 30px;
+                                display: flex;
+                                margin-right: 10px;
+                                // justify-content: center;
+                                 background: #594074 !important;;
+                                padding: 7px;
+                                border-radius: 50%;
+                        }
+                        .text-contr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: calc(100% - 15px);
+                                font-size: 28px;
+                                font-family: $font-family-medium;
+                                padding-top:3px;
+                        }       
+                        .icon-video-icon:before {
+                                font-size: 11px;
+                                top: -1.5px;
+                                position: relative;
+                            }
+                }
+        }
+
+        @media screen and (max-width: 768px) {
+                &.page-header {
+                        .category-header {
+                                .text-contr {
+                                        font-size: 20px;
+                                }
+                        }
+                }
+        }
+}

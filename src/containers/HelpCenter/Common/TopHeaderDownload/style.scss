@@ -1,0 +1,46 @@
+.top-header-download {
+  .download-container {
+    position: fixed;
+    height: 45px;
+    top: 0;
+    background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+    color: $white-color;
+    width: 100%;
+    padding-left: 27px;
+    padding-right: 16px;
+    z-index: 1001;
+
+    .text-size {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $font-family-medium;
+    }
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .download-close-container{
+    height:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .close-btn {
+    height: 12px;
+    width: 12px;
+    margin-left: 15px;
+  }
+
+  .apple-store {
+    width: 100px;
+    height: 34px;
+  }
+
+  .play-store {
+    width: 111px;
+    height: 34px;
+  }
+}

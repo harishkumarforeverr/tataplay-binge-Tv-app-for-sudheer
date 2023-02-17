@@ -1,0 +1,46 @@
+.logituit_muteVolumeTooltip {
+    visibility: hidden;
+    max-width: none !important;
+    width: 48px;
+    background-color: #171f2c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 6px 2px;
+    /* Position the tooltip */
+    position: absolute;
+    left: -22%;
+    bottom: 90%;
+    z-index: 1;
+  }
+.logituit_MuteVolumePanel{
+  position: absolute;
+  background-size: contain !important;
+  outline: none;
+  height: 4.4%;
+  /* width: 6.5%; */
+  width: 3.5%;
+  display: block;
+  transform: rotate(0deg);
+  z-index: 1;
+  cursor: pointer;
+  background-position: left !important;
+  background-repeat: no-repeat !important;
+}
+@media (hover: hover) and (pointer: fine) { 
+.logituit_MuteVolumePanel:hover .logituit_muteVolumeTooltip{
+    visibility: visible;
+    width: 48px;
+  }
+  .logituit_MuteVolumePanel:hover ~ .logituit_volumeSlider{
+    visibility: visible !important;
+  }
+  .logituit_MuteVolumePanel:hover {
+    transform: scale(1.1) !important;
+    transition: none !important;
+  }  
+  .logituit_volumeSlider:hover{
+    visibility: visible !important;
+  }
+ }

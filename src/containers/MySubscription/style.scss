@@ -1,0 +1,779 @@
+.my-subscription {
+  margin-top: 4em;
+
+  &.form-container {
+    padding: 48px 6.9% 50px 6.9%;
+
+    .page-heading {
+      margin-bottom: 40px;
+
+      .page-main-heading {
+        line-height: 1;
+      }
+    }
+  }
+
+  .back-block {
+    background: #1d1e30;
+    height: 20px;
+
+    i.icon-back-2 {
+      position: relative;
+      top: 20px;
+      left: 16px;
+      height: fit-content;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .free-trial-info {
+    margin-bottom: 45px;
+  }
+
+  &.combo-subscription {
+    .combo-pack-header {
+      margin: 20px 18px 10px 18px;
+
+      .my-subscription-header-left {
+        h5 {
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 10px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.my-subscription-top,
+.my-subscription-bottom {
+  width: 475px;
+  background-color: #2b2d41;
+  margin-bottom: 6px !important;
+  padding: 20px 20px;
+  position: relative;
+  @media only screen and (min-width: 320px) and (max-width: 550px) {
+    width: 100%;
+  }
+
+  .app-count {
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .cancelled {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: -8px;
+    text-align: center;
+
+    span {
+      background-color: #e5007d;
+      font-family: sky_med;
+      font-size: 16px;
+      padding: 3px 26px;
+      border-radius: 3px;
+      color: $white-color;
+    }
+  }
+
+  .subscription-app-list {
+    margin-bottom: 9px;
+  }
+
+  img {
+    width: 82px;
+    height: 52px;
+    margin-right: 5px;
+  }
+
+  //Comment the below css when paid pack new ui done
+  .subscription-availed {
+    color: #bec1d9;
+    font-size: 15px;
+    font-family: sky_med;
+    line-height: 1.33;
+  }
+
+  .partner-desc {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: sky_reg;
+    line-height: 1.14;
+    margin-bottom: 10px;
+  }
+
+  button.btn {
+    padding: 13px 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    &.modify-resume-link {
+      padding: 0;
+      margin-top: 8px;
+      font-size: 16px;
+      color: #5087c7;
+      background: none;
+      border: none;
+      text-align: left;
+      text-decoration: underline;
+    }
+  }
+}
+
+.my-subscription-header {
+  display: flex;
+  flex-direction: row;
+  font-family: sky_med;
+  color: $white-color;
+  margin-bottom: 30px;
+}
+
+.my-subscription-bottom {
+  /*width: 475px;*/
+  background-color: #2b2d41;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.my-subscription-bottom-cancelled {
+  margin-top: 20px;
+
+  .cancelled {
+    top: -6px;
+  }
+}
+
+.my-subscription-header-left {
+  flex: 1;
+}
+
+.my-subscription-header-right {
+  font-size: 20px;
+  align-items: flex-end;
+  color: $white-color;
+  display: inline-block;
+  font-family: sky_med;
+  padding-left: 5px;
+
+  .pack-price {
+    span {
+      display: inline;
+    }
+  }
+
+  span.proRataAmount {
+    display: block;
+    font-family: sky_reg;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  i {
+    margin-left: 12px;
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+  }
+}
+
+.subscription-info {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sky_reg;
+}
+
+.my-subscription, .no-subscription {
+  h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: sky_med;
+    line-height: 1;
+  }
+
+  .subscription-info {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: sky_reg;
+  }
+
+  p {
+    color: #a3a6c2;
+    font-size: 15px;
+    line-height: 1.33;
+    font-family: sky_med;
+
+    &.expired {
+      color: #e56c6c;
+    }
+
+    //Uncomment the below css when paid pack new ui done
+    /*&.subscription-availed {
+      font-family: sky_med;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #B6B9D2;
+      padding: 17px 40px 0 40px;
+    }*/
+  }
+
+  a {
+    margin: 20px 0;
+    display: block;
+    color: #5087c7;
+    font-family: sky_med;
+  }
+
+  .btn {
+    padding: 13px 32px;
+
+    span {
+      font-family: sky_med;
+    }
+  }
+
+  .cancel-block {
+    margin-top: 30px;
+
+    span.cancel-subscription-link {
+      color: #5087c7;
+      font-size: 16px;
+      font-family: sky_med, serif;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &.for-web {
+        width: fit-content;
+      }
+
+      &:focus, &:active {
+        -webkit-tap-highlight-color: transparent;
+        -moz-tap-highlight-color: transparent;
+        -o-tap-highlight-color: transparent;
+      }
+    }
+  }
+}
+
+.for-web {
+  display: block;
+}
+
+.for-mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+(min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+(max-device-width: 892px) and (orientation: landscape) {
+  /* .my-subscription-top{
+     width: 100% !important;
+   }*/
+
+  .de-active-subscription {
+    text-align: center;
+  }
+
+  .cancel-success {
+    .get-icon-success-tick {
+      width: 49px;
+      border-radius: 100%;
+      height: 49px;
+      margin: auto;
+      display: block;
+
+      i {
+        &:before {
+          top: -5px !important;
+          font-size: 31px !important;
+        }
+      }
+    }
+
+    .icon-check {
+      font-size: 22px !important;
+
+      &:before {
+        top: 1px;
+        left: 1px;
+
+      }
+    }
+  }
+  .cancel-alert .popupOuter .popupSec {
+    height: 322px;
+  }
+  .cancel-alert .popupOuter .popupSec .modal-body {
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .btn-group {
+      margin: 0 !important;
+
+      .btn {
+        margin: 0 auto 15px
+      }
+    }
+
+    .instructions-text {
+      margin: -9px 0 18px 0 !important;
+    }
+  }
+  .for-web {
+    display: none;
+  }
+  .for-mobile {
+    display: block;
+  }
+  .my-subscription, .no-subscription {
+    width: 100%;
+    display: block;
+    overflow: auto;
+
+    &.combo-subscription {
+      .page-heading {
+        margin-bottom: 12px;
+
+        .page-main-heading {
+          font-size: 28px;
+          text-align: center;
+          margin-top: 18px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 32px;
+        }
+      }
+
+      .sub-header {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: #B6B9D2;
+        padding: 0 18px;
+      }
+
+      .combo-pack-header {
+        .my-subscription-header-right {
+          font-size: 18px;
+          line-height: 21px;
+
+          .pack-price {
+            .price {
+              padding-left: 5px;
+            }
+          }
+        }
+
+        .my-subscription-header-left {
+          p {
+            font-size: 14px;
+            line-height: 16px;
+            color: #B6B9D2;
+
+            &.expired {
+              color: #e56c6c;
+            }
+          }
+        }
+      }
+
+      .combo-desc-block {
+        text-align: center;
+        padding: 14px 10px 10px 14px;
+      }
+
+      .combo-separator {
+       color:$white-color;
+        text-align: center;
+        margin: 10px 0 11px 0;
+        font-size: 32px;
+      }
+
+      .combo-block {
+        background: #2B2D41;
+        border-radius: 4px;
+        flex: none;
+        order: 4;
+        flex-grow: 0;
+        margin: 0 18px 0 18px;
+        padding: 15px;
+
+        .combo-channel-block {
+          display: flex;
+          flex-direction: row;
+
+          .combo-ott-channels {
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: #FFFFFF;
+            margin-right: 50px;
+          }
+
+          .combo-channels {
+            .channel-info {
+              &:first-child {
+                margin-right: 13px;
+              }
+
+              .type {
+                margin-right: 6px;
+                border-radius: 2px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #A3A6C2;
+                border: 1px solid #A3A6C2;
+                padding: 3px 7px;
+
+                &.hd-channel {
+                  color: red;
+                  border: 1px solid red;
+                }
+              }
+
+              .count {
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+
+        .combo-text {
+          font-size: 12px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          color: #B6B9D2;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .no-subscription-para {
+      text-align: center;
+      margin: 0 46px;
+    }
+
+    .proceed-block {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+
+      button {
+        width: 90%;
+        margin-left: 20px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .cancel-block {
+      margin-top: 0;
+
+      div {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      &.combo-cancel-block {
+        background: #33354D;
+        margin-top: 30px;
+        mix-blend-mode: normal;
+        box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+
+        button {
+          margin: 20px 18px;
+        }
+      }
+    }
+
+
+    .web-small-logo {
+      display: block;
+      text-align: center;
+
+      img {
+        margin-top: 20px;
+      }
+    }
+
+    &.form-container {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    .my-subscription-top, .my-subscription-bottom {
+      width: auto;
+      height: 100%;
+      padding: 18px 22px 18px 22px;
+      margin: 0 18px 0 18px;
+
+      &.paid-pack {
+        padding: 14px 10px 10px 14px;
+
+        .subscription-app-list {
+          margin-bottom: 5px;
+        }
+
+        img {
+          width: 70px;
+          height: 44px;
+        }
+
+        .partner-desc {
+          font-size: 12px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          color: #B6B9D2;
+          font-family: sky_reg;
+          margin-bottom: 0;
+        }
+      }
+
+      &.lower-pack {
+        padding: 14px 10px 10px 11px;
+
+        img {
+          width: 96px;
+          height: 60px;
+        }
+      }
+
+      .my-subscription-header {
+        margin-bottom: 15px;
+
+        .my-subscription-header-left {
+          h5 {
+            font-size: 18px;
+            margin-top: -2px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .my-subscription-header-right {
+          font-size: 16px;
+        }
+      }
+
+      .subscription-app-list {
+        margin-bottom: 11px;
+      }
+
+      img {
+        width: 65px;
+        height: 41px;
+      }
+
+      .subscription-availed {
+        font-size: 14px;
+      }
+
+      button.btn {
+        padding: 0;
+        margin-top: 8px;
+        font-size: 16px;
+        color: #5087c7;
+        background: none;
+        border: none;
+        text-align: left;
+        text-decoration: underline;
+      }
+    }
+
+    .page-heading {
+      margin-bottom: 20px;
+
+      .page-main-heading {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+
+    .subscription-info {
+      color: #dddfef;
+      font-size: 14px;
+      line-height: 1.14;
+      font-family: sky_reg;
+      padding: 27px 40px 0 40px;
+      text-align: center;
+    }
+
+    a {
+      text-align: center;
+    }
+
+    .cancel-block {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .btn {
+        width: 88%;
+        margin: 30px 0px 10px 20px;
+      }
+    }
+
+  }
+  .my-subscription .my-subscription-bottom img {
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+(max-device-width: 892px) and (orientation: landscape) {
+  .de-active-subscription {
+    margin: 0 90px;
+  }
+
+  .my-subscription {
+    .my-subscription-top, .my-subscription-bottom {
+      margin: 0 90px;
+    }
+
+    .cancel-block {
+      margin-top: 0;
+
+      .btn {
+        width: 70%;
+        margin: 20px auto 10px auto;
+      }
+
+      div {
+        margin-top: 15px;
+        text-align: center;
+      }
+    }
+  }
+  .cancel-success {
+    .get-icon-success-tick {
+      width: 42px;
+      border-radius: 100%;
+      height: 42px;
+      margin: auto;
+      display: block;
+    }
+
+    .icon-check {
+      font-size: 22px !important;
+
+      &:before {
+        top: 8px;
+        left: 1px;
+
+      }
+    }
+  }
+  .cancel-alert .popupOuter .popupSec {
+    height: 322px;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 370px) {
+  .my-subscription {
+    .my-subscription-top {
+      padding: 18px 4px 18px 10px;
+
+      &.paid-pack {
+        padding: 14px 10px 10px 14px;
+      }
+
+      &.lower-pack {
+        padding: 14px 10px 10px 11px;
+      }
+
+      .my-subscription-header .my-subscription-header-right {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 370px) and (max-device-width: 380px) {
+  .my-subscription {
+    .my-subscription-top {
+      padding: 18px 4px 18px 18px;
+
+      &.paid-pack {
+        padding: 14px 10px 10px 14px;
+      }
+
+      &.lower-pack {
+        padding: 14px 10px 10px 11px;
+      }
+
+      .my-subscription-header .my-subscription-header-right {
+        padding-right: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 410px) and (max-device-width: 420px) {
+  .my-subscription {
+    .my-subscription-top {
+      padding: 18px 22px 18px 22px;
+
+      &.paid-pack {
+        padding: 14px 10px 10px 14px;
+      }
+
+      &.lower-pack {
+        padding: 14px 10px 10px 11px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 670px) {
+  .my-subscription {
+    position: relative;
+    min-height: 100vh;
+    .cancel-block {
+      position: absolute;
+      width: 100%;
+      //bottom: 0;
+    }
+  }
+}
+
+
+.cancel-alert, .resume-alert {
+  .icon-remove-phon, .icon-my-subscription-1 {
+    font-size: 82px;
+  }
+
+  h1 {
+    font-family: sky_med;
+    font-size: 35px;
+  }
+
+  .secondary-btn {
+    background-color: transparent;
+    background-image: none;
+    color: $pink-25;
+    border: transparent;
+    // text-decoration: underline;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+  }
+
+}
+

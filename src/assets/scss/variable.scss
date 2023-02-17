@@ -1,0 +1,269 @@
+$background-color:#1d1e30;
+$popup-windowColor:lightsteelblue;
+$popup-backgroundColor:cornflowerblue;
+$icon-color:#ffffff;
+
+/* font color */
+
+$text-color: #000000;
+$heading-color:#737373;
+$light-text-color:#aaa9a9;
+$purple-color:#7b4479;
+$light-green:#1fb55e;
+$box-shadow-color:#c3cde4;
+
+/* Theme color */
+$primary-heading:#fcf7f4;
+$primary-color:#5087c7;
+$warning-color:#fecc00;
+$alert-color:#ec694f;
+$success-color:#22c064;
+$info-color:#bc86ba;
+$link-color:#5674b9;
+$error-color:#e56c6c;
+$white-color:#ffffff;
+$black-color:#000000;
+$blue-color:#eef2f4;
+$border-color:#dbdbdb;
+$gray-color:#cccccc;
+$gray-color-1: #969696;
+$gray-color-2:#595977;
+$gray-color-3: #eeeeee;
+$gray-color-4: #eeeeff;
+$gray-color-5: #33354d;
+$link-color2:#c59e7c;
+$table-color:#304048;
+$disable-background: #83807e;
+$disable-color: #c1bfbe94;
+$light-grey-background:#f5f7f8;
+$profile-icon-color:#f9a6ae;
+$light-orange:#ffefc3;
+$radio-blue : #6678a2;
+$accordion-background: #fafafa;
+$main-background-color: #1d1e30;
+$light-blue: #a3a6c2;
+$pink-active: #e5007d;
+
+/*  Dashboard Variables   */
+
+$dashboard-border-color:#e2e7eb;
+$dashboard-bg-color:#fbfbfb;
+$fund-type-color1:#67cde7;
+$fund-type-color2:#5879e3;
+$fund-type-color3:#be67e7;
+$header-dropdown-bg: #50485c;
+$light-blue-color:#f8fdfe;
+$social-color:#26a6d1;
+$search-background:#f4f7fc;
+$toggle-border:#ebebeb;
+$login-background-color:#1d1e30;
+
+/* Select dropdown*/
+
+$select-active-bg-color:#DEEBFF;
+
+/* Profile Variables */
+
+$profile-bg: #c2dceb;
+
+/* Transaction Variables */
+
+$transaction-bg: #eef3f6;
+
+/* Status Variables */
+
+$active-color: #0be835;
+$pending-color: #fa86f6;
+$ceased-color: #aaa2a2;
+$cancelled-color: #f6c236;
+
+/* Login color */
+
+$login-bg-color: #000000e0;
+/* Loader */
+$dot-color1:#8cc759;
+$dot-color2:#8c6daf;
+$dot-color3:#ef5d74;
+$dot-color4:#f9a74b;
+
+/* Fund type color  */
+
+$equity-color:#ffa1a1;
+$debt-color:#e5b800;
+$hybrid-color:#d1aacf;
+$etf-color:#e35663;
+$fof-color:#58595b;
+$moderately-high-risk: #f59729;
+$moderately-low-risk: #e35663;
+$moderately-risk: #ee7442;
+$low-risk: #d46782;
+$high-risk: #f9af18;
+
+/*  Ways of Transact */
+$wayOfTransact-bg : #fefdf7;
+
+
+$hover-color:#eef2f7;
+
+
+/* fund category */
+
+$sterling-color:#fb637e;
+$bse-color:#f79548;
+$nifty-color:#c9759c;
+
+/* investment tools */
+
+$retirement-tab-color:#fdd4b9;
+$insurance-tab-color:#c1efce;
+$goal-planner-tab-color:#c4d7f3;
+$budget-tab-color:#f3de9c;
+$planning-tab-color:#fcbbbf;
+$emergency-tab-color:#ddf4fd;
+$limit-marker-color:#696969;
+$slider-circle-color:#ff800f;
+$slider-bar-color:#004a8c;
+
+/* font family */
+
+$base-font-family: sky_reg;
+$heading-font-family: sky_reg;
+
+/*Fonts - sizes
+ --------------------------*/
+
+$font-size-default: 1rem;
+/* 14px */
+
+$large-font-size: 2.857rem;
+/* 40px */
+
+$font-size-30: 2.143rem;
+/* 30px */
+
+$font-size-24: 1.714rem;
+/* 24px */
+
+$font-size-18: 1.286rem;
+/* 18px */
+
+$font-size-16: 1.143rem;
+/* 16px */
+
+$font-size-12: 0.857rem;
+/* 12px */
+
+$font-size-10: 0.715rem;
+/* 10px */
+
+$font-size-8: 0.5em;
+/* 8px */
+
+/* Heading Stylng */
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $heading-font-family;
+  font-weight: normal;
+  line-height: 1.3;
+  font-style: normal;
+  font-stretch: normal;
+  color: $white-color;
+}
+
+h1{
+  font-size: $font-size-30;
+}
+
+h2 {
+  font-size: $font-size-24;
+}
+
+h3 {
+  font-size: $font-size-18;
+}
+
+
+/* Base Theme */
+
+//$base-font-size:14px;
+$base-font-size: 87.5%;
+$base-line-height:1.3;
+
+
+/* modal */
+$modal-shadow:rgb(52,53,79);
+
+$modal-header-text:#999999;
+
+/* Form */
+$input-placeholder-color:#aeacac;
+$input-color:#1e1e1e;
+
+/*  Form Elements
+ --------------------------*/
+
+input,select,button.btn{
+  &:focus,&:active{
+    outline:none;
+  }
+}
+
+
+/* Icons
+------------------------*/
+
+.chevron-arrow-left {
+  display: inline-block;
+  border-right: 2px solid #a8a8a8;
+  border-bottom: 2px solid #a8a8a8;
+  width: 8px; height: 8px;
+  transform: rotate(-225deg);
+}
+
+.chevron-arrow-right {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  transform: rotate(-45deg);
+  border-right: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+
+.border-right{
+  border-right:1px solid $border-color;
+}
+
+
+// white container
+.white-container{
+  background: $white-color;
+  box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius:4px;
+  margin-bottom:30px;
+}
+
+// Buttons
+.orange-button {
+  background: $primary-color;
+  cursor: pointer;
+}
+
+.blue-link {
+  font-family: sky_reg;
+  font-size: $font-size-16;
+  color: $link-color;
+}
+
+.additional-container {
+  padding:20px;
+  background: $blue-color;
+  border: 1px solid $border-color;
+}
+
+.orange-text{
+  color: $primary-color;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}

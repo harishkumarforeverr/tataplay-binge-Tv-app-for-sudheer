@@ -1,0 +1,41 @@
+.link-accounts-container {
+  input {
+    display: inline-block;
+  }
+
+  .link-acc-instruction {
+    font-size: 15px;
+    font-family: sky_reg;
+    color: #a3a6c2;
+    line-height: 18px;
+  }
+
+  .resend-otp-container {
+    display: inline-block;
+
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+.link-account-modal {
+  .popupSec {
+    width: 554px;
+    height: 519px;
+
+    .modal-body {
+      padding: 100px 50px 125px 50px;
+    }
+
+    .get-icon-success-tick {
+      font-size: 62px;
+      padding: 7.5px 18.5px;
+
+      i {
+        font-size: 45px;
+      }
+    }
+  }
+}
+

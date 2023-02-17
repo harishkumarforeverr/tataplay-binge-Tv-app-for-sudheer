@@ -1,0 +1,32 @@
+{
+  "name": "tatasky-analytics-mitigation",
+  "version": "1.0.0",
+  "description": "Client Side SDK for Analytics Solution used in Tata SKY binge app",
+  "main": "./src/analytics-mitigation-sdk.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --open --config webpack.dev.js",
+    "clean": "rm -rf ./dist",
+    "build": "npm run build:describe && npm run build:bundle",
+    "build:describe": "echo \"Building Analytics and Mitigation SDK...\"",
+    "build:bundle": "./node_modules/.bin/webpack --config webpack.prod.js",
+    "uglify": "uglifyjs dist/built.js --compress --mangle  --mangle-toplevel -o dist/mitigation-sdk-uglified.js",
+    "obfuscate": "echo #TODO",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Infinite",
+  "license": "ISC",
+  "devDependencies": {
+    "bitmovin-player": "8.82.0",
+    "bitmovin-player-ui": "^3.36.0",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "create-file-webpack": "^1.0.2",
+    "md5": "^2.3.0",
+    "uuidv4": "^6.2.13"
+  }
+}

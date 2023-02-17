@@ -1,0 +1,328 @@
+.logituit_watchNext {
+  position: absolute;
+    display: block;
+    border-radius:  0px !important;
+    background-color: #171f2c;
+    z-index: 1;
+    outline: none;
+}
+.mobilePopup .logituit_watchNext{
+  position: absolute;
+    display: flex;
+    border-radius: 8px;
+    background-color: #171f2c;
+    z-index: 1;
+    outline: none;
+    align-items: center;
+}
+.containerWatchNext{
+  margin: 20px;
+  height: fit-content;
+}
+.mobilePopup .contentLabelWatchNext{
+  font-size: 16px;
+}
+.mobilePopup .containerWatchNext{
+  margin: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.mobilePopup .mobileInnerContainer{
+  display: flex;
+  margin-top: 7px;
+  margin-left: 61px;
+  grid-gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.mobilePopup .watchNextImage{
+  width: 80px;
+  height: 120px;
+  display: grid;
+  place-content: center;
+} 
+.mobilePopup .iconNextCloseWatchNext{
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: flex-end;
+  padding: 20px;
+}
+.mobilePopup .playingTimeCombine{
+  display: none;
+}
+.landscapePopup .mobileInnerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+}
+.landscapePopup .watchNextImage{
+  width: 102px;
+  height: 120px;
+}
+.landscapePopup .spinnerContainer{
+  margin: auto;
+}
+.landscapePopup .iconNextCloseWatchNext{
+  right: 4.4%;
+}
+.watchNextImage{
+  width: 192px;
+  height: 108px;
+  display:flex;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iconNextCloseWatchNext{
+  width: 15px;
+  height: 15px;
+  /* display:flex; */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0%;
+  /* background-image: url('UIComponent/Component/assets/LogiPlayer_icons/cta-close/icon-close.png'); */    
+  top: 7.3%;
+
+}
+.desktopPopup .iconNextCloseWatchNext{
+  width: 12px;
+  height: 12px;  
+  display:flex !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* align-self: end!important; */
+  position:unset;
+  margin-left: 39px;
+}
+.innerContainerWatchNext{
+  position: relative;
+  width: 100%;
+}
+.desktopPopup .innerContainerWatchNext{
+  display: flex;
+  position: relative;
+  width: 100%;
+  grid-gap: 15px;
+}
+.watchNextLabel{
+  margin: 20px 0 50px 0;
+  display: flex;
+  grid-gap: 8px;
+  flex-direction: column;
+  text-align: left;
+}
+.upNextLabelWatchNext{
+  font-size: 12px;
+  font-weight: 600;
+  color: #878787;
+  /* margin: 8.7% 0% 3.3% 9.1% */
+}
+.playingTimeCombine{
+  /* position: absolute;
+  top: 80%;
+  left : 30%; */
+}
+.contentLabelWatchNext{
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.assetLabelWatchNext{
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.7;
+    color: #ffffff;
+    display:flex;
+    position: absolute;
+    left: 8.1%;
+    top: 66%;
+    display: none;
+    /* margin-left :9.7%; */
+  }
+
+.iconPlayWatchNext{
+  width : 35px;
+  height: 35px;
+  display :flex;
+  background-position: center;
+  background-repeat : no-repeat;
+  z-index: 2;
+  background-color: #0e141b;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position : absolute;
+}
+
+
+.iconPlayBgWatchNext{
+  background-color: #0e141b;
+  top: 78.4%;
+  left: 6%;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  z-index: 1;
+  background-repeat : no-repeat;
+  position: absolute;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(240deg);
+  }
+  50%{
+     transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    border-right: none;
+  }
+}
+.spinnerContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  grid-gap: 9px;
+}
+.logix-center-watchNext {
+  border-radius: 50%;
+  top: 0%;
+  left: 0%;
+  /* top: 78%; */
+  /* left: 5%; */
+}
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed-watch-next {
+  stroke-width: 7px;
+  stroke: transparent;
+}
+
+.base-timer__path-remaining { 
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  /* stroke: currentColor; */
+  color:#0aa1ea;
+  background-repeat: no-repeat;
+}
+.spinnerBgWatchNext{
+  position: relative;
+  width: 44px;
+  height: 44px;  
+}
+
+.spinnerBgWatchNext:hover{
+  transform: scale(1.1);
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+.base-timer-watch-next {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}  
+
+
+
+
+
+
+
+.playingTimeWatchNext{
+  font-size: 14px;
+}
+
+.forSpaceWatchNext{
+  font-size: 14px;
+  font-weight: bold;
+}
+/* @media (max-width: 480px){
+  .watchNextLabel{
+   
+  }
+  .playingTimeCombine{
+    display: none;
+  }
+  .spinnerBgWatchNext{
+    position: relative;
+    margin: auto;
+  }
+  .contentLabelWatchNext{
+    font-size: 16px;
+  }
+  .assetLabelWatchNext{
+    font-size: 12px;
+  }
+} */
+
+
+
+/* .leftHalf{
+  float: left;
+  width: 22px;
+  height: 42px;
+  overflow: hidden;
+} */
+/* .rightHalf{
+  float: left;
+  width: 21px;
+  height: 42px;
+  overflow: hidden;
+}  
+.leftHalf::before{
+  content: " "; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 3px solid #0aa1ea; */
+  /* background-image: linear-gradient(to left, #40c6b6, #0aa1ea);
+  border-right: none;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: center right;
+  -webkit-animation-name: l-rotate;
+} */
+/* .rightHalf::before{
+   content:" "; 
+  display: block;
+  width: 100%;
+  height: 100%; 
+  box-sizing: border-box;
+  /* border: 3px solid #0aa1ea; */
+  /* background-image: linear-gradient(to left, #40c6b6, #0aa1ea);
+  border-left: none;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: center left;
+  -webkit-animation-name: r-rotate;
+}  */ 
+
+
+

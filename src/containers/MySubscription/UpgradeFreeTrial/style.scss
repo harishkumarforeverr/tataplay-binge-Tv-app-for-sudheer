@@ -1,0 +1,144 @@
+.my-subscription.form-container.upgrade-free-trial-container {
+  .page-main-heading {
+    font-size: 22px;
+    margin-top: 5%;
+  }
+
+  .provider-container {
+    padding: 0 20px;
+    .plus {
+      text-align: center;
+      color: $white-color;
+      font-size: 36px;
+      margin: 10px 0;
+    }
+    ul {
+      padding: 5% 5%;
+      background: #2B2E41;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      row-gap: 8px;
+      &.app-listing{
+        &.upgraded-provider{
+          img:nth-child(3n+2){
+            margin: 0 14px;
+          }
+          img:nth-child(2){
+            margin-right: 0;
+          }
+        }
+        &.base-provider{
+          img
+          {
+           &:nth-child(3n+2){
+             margin: 0 8px;
+           }
+          }
+        }
+      }
+    }
+  }
+
+  .expiry-text {
+    margin-top: 20px;
+  }
+
+  .plan-message {
+    margin-top: 30px;
+  }
+
+  p {
+    font-family: sky_reg;
+    color: #b6b9d2;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .select-plan {
+    background: #33354D;
+    mix-blend-mode: normal;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 26px;
+    font-family: sky_reg;
+    position: sticky;
+    bottom: 0;
+  }
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 330px){
+    .provider-container {
+      padding: 0 5px;
+      ul{
+        padding: 6.5px;
+        row-gap: 6px;
+        &.app-listing{
+          &.upgraded-provider{
+            img:nth-child(3n+2){
+              margin: 0 8px;
+            }
+            img:nth-child(2){
+              margin-right: 0;
+            }
+          }
+          &.base-provider{
+            img
+            {
+              &:nth-child(3n+2){
+                margin: 0 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-device-width: 360px){
+    .provider-container {
+      padding: 0 14px;
+      ul{
+        padding: 14px;
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 375px) {
+    .provider-container {
+      padding: 0 5%;
+    }
+  }
+
+  @media only screen and (min-device-width: 400px) {
+    .provider-container {
+      padding: 0 9%;
+    }
+  }
+}
+
+.upgrade-success-container {
+
+  display: flex;
+  flex-direction: row;
+  font-family: sky_reg;
+  font-weight: 400;
+
+  .upgrade-success-image {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .upgrade-success-text {
+    font-size: 14px;
+    margin-left: 14px;
+
+    div:nth-child(2) {
+      color: #a3a6c2;
+      margin-top: 2px;
+    }
+  }
+}

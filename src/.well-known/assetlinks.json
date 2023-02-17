@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tatasky.binge.uat",
+      "sha256_cert_fingerprints": [
+        "55:12:DB:5C:1F:D6:61:AA:DC:F6:AF:38:89:A8:E3:86:B8:5F:D1:7C:D0:40:B3:56:D7:F7:35:23:1E:9A:D5:11",
+        "68:0F:8F:47:9F:D7:66:C0:71:90:30:D3:27:98:96:85:52:1D:B6:A4:AE:ED:BF:AE:91:42:F3:1E:E9:51:60:0E"
+      ]
+    }
+  }
+]

@@ -1,0 +1,186 @@
+.top-menu-wrapper {
+  // background: #28293e;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+.img-section {
+
+    // css for avatar image
+    .avatar-block {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(to right, #f08300, #e3000f 43%, #a72879 101%);
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        text-align: center;
+        color: #ffffff;
+
+        p {
+            width: inherit;
+            position: relative;
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+        }
+    }
+
+    .profile-img-section {
+
+        .profile-img {
+            &.add-border {
+                max-width: 50px;
+                max-height: 50px;
+                display: block;
+                border: 2px solid transparent;
+                border-radius: 50%;
+                background-image: linear-gradient(#33354d, #33354d), linear-gradient(121deg, #f08300 8%, #e3000f 31%, #a72879 73%, #064497 99%);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+            }
+
+            img {
+                max-width: 40px;
+                max-height: 40px;
+                margin: 3px;
+                background: white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .profile-img-icon {
+            position: relative;
+            right: 21px;
+            bottom: 4px;
+            font-size: 40px;
+
+            &.with-avatar {
+                bottom: 0;
+                top: 40px;
+            }
+        }
+
+        // css for avatar image
+        .avatar-image {
+            &.sb-avatar__text {
+                width: 72px;
+                height: 72px;
+                margin: 25px 0 35px 0;
+                display: inline-block;
+            }
+
+            &.sb-avatar.sb-avatar--text {
+                position: relative;
+                top: -15px;
+                display: inline-block;
+
+                div {
+                    font-size: 60px;
+                    position: relative;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+  span {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-avatar-wrapper {
+    padding: 15px 0 10px 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .logged-in-user-detail {
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2px;
+      word-break: break-word;
+
+      i {
+        margin-right: 12px;
+      }
+    }
+
+    .user-detail {
+      font-family: $font-family-medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 19px;
+      // color: #a3a6c2;
+      margin-left: 12px;
+      color: $white-color;
+      // text-align: center;
+    }
+
+    .user-rmn-detail {
+      margin-left: 0;
+    }
+  }
+
+  .login-text {
+    font-family: $font-family-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .login-btn {
+    font-family: $font-family-medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+    color: $pink-25;
+    padding: 10px 0 14.5px 0;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      // height: 10px;
+      background: url("../../../../assets/images/Shape.png") no-repeat;
+      position: relative;
+      // top: 3px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-menu-wrapper {
+    .logged-in-user-detail {
+      margin-bottom: 23px;
+    }
+
+    .profile-avatar-wrapper {
+      padding: 23px 0 8px 0;
+    }
+
+    .login-btn {
+      padding: 8px 0 17px 0;
+    }
+  }
+}

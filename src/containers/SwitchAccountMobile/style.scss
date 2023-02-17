@@ -1,0 +1,17 @@
+.binge-subscriber-screen{
+  &.for-web{
+    padding: 0 7%;
+    margin-top: 5em;
+    .binge-account-listing-container{
+      width: 60%;
+      margin: auto;
+    }
+    .without-blue-text {
+      text-align: center;
+    }
+    .btn.primary-btn{
+      width: 50%;
+      margin-top: 40px;
+    }
+  }
+}

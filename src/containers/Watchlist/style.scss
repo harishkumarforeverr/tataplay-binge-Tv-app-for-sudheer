@@ -1,0 +1,527 @@
+.watchlist-container {
+  &.form-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .grid-view .listing-block  {
+    display: inline-flex;
+    position: relative;
+    padding: 0px !important;
+  }
+  .empty-heading {
+    padding: 35px 12.9% 0 5.2%;
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 120%;
+    /* or 31px */
+
+    /* White */
+
+    color: #ffffff;
+  }
+
+  .empty-watchlist {
+    text-align: center;
+    // margin-top: 7%;
+    // padding-bottom: 275px;
+    padding-top: 46px;
+
+    .bottom-margin {
+      margin-bottom: 374px;
+    }
+
+    .icon-watchlist {
+      width: 32px;
+      height: 29.18px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .discover-button {
+      width: 367.03px;
+      height: 57.68px;
+      margin-bottom: 30px;
+      margin-top: 61.5px;
+      border: none;
+      outline: none;
+      background: $pink-100;
+      border-radius: 50px;
+      cursor: pointer;
+
+      .button-text {
+        font-family: $font-family-semiBold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20.973px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #ffffff;
+      }
+    }
+
+    h1 {
+       font-family: $font-family-medium;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 120%;
+
+      text-align: center;
+
+      color: #ffffff;
+      margin: 7px 0 10px 0;
+    }
+
+    p {
+      font-family: $font-family-medium;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: $bingeBlue-50;
+    }
+  }
+
+  .watchlist-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 4.7% 0 0;
+    width: 100%;
+
+    .left-heading {
+       font-family: $font-family-medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 120%;
+
+      color: #ffffff;
+    }
+
+    .right-heading {
+      display: flex;
+
+      p {
+        color: $pink-25;
+        font-family: $font-family-semiBold;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        cursor: pointer;
+
+        span {
+          font-size: 20px;
+          color: $pink-50;
+          padding-left: 3px;
+        }
+      }
+
+      p:not(:last-child) {
+        margin-right: 57px;
+      }
+
+      .right-inner-text {
+        padding-right: 6px;
+      }
+    }
+  }
+
+  .watchlist-content {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 7px;
+    //padding: 0 85px;
+    padding: 18px 1% 77px 5.2%;
+
+    h3 {
+     color:$white-color;
+      font-size: 45px;
+      width: 100%;
+    }
+
+    .watchlist {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: 24px;
+      width: 100%;
+      padding: 0px;
+      .infinite-scroll-component__outerdiv {
+        width: 100%;
+      }
+
+      li {
+        margin-bottom: 25px;
+
+        // div {
+        //   height: 79px;
+        // }
+
+        img {
+          width: 100%;
+          height: 100%;
+
+          &.tatasky {
+            width: auto;
+          }
+
+          &.broken-image {
+            height: auto;
+          }
+          &.crown-image{
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      &.listing-landscape {
+        li {
+          width: 310px;
+          height: 208px;
+          margin-right: 20px;
+        }
+
+        .select-content {
+          position: absolute !important;
+          right: 13px !important;
+          top: 9px; left: auto !important;
+          width: 22px !important;
+          height: 22px !important;
+          border-radius: 11px;
+          background: #8E81A1;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+
+        .tick {
+          @extend .tick;
+          // width: 18px;
+          // height: 18px;
+          background-color: #e10092;
+          border-radius: 55px !important;
+          border: 1px solid #e10092;
+          padding: 1px;
+          // margin-top: 10px;
+        }
+
+        // .active {
+        //   background: $pink-100;
+        //   background-color: $pink-100;
+        //   border-radius: 55px!important;
+        //   border: 1px solid $pink-100;
+        // }
+
+        li div:nth-child(1) {
+          .card-image {
+            height: 173px;
+            z-index: 0;
+          }
+
+          .place-holder-image {
+            height: 173px;
+            z-index: 0;
+          }
+        }
+
+        // li div:nth-child(2) {
+        //   position: absolute;
+        //   bottom: 14px;
+        //   left: 0;
+        //   width: 100%;
+        //   padding: 0 6px;
+        //   color: #ffffff;
+        //   display: flex;
+        //   justify-content: space-between;
+        //   align-items: center;
+        //   height: 0;
+        // }
+      }
+
+      &.listing-portrait {
+        li {
+          width: 167px;
+          height: 306px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.toast-wrapperr {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  p {
+    padding-left: 30px;
+    font-family: $font-family-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+.Toastify__toast-container {
+  width: 640px;
+  height: 66px;
+  background: $background-popup-gradient;
+  border: 2px solid #5F4372;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: $font-family-medium!important;
+}
+
+.Toastify__toast-container--bottom-center {
+  bottom: 32% !important;
+  border: none;
+  font-family: $font-family-medium!important;
+}
+
+.Toastify__close-button {
+  opacity: 1;
+  width: 35px;
+  height: 26px;
+  padding-top: 1.8%;
+  font-family: $font-family-medium!important;
+}
+
+.Toastify__close-button > svg {
+  height: 30px;
+  width: 22px;
+}
+
+.set-watchlist-hover{
+  margin-top: -1px !important;
+  width: 321px !important;
+  .image-top{ 
+    img{
+    height: 173px !important;
+  }
+}
+}
+@media only screen and (max-width: 480px) {
+  .watchlist-container {
+    .empty-watchlist {
+      text-align: center;
+      padding-top: 65px;
+      padding-bottom: 347px;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+
+      .discover-button {
+        width: 320px;
+        height: 44px;
+        margin-top: 20px;
+
+        .button-text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .empty-heading {
+      padding: 0 12.9% 0 5.2%;
+      font-size: 22px;
+    }
+  }
+
+  .watchlist-container .watchlist-content {
+    padding: 0% 0 0 5%;
+
+    .watchlist {
+      top: 27px;
+    }
+
+    .watchlist-heading {
+      padding: 1px 4.9% 0 0;
+      // z-index: 1000;
+      
+      .left-heading {
+        font-size: 22px;
+      }
+
+      .right-heading {
+        display: flex;
+
+        .right-inner-text {
+          padding-right: 0;
+        }
+
+        .remove-button {
+          padding-right: 0;
+        }
+
+        p {
+          color: $pink-100;
+          // font-family: Sky Text;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 120%;
+          cursor: pointer;
+
+          span {
+            font-size: 16px;
+            color: $pink-100;
+            padding-left: 3px;
+          }
+        }
+
+        p:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .watchlist-container .watchlist-content .watchlist.listing-landscape li {
+    width: 47%;
+    height: 112px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+
+    .select-content {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      width: 18px;
+      height: 18px;
+      border-radius: 11px;
+      background: #444764;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tick {
+      // @extend .tick;
+      width: 15px;
+      height: 15px;
+      background-color: #e10092;
+      border-radius: 55px !important;
+      border: 1px solid #e10092;
+      padding: 1px;
+      // margin-top: 10px;
+    }
+
+    .active {
+      background: $pink-100;
+      height:18px !important;
+      width:18px !important;
+      padding-left: 2px !important;
+    }
+
+    div:nth-child(1) {
+      .card-image {
+        height: 89px;
+        z-index: 0;
+      }
+
+      .place-holder-image {
+        height: 89px;
+        z-index: 0;
+      }
+    }
+
+    // div:nth-child(2) {
+    //   position: absolute;
+    //   bottom: 12px;
+    //   left: 0;
+    //   width: 100%;
+    //   padding: 0;
+    //   color: #ffffff;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   height: 0;
+    // }
+  }
+
+  .Toastify__toast-container {
+    width: 340px;
+    height: 48px;
+  }
+
+  .Toastify__toast-container--bottom-center {
+    bottom: 15% !important;
+  }
+
+  .toast-wrapperr {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      padding-left: 15px;
+      // font-family: Sky Text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+  .Toastify__close-button {
+    opacity: 1;
+
+    padding-top: 0.8%;
+  }
+  .Toastify__toast {
+    width: 87%;
+    margin: 10px auto;
+  }
+  .bottom-margin {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .watchlist-container .watchlist-content {
+    padding: 11.5% 0 0 5%;
+
+    .watchlist.listing-landscape li {
+      width: 140px;
+      height: 112px;
+    }
+
+    .watchlist-heading {
+      padding: 1px 5% 0 0;
+    }
+  }
+  .watchlist-container .empty-watchlist {
+    .discover-button {
+      width: 285px;
+      height: 42px;
+
+      .button-text {
+        font-size: 16px;
+      }
+    }
+  }
+}

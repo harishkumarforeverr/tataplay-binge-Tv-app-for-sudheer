@@ -1,0 +1,215 @@
+.language-container {
+  padding: 4px;
+  position: relative;
+  top: 1em;
+  margin-bottom: 38px;
+
+  .lang-sub-container {
+    margin: 0 auto;
+    // margin-top: 30px;
+    width: 640px;
+    height: 68px;
+    text-align: center;
+    padding: 10px 27px 15px 29px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $background-overlays;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid #220046;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    .lang-message {
+      font-family: $font-family-semiBold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      color: $white-color;
+      text-shadow: 0px 3px 10px rgb(0, 0, 0 / 80%);
+      position: relative;
+      text-align: center;
+
+      .lang-text {
+        position: absolute;
+        width: 300px;
+        bottom: -22px;
+        left:2px;
+      }
+
+      span {
+        display: flex;
+      }
+
+      .text-box-image {
+        position: absolute;
+        bottom: -34px;
+        right: -86px;
+        width: 111px;
+        height: 85px;
+      }
+
+      .hindi-letter-image {
+        position: absolute;
+        bottom: 11px;
+        left: 45px;
+       
+      }
+
+      .english-letter-image {
+        position: absolute;
+        bottom: 4px;
+        left: 23px;
+      }
+    }
+
+    .cross-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .lang-cross-icon-wrapper {
+      display: flex;
+    }
+
+    .select-language {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        font-family: $font-family-semiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: right;
+        color: $pink-25;
+        position: relative;
+        top:4px
+      }
+
+      img {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .lang-sub-container {
+      width: 90%;
+
+      .lang-message {
+        font-size: 16px;
+
+        .lang-text {
+          width: 240px;
+        }
+      }
+
+      .select-language span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 26px;
+    .lang-sub-container {
+      height: 47px;
+      padding: 8px 10px 9px 21px;
+
+      .lang-message {
+        font-size: 12px;
+        line-height: 15px;
+
+        .text-box-image {
+          bottom: -24px;
+          right: -57px;
+          width: 75px;
+          height: 58px;
+        }
+
+        .hindi-letter-image {
+          bottom: 13px;
+          left: 31px;
+          width: 15px;
+        }
+
+        .english-letter-image {
+          bottom: 8px;
+          width: 17px;
+          left: 18px;
+        }
+
+        .lang-text {
+          width: 200px;
+          bottom: -14px;
+        }
+      }
+
+      .select-language span {
+        font-size: 12px;
+        top: 0;
+      }
+
+      .cross-icon {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .lang-sub-container {
+      .lang-message {
+        font-size: 10px;
+
+        .lang-text {
+          width: 200px;
+        }
+      }
+
+      .select-language span {
+        font-size: 10px;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 320px) {
+    .lang-sub-container {
+      .lang-message {
+        font-size: 10px;
+
+        .lang-text {
+          width: 155px;
+        }
+      }
+
+      .select-language span {
+        font-size: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+    .lang-sub-container {
+      .lang-message {
+        font-size: 10px;
+
+        .lang-text {
+          width: 130px;
+        }
+      }
+
+      .select-language span {
+        font-size: 10px;
+      }
+    }
+  }
+}

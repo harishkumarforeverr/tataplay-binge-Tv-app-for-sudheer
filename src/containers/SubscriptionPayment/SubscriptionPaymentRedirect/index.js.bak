@@ -1,0 +1,367 @@
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router";
+import PropTypes from "prop-types";
+import { bindActionCreators } from "redux";
+import get from "lodash/get";
+import { isEmpty } from "lodash";
+
+import {hideFooter, hideHeader, hideMainLoader, showMainLoader, showMainLoaderImmediate} from "@src/action";
+import {deleteKey, getKey} from "@utils/storage";
+import {errorForAPIFailure} from '@containers/Subscription/APIs/subscriptionCommon';
+import {URL} from "@constants/routeConstants";
+import {closePopup, openPopup} from '@common/Modal/action';
+import {safeNavigation, trackModifyPackSuccess,getPaymentType, getAnalyticsSource, getSubscriptionJourneySource, trackMixpanelSubscriptionSuccess, trackMixpanelSubscriptionFailed} from "@utils/common";
+import {MODALS} from "@common/Modal/constants";
+import {LOCALSTORAGE} from "@constants";
+import BackgroundImage from "@assets/images/Subscription-Page-Background.png";
+import PlaceholderForSubscriptionBackground from "@assets/images/imagesubscription.png";
+import { fetchConfig } from "@components/Header/APIs/actions";
+
+import { getOpelResponse } from "../APIs/action";
+import PaymentSuccess from '../PaymentSuccess';
+import {ERROR_HANDLING_VERBIAGES, OPEL_STATUS, PENDING_PAYMNET_ERROR_CODES, fetchDetailsFromURL, METHOD_TYPE} from '../APIs/constants';
+import mixPanelConfig from "@utils/mixpanel";
+import MIXPANEL from "@constants/mixpanel";
+
+import './style.scss';
+import appsFlyerConfig from "@utils/appsFlyer";
+import APPSFLYER from "@utils/constants/appsFlyer";
+import { getCurrentSubscriptionInfo } from "@containers/PackSelection/APIs/action";
+
+
+class SubscriptionPaymentRedirect extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isPaymentSuccessful: false,
+            isPaymentInProgress: true,
+        };
+        this.paymentTimeout = '';
+        this.paymentStatusSuccessReceived = false;
+    }
+
+    componentDidMount = async () => {
+        let { hideFooter, hideHeader, history, configResponse, fetchConfig } = this.props;
+        hideFooter(true);
+        hideHeader(true);
+        isEmpty(configResponse) && await fetchConfig(true);
+        const transactionId = getKey(LOCALSTORAGE.TRANSACTION_ID);
+        let fsJourney = JSON.parse(getKey(LOCALSTORAGE.FS_PAYMENT_JOURNEY)) === true;
+        fsJourney && deleteKey(LOCALSTORAGE.FS_PAYMENT_JOURNEY);
+        !isEmpty(transactionId) ? this.handleCallbackStatus() : safeNavigation(history, `${URL.DEFAULT}`);
+    };
+
+    componentDidUpdate = async (prevProps) => {
+        if (this.props.paymentStatusFromPubnub !== prevProps.paymentStatusFromPubnub) {
+            this.props.paymentStatusFromPubnub === OPEL_STATUS.SUCCESS && this.subscribeOpelStatus(false, true);
+        }
+    };
+
+    componentWillUnmount = () => {
+        let { hideFooter, hideHeader } = this.props;
+        clearTimeout(this.paymentTimeout);
+        hideFooter(false);
+        hideHeader(false);
+    }
+
+    handleCallbackStatus = () => {
+        let status = fetchDetailsFromURL(window.location.href, 'status'),
+            isStatusCategoryPending = PENDING_PAYMNET_ERROR_CODES.includes(status.toUpperCase());
+        const {currentSubscription}=this.props;
+        mixPanelConfig.trackEvent(MIXPANEL.EVENT.PAYMENT,{
+            [MIXPANEL.PARAMETER.RENEWAL_MODE]:"",
+            [MIXPANEL.PARAMETER.SUBSCRIBER_BALANCE]:"",
+            [MIXPANEL.PARAMETER.TRANSACTION_STATUS]:MIXPANEL.VALUE.COMPLETED,
+            [MIXPANEL.PARAMETER.CARD_TYPE]:"",
+            [MIXPANEL.PARAMETER.BANK_NAME]:"",
+            [MIXPANEL.PARAMETER.WALLET_NAME]:currentSubscription?.data?.paymentMode,
+            [MIXPANEL.PARAMETER.TRANSACTION_ID]:"",
+            [MIXPANEL.PARAMETER.CARD_NAME]:"",
+            [MIXPANEL.PARAMETER.FAILURE_REASON]:"",
+            [MIXPANEL.PARAMETER.AMOUNT]:currentSubscription?.data?.amountValue,
+        })
+        status.toUpperCase() === OPEL_STATUS.CHARGED ? this.handleStatusCall() : this.showErrorModal(isStatusCategoryPending);
+    };
+
+    showErrorModal = (isStatusCategoryPending) => {
+        let errorMsgFromBacked = JSON.parse(getKey(LOCALSTORAGE.PAYMENT_ERROR_STATUS_VERBIAGE)),
+            pendingStateError = get(errorMsgFromBacked, 'transactionPendingVerbiage', ERROR_HANDLING_VERBIAGES.PENDING_STATE_ERROR),
+            failedStateError = get(errorMsgFromBacked, 'paymentFailureVerbiage', ERROR_HANDLING_VERBIAGES.PAYMENT_FAILED_ERROR),
+            instructions = isStatusCategoryPending ? pendingStateError : failedStateError,
+            primaryButtonText = isStatusCategoryPending ? ERROR_HANDLING_VERBIAGES.CLOSE_BTN : ERROR_HANDLING_VERBIAGES.TRY_AGAIN,
+            secondaryButtonLinkText = !isStatusCategoryPending && ERROR_HANDLING_VERBIAGES.CLOSE_BTN;
+         const {currentSubscription}=this.props;
+        this.setState({ isPaymentInProgress: false });
+        this.props.openPopup(MODALS.ALERT_MODAL, {
+            modalClass: 'alert-modal error-state-modal',
+            errorIcon: 'icon-alert-upd',
+            hideCloseIcon: true,
+            headingMessage: ERROR_HANDLING_VERBIAGES.HEADING,
+            instructions,
+            primaryButtonText,
+            secondaryButtonLinkText,
+            primaryButtonAction: () => {
+                this.handleApiFailure(!isStatusCategoryPending)
+            },
+            secondaryButtonAction: this.handleApiFailure,
+        })
+        // let mixpanel = this.getAnalyticsData(MIXPANEL, MIXPANEL.VALUE.PG)
+        // mixpanel[`${MIXPANEL.PARAMETER.REASON}`] = instructions;
+        // mixPanelConfig.trackEvent(
+        //     MIXPANEL.EVENT.SUBSCRIBE_FAILED, mixpanel
+        // );
+        trackMixpanelSubscriptionFailed()
+        mixPanelConfig.trackEvent(MIXPANEL.EVENT.PAYMENT,{
+            [MIXPANEL.PARAMETER.SUBSCRIBER_BALANCE]:"",
+            [MIXPANEL.PARAMETER.TRANSACTION_STATUS]:MIXPANEL.VALUE.FAILED,
+            [MIXPANEL.PARAMETER.CARD_TYPE]:"",
+            [MIXPANEL.PARAMETER.BANK_NAME]:"",
+            [MIXPANEL.PARAMETER.WALLET_NAME]:currentSubscription?.data?.paymentMode,
+            [MIXPANEL.PARAMETER.TRANSACTION_ID]:"",
+            [MIXPANEL.PARAMETER.CARD_NAME]:"",
+            [MIXPANEL.PARAMETER.FAILURE_REASON]:instructions,
+            [MIXPANEL.PARAMETER.AMOUNT]:currentSubscription?.data?.amountValue,
+        })
+        let appsFlyer = this.getAnalyticsData(APPSFLYER, APPSFLYER.VALUE.PG,)
+        appsFlyer[`${APPSFLYER.PARAMETER.TYPE}`] = APPSFLYER.VALUE.PAID;
+        appsFlyer[`${APPSFLYER.PARAMETER.REASON}`] = instructions;
+        appsFlyerConfig.trackEvent(APPSFLYER.EVENT.SUBSCRIBE_FAILED, appsFlyer)
+    };
+
+    handleApiFailure = (isTryAgain = false) => {
+        let { closePopup, history } = this.props,
+            isPaymentFromSubscription = getKey(LOCALSTORAGE.IS_PAYMENT_FROM_SUBSCRIPTION);
+        closePopup();
+        deleteKey(LOCALSTORAGE.TRANSACTION_ID);
+        deleteKey(LOCALSTORAGE.PAYMENT_STATUS_VERBIAGE);
+        deleteKey(LOCALSTORAGE.PAYMENT_ERROR_STATUS_VERBIAGE);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_CHANGE_TYPE);
+        deleteKey(LOCALSTORAGE.IS_PAYMENT_FROM_SUBSCRIPTION);
+        deleteKey(LOCALSTORAGE.GET_PAYMENT_DETAILS);
+        deleteKey(LOCALSTORAGE.PREVIOUS_SUBSCRIPTION_DETAILS);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_SELECTED_PACK);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_JOURNEY_SOURCE);
+        if (isTryAgain) {
+            isPaymentFromSubscription ? safeNavigation(history, `/${URL.SUBSCRIPTION}`) : safeNavigation(history, `${URL.DEFAULT}`);
+        } else {
+            safeNavigation(history, `${URL.DEFAULT}`)
+        }
+    }
+
+    handleStartWatching = async () => {
+        let { history } = this.props;
+        this.setState({
+            isPaymentsuccessful: false,
+        })
+        deleteKey(LOCALSTORAGE.TRANSACTION_ID);
+        deleteKey(LOCALSTORAGE.PAYMENT_STATUS_VERBIAGE);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_CHANGE_TYPE);
+        deleteKey(LOCALSTORAGE.PREVIOUS_SUBSCRIPTION_DETAILS);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_SELECTED_PACK);
+        deleteKey(LOCALSTORAGE.SUBSCRIPTION_JOURNEY_SOURCE);
+        
+        const pi_detail_url = await getKey(LOCALSTORAGE.PI_DETAIL_URL)
+        !!pi_detail_url ? safeNavigation(history, `${pi_detail_url}`) : safeNavigation(history, `${URL.DEFAULT}`)
+        deleteKey(LOCALSTORAGE.PI_DETAIL_URL);
+    }
+
+    handleStatusCall = () => {
+        let { configResponse } = this.props,
+            paymnetCallBackArray = get(configResponse, 'paymentCallbackArrayInfo.paymentStatusApiArray', [10000, 20000]),
+            userInfo = JSON.parse(getKey(LOCALSTORAGE.USER_INFO)),
+            transactionId = getKey(LOCALSTORAGE.TRANSACTION_ID),
+            payload = {
+                baId: get(userInfo, 'baId'),
+                paymentTransaction: transactionId,
+            };
+
+        for (let i = 0; i < paymnetCallBackArray.length; i++) {
+            let isLastIteration = (i + 1) === paymnetCallBackArray.length,
+                { opelResponse } = this.props,
+                opelPaymentStatus = get(opelResponse, 'data.paymentStatus')?.toUpperCase();
+            if (opelPaymentStatus !== OPEL_STATUS.SUCCESS || opelPaymentStatus !== OPEL_STATUS.FAILED) {
+                this.paymentTimeout = setTimeout(async () => {
+                    await this.props.getOpelResponse(payload);
+                    this.subscribeOpelStatus(isLastIteration);
+                }, paymnetCallBackArray[i]);
+            }
+        }
+    }
+    subscribeOpelStatus = (isLastIteration = false, isSuccessFromPubnub = false) => {
+        let {opelResponse} = this.props,
+         paymentStatus = get(opelResponse, 'data.paymentStatus')?.toUpperCase();
+        const subscriptionChangeType =  getKey(LOCALSTORAGE.SUBSCRIPTION_CHANGE_TYPE)
+        if ((get(opelResponse, 'code') === 0 && !isEmpty(get(opelResponse, 'data')) || isSuccessFromPubnub)) {
+            if (paymentStatus === OPEL_STATUS.SUCCESS || isSuccessFromPubnub) {
+                if(this.paymentStatusSuccessReceived){
+                    return;
+                }
+                this.paymentStatusSuccessReceived = true;
+                this.setState({
+                    isPaymentSuccessful: true,
+                    isPaymentInProgress: false,
+                }, async () => {
+                    const currentSubscription = await this.props.getCurrentSubscriptionInfo()
+                    
+                    let appsFlyerData = this.getAppsFlyerData();
+                    let isFirstSubscription=currentSubscription?.data?.firstPaidPack && !currentSubscription?.data?.fdoRequested;
+                    trackMixpanelSubscriptionSuccess(currentSubscription?.data);
+                    appsFlyerConfig.trackEvent(APPSFLYER.EVENT.PAYMENT, appsFlyerData);
+                    appsFlyerConfig.trackEvent(APPSFLYER.EVENT.SUBSCRIPTION_SUCCESS, appsFlyerData);
+                    if(isFirstSubscription){
+                        appsFlyerConfig.trackEvent(APPSFLYER.EVENT.SUBSCRIBE_SUCCESS_NEW, appsFlyerData)
+                    }
+                    else{
+                        trackModifyPackSuccess(this.props.currentSubscription.data)
+                    }
+                    
+                    clearTimeout(this.paymentTimeout);
+                    
+                })
+            } else if (paymentStatus === OPEL_STATUS.INPROGRESS) {
+                this.setState({ isPaymentInProgress: true });
+                if (isLastIteration) {
+                    this.setState({ isPaymentInProgress: false });
+                    clearTimeout(this.paymentTimeout);
+                    this.props.openPopup(MODALS.ALERT_MODAL, {
+                        modalClass: 'alert-modal error-state-modal',
+                        errorIcon: 'icon-alert-upd',
+                        hideCloseIcon: true,
+                        headingMessage: ERROR_HANDLING_VERBIAGES.HEADING_PENDING,
+                        instructions: ERROR_HANDLING_VERBIAGES.PAYMENT_CONFIRMATION_PENDING_ERROR,
+                        primaryButtonText: ERROR_HANDLING_VERBIAGES.CLOSE_BTN,
+                        primaryButtonAction: this.handleApiFailure
+                    })
+                }
+            } else if (paymentStatus === OPEL_STATUS.FAILED) {
+                this.setState({ isPaymentInProgress: false });
+                clearTimeout(this.paymentTimeout);
+                // mixPanelConfig.trackEvent(
+                //     MIXPANEL.EVENT.SUBSCRIBE_FAILED,
+                //     this.getAnalyticsData(MIXPANEL, "PG")
+                // );
+                this.showErrorModal();
+            }
+        } else {
+            clearTimeout(this.paymentTimeout);
+            (this.props.paymentStatusFromPubnub !== OPEL_STATUS.SUCCESS) && errorForAPIFailure(opelResponse, this.handleApiFailure);
+        }
+    };
+
+    getSource = () => {
+        let subscriptionChangeType = getKey(LOCALSTORAGE.SUBSCRIPTION_CHANGE_TYPE);
+        let Pipage = getKey(LOCALSTORAGE.IS_SUBSCRIPTION_FROM_PI) || "";
+        if(Pipage){
+            return MIXPANEL.VALUE.PI_PAGE
+        }
+        if(subscriptionChangeType === METHOD_TYPE.ADD_SUBSCRIPTION){
+            return MIXPANEL.VALUE.SUBSCRIBE
+        }else{
+            return MIXPANEL.VALUE.CHANGE_PLAN
+        }
+    }
+
+    getAnalyticsData = (analytics = MIXPANEL, paymentMethod,) => {
+        let subscriptionDetails = JSON.parse(getKey(LOCALSTORAGE.GET_PAYMENT_DETAILS))
+        let path = getKey(LOCALSTORAGE.IS_PAYMENT_FROM_SUBSCRIPTION) || "";
+        // let source = !isEmpty(path) && "CHANGE-PLAN";
+        return {
+            [`${analytics.PARAMETER.PACK_NAME}`]: subscriptionDetails?.packName || "",
+            [`${analytics.PARAMETER.PAYMENT_TYPE}`]:getPaymentType(this.props.currentSubscription?.data?.paymentMode),
+            [`${analytics.PARAMETER.PAYMENT_METHOD}`]: paymentMethod,
+
+        };
+
+    };
+
+    getAppsFlyerData = (eventName) =>{
+        let subscriptionDetails = JSON.parse(getKey(LOCALSTORAGE.GET_PAYMENT_DETAILS))
+        let appsFlyerData={
+            [`${APPSFLYER.PARAMETER.SOURCE}`] : getAnalyticsSource(getSubscriptionJourneySource(), APPSFLYER ),
+            [APPSFLYER.PARAMETER.PACK_PRICE]:this.props.currentSubscription?.data?.amountValue,
+            [APPSFLYER.PARAMETER.AF_REVENUE]:this.props.currentSubscription?.data?.amountValue ,
+            [APPSFLYER.PARAMETER.AF_CURRENCY]:APPSFLYER.VALUE.INR,
+            [APPSFLYER.PARAMETER.PACK_ID]:this.props.currentSubscription?.data?.productId,
+            [APPSFLYER.PARAMETER.PACK_NAME]: subscriptionDetails?.packName || "",
+            [APPSFLYER.PARAMETER.PACK_DURATION]: this.props?.currentSubscription?.data?.packDuration,
+            [APPSFLYER.PARAMETER.PROMO_CODE]: this.props?.currentSubscription?.data?.promoCode,
+            [APPSFLYER.PARAMETER.PAYMENT_MODE]: this.props?.currentSubscription?.data?.paymentMethod,
+        }
+        return appsFlyerData;   
+    }
+
+    render() {
+        let { isPaymentSuccessful, isPaymentInProgress } = this.state;
+
+        return (
+            <React.Fragment>
+                <div className="subscription-payment-background">
+                    <img src={PlaceholderForSubscriptionBackground} alt="" />
+                    <img src={BackgroundImage} alt=""
+                        onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = PlaceholderForSubscriptionBackground;
+                        }}
+                    />
+                </div>
+                {isPaymentSuccessful && <PaymentSuccess
+                    onStartClick={this.handleStartWatching}
+                    paymentStatusVerbiage={JSON.parse(getKey(LOCALSTORAGE.PAYMENT_STATUS_VERBIAGE))}
+                />}
+                {isPaymentInProgress && <div>
+                    <p className="in-progress">{ERROR_HANDLING_VERBIAGES.PAYMENT_IN_PROGRESS}</p>
+                </div>}
+            </React.Fragment>
+        );
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        opelResponse: get(state.subscriptionPaymentReducer, 'opelResponse'),
+        paymentStatusFromPubnub: get(state.subscriptionPaymentReducer, 'paymentStatusFromPubnub'),
+        configResponse: get(state.headerDetails, "configResponse.data.config"),
+        currentSubscription: get(state.subscriptionDetails, 'currentSubscription'),
+
+    };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+    ...bindActionCreators(
+        {
+            hideFooter,
+            hideHeader,
+            showMainLoader,
+            showMainLoaderImmediate,
+            hideMainLoader,
+            getOpelResponse,
+            openPopup,
+            closePopup,
+            fetchConfig,
+            getCurrentSubscriptionInfo
+        },
+        dispatch,
+    ),
+});
+
+SubscriptionPaymentRedirect.propTypes = {
+    hideFooter: PropTypes.func,
+    hideHeader: PropTypes.func,
+    showMainLoaderImmediate: PropTypes.func,
+    showMainLoader: PropTypes.func,
+    hideMainLoader: PropTypes.func,
+    getOpelResponse: PropTypes.func,
+    openPopup: PropTypes.func,
+    closePopup: PropTypes.func,
+    configResponse: PropTypes.object,
+    opelResponse: PropTypes.object,
+    history: PropTypes.object,
+    fetchConfig: PropTypes.func,
+    currentSubscription: PropTypes.object
+};
+
+export default withRouter(
+    connect(mapStateToProps, mapDispatchToProps)(SubscriptionPaymentRedirect),
+);
+

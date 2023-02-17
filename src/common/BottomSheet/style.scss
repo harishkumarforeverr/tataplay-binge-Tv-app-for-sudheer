@@ -1,0 +1,74 @@
+.home-page
+  > div:nth-child(2)
+  > div:nth-child(2)
+  > div
+  > div:nth-child(1)
+  > div {
+  background: $background-bottom-sheet;
+}
+.bottomSheetHeading {
+  font-family: $font-family-medium;
+  font-size: 22px;
+  color: $white-color;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  line-height: 120%;
+}
+
+.bar {
+  width: 35px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: $white-color;
+  margin: 14px auto;
+  opacity: 50%;
+}
+.background-img{
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  min-height: 400px;
+  right: 0;
+  background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+  opacity: 0.55;
+   top: -14px;
+  
+  img {
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0%;
+  }
+ } 
+ 
+.bottom-sheet-block {
+  height: auto;
+}
+
+.bottom-sheet-block-short {
+  .bg-wrapper {
+    height: 135px;
+  }
+}
+
+.bottom-shadow{
+  position: absolute;
+  bottom: 0;
+  height: 84px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50.52%, #000000 100%);
+  z-index: 1;
+  &.drawer-shadow{
+    height: 216px;
+  }
+}
+.login-bar {
+  margin: 10px auto 20px auto;
+}
+.ReactSwipeableBottomSheet--open,
+.ReactSwipeableBottomSheet--closed{
+  max-height: inherit !important;
+}
+

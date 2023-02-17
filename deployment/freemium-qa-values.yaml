@@ -1,0 +1,57 @@
+
+deployment:
+  replicaCount: 2
+
+  version: 14.14.0
+  platform: node
+  containers:
+    - name: binge-anywhere-web-freemium
+      repository: binge-anywhere-web-freemium
+      secrets:
+        enabled: false
+      env:
+      - name: ngnix.restart.url
+        value: ""
+      - name: tvod.rental.expiry
+        value: "48"
+      - name: server.contextPath
+        value: /binge-anywhere-web
+
+      healthcheck:
+        enabled: true
+        path: /versioninfo.txt
+        port: 3000
+        initialDelaySeconds: 100
+        timeoutSeconds: 10
+        failureThreshold: 7
+
+
+      ports:
+        containerPort: 8080
+      volumeMounts:
+        mountPath: /opt/logs/binge-anywhere-web-freemium
+      resources:
+        limits:
+          cpu: 500m
+          memory: 500Mi
+        requests:
+          cpu: 500m
+          memory: 500Mi
+
+  volume:
+    - name: application-logs
+  nodeSelector:
+    ENV: qa-ba
+
+service:
+  ports:
+    name: www
+    port: 80
+    targetport: 3000
+
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 60
+  targetMemoryUtilizationPercentage: 60

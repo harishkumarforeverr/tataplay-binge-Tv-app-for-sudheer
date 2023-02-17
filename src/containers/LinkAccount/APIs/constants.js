@@ -1,0 +1,3 @@
+export const ACTION = {
+    FETCH_LINK_ACCOUNT_OTP: 'FETCH_LINK_ACCOUNT_OTP',
+};

@@ -1,0 +1,257 @@
+.popupOuter {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+  .tick-tick-background-img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(146.32deg, #020005 0%, #220046 87.9%);
+    opacity: 0.55;
+    overflow-y: hidden;
+
+    
+    img {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0%;
+
+    }
+   } 
+}
+
+.modal-lg .popupSec {
+  width: 80%;
+}
+
+.modal-md .popupSec {
+  width: 60%;
+}
+
+.modal-sm .popupSec {
+  width: 40%;
+}
+
+.modal-xsm .popupSec {
+  width: 35%;
+}
+
+.modal-xs .popupSec {
+  /* width: 30%;*/
+  width: 410px;
+}
+
+.popup_overlay {
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.94;
+  overflow: hidden;
+  transition: opacity 500ms;
+  z-index: 9997;
+}
+
+.popup_overlay.black_overlay {
+  // background-image: linear-gradient(to bottom, #3e405e, #1d1e30);
+  background: rgba(2, 0, 5, 0.75);
+}
+
+.popupSec {
+  /* FTV Card */
+  background: #33354d;
+  /* FTV CTA */
+  border: 1px solid $bingeBlue-75;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: $white-color;
+  max-height: 90%;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-overflow-scrolling: touch;
+  pointer-events: all;
+
+  .error-style {
+    // font-size: 14px;
+    color: $error-color;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  .cross {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+    font-size: $font-size-16;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: $heading-color;
+    font: 35px/45px;
+    padding-bottom: 15px;
+    //background: url(/images/head_bg.png) no-repeat center bottom;
+    background-size: 556px 2px;
+    margin-bottom: 30px;
+  }
+}
+
+.modal-header {
+  // background-color: $modal-header;
+  padding: 15px 25px;
+  border-radius: 5px;
+  position: relative;
+
+  h3 {
+    font-family: $font-family-medium;
+    font-size: 1.714em;
+    font-weight: 400;
+    // color: $heading-color;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  p {
+    // font-size: 14px;
+    font-weight: 600;
+    color: $modal-header-text;
+  }
+}
+
+.icon-close {
+  top: 15px;
+  right: 20px;
+  margin: auto;
+  cursor: pointer;
+  position: absolute;
+  font-size: 15px;
+  z-index: 2;
+}
+
+.modal-body {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.popover {
+  .icon-close {
+    top: 21px;
+    position: absolute;
+  }
+
+  .popupSec {
+    max-width: 725px;
+    // width: 100% !important;
+    padding: 40px 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1170px) {
+  .media-modal .popupSec .cross {
+    top: 3px;
+    font-size: 0.8em;
+  }
+  .modal-xsm .popupSec {
+    width: 73%;
+  }
+}
+
+//styling for introductory modal
+.modal-xsm .popupSec .card-image > img {
+  width: 100%;
+}
+
+//modal-styling
+.verify-otp-modal {
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-lg .popupSec,
+  .modal-md .popupSec,
+  .modal-sm .popupSec,
+  .modal-xs .popupSec {
+    width: 85%;
+  }
+  .modal-xsm .popupSec {
+    width: 73%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape) {
+  .modal-xs .popupSec {
+    width: 50%;
+  }
+  .modal-xsm .popupSec {
+    width: 45%;
+  }
+}
+
+.for-web {
+  display: block;
+}
+
+.for-mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .for-web {
+    display: none;
+  }
+  .for-mobile {
+    display: block;
+  }
+
+  .popupOuter {
+    position: fixed;
+
+    .popupSec {
+      width: 300px;
+      height: fit-content;
+      /* top: 36%;*/
+      /*  width: 80%;*/
+      background-color: #33354d;
+      border: 1px solid $bingeBlue-75;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+
+      .icon-close {
+        &:before {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .popup_overlay.black_overlay {
+    opacity: 0.9;
+    // background-color: #2b2d41;
+  }
+}

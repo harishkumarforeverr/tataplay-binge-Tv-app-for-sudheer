@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>50FA923B-67C8-467E-AE46-1DA78AE35131</title>
+    <g id="Web-Player" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="10-Recommended-for-You_WEB" transform="translate(-428.000000, -500.000000)" stroke="#FFFFFF">
+            <g id="recommendation" transform="translate(0.000000, 338.000000)">
+                <g id="assets" transform="translate(44.000000, 66.000000)">
+                    <g id="2-hover" transform="translate(246.000000, 0.000000)">
+                        <g id="Action-Bar" transform="translate(0.000000, 92.000000)">
+                            <g id="Hover-Action---Share" transform="translate(120.000000, 0.000000)">
+                                <g id="Action" transform="translate(14.000000, 4.000000)">
+                                    <g id="icon_share" transform="translate(4.000000, 0.000000)">
+                                        <g transform="translate(4.000000, 4.000000)" id="streamline-icon-single-neutral-actions-share-2@40x40">
+                                            <path d="M3.42857143,6.28571429 C5.00698413,6.28571429 6.28571429,7.56444444 6.28571429,9.14285714 C6.28571429,10.7212698 5.00698413,12 3.42857143,12 C1.85015873,12 0.571428571,10.7212698 0.571428571,9.14285714 C0.571428571,7.56444444 1.85015873,6.28571429 3.42857143,6.28571429 Z" id="Path"></path>
+                                            <path d="M12.952381,10.0952381 C14.5307937,10.0952381 15.8095238,11.3739683 15.8095238,12.952381 C15.8095238,14.5307937 14.5307937,15.8095238 12.952381,15.8095238 C11.3739683,15.8095238 10.0952381,14.5307937 10.0952381,12.952381 C10.0952381,11.3739683 11.3739683,10.0952381 12.952381,10.0952381 Z" id="Path"></path>
+                                            <path d="M12.952381,0.571428571 C14.5307937,0.571428571 15.8095238,1.85015873 15.8095238,3.42857143 C15.8095238,5.00698413 14.5307937,6.28571429 12.952381,6.28571429 C11.3739683,6.28571429 10.0952381,5.00698413 10.0952381,3.42857143 C10.0952381,1.85015873 11.3739683,0.571428571 12.952381,0.571428571 Z" id="Path"></path>
+                                            <line x1="5.87174603" y1="7.67619048" x2="10.5066667" y2="4.8952381" id="Path"></line>
+                                            <line x1="6.08" y1="10.2031746" x2="10.3009524" y2="11.8920635" id="Path"></line>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

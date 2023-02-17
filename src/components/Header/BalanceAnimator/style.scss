@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.balanceContainer {
+  .refreshBal {
+    i {
+     color:$white-color;
+      line-height: normal;
+      font-size: 30px;
+      padding: 6px 0 0 8px;
+      margin-left: 0 !important;
+
+      &.refAnimate {
+        animation: spin 1500ms cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+        -webkit-animation: spin 1500ms cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+        -moz-animation: spin 1500ms cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+        -o-animation: spin 1500ms cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+      }
+
+      @-moz-keyframes spin {
+        from {
+          -moz-transform: rotate(0deg);
+        }
+        to {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .odometer {
+    vertical-align: unset;
+    line-height: inherit;
+  }
+
+  .odometer-value {
+    font-family: 'sky_reg';
+  }
+
+  .odometer-digit, .odometer-digit-spacer {
+    vertical-align: unset !important;
+  }
+}

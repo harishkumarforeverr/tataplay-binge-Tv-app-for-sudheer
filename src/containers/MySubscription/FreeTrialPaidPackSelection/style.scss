@@ -1,0 +1,64 @@
+
+.free-trial-paid-pack-container {
+  .page-main-heading {
+    margin: 20px;
+    padding: 0 18px;
+  }
+
+  .subscription-info {
+    font-size: 17px;
+    color: #b6b9d2;
+  }
+
+  .subscription-app-list {
+    img {
+      width: 71px;
+      height: 44px;
+      margin-right: 6px;
+    }
+  }
+
+  .blue-text{
+    span{
+      font-family: sky_med;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+(min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+(max-device-width: 892px) and (orientation: landscape) {
+  .select-plan {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 155px;
+
+    .btn {
+      width: 90%;
+      margin-right: 0;
+    }
+
+    .cancel-link {
+      margin-top: 18%;
+    }
+  }
+  &.my-subscription {
+    .my-subscription-top .my-subscription-header,
+    .my-subscription-bottom .my-subscription-header {
+      margin-bottom: 20px;
+    }
+
+    &.free-trial-paid-pack-container {
+      .page-main-heading {
+        margin: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-height: 700px) and (min-device-width: 320px) and (max-device-width: 480px) {
+  .select-plan {
+    //margin-top: 15%;
+  }
+}

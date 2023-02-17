@@ -1,0 +1,71 @@
+@import "../../../serverFiles/privacy-policy.css";
+
+.privacy-policy-container {
+  color: $white-color;
+  height: 100vh;
+
+  &.form-container {
+    padding: 0;
+    margin-top: 0;
+
+    .page-heading {
+      margin-top: 25px;
+    }
+  }
+
+  iframe {
+    width: 74%;
+   // height: 543px;
+   margin-left: 10%;
+    height: 85%;
+    margin-top: 1em;
+  }
+
+  p {
+    &.privacy-sub-head {
+      font-size: 16px;
+      font-family:$font-family-medium;
+      margin-bottom: 12px;
+    }
+  }
+
+  .privacy-policy-text {
+    width: 933px;
+    height: 543px;
+    font-family: volte_reg;
+    font-size: 14px;
+    font-weight: normal;
+    overflow-y: auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    p {
+      line-height: 1.1;
+    }
+  }
+
+  @media only screen and (min-width: 446px) and (max-width: 768px) {
+    iframe {
+      width: 85%;
+      height: 80%;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+  (max-device-width: 892px) and (orientation: landscape) {
+    iframe {
+      width: 100%;
+      height: 100%;
+      margin-left: 0px;
+    }
+    &.form-container {
+      //margin-top: 1em;
+    }
+    .privacy-policy-text {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+

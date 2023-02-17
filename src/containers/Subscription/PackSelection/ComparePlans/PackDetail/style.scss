@@ -1,0 +1,237 @@
+.pack-wrapper {
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 2px solid $bingeBlue-75;
+
+  &:hover {
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+  &.selected-plan {
+    border: 2px solid $pink-100;
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    &.higher-plan {
+      background: linear-gradient(339.81deg, #220046 59.34%, #E10092 134.97%);
+      border: 2px solid #564372;
+      &:hover{
+        border: 2px solid #564372;
+    
+      }
+    }
+    
+    &:hover{
+      border: 2px solid $pink-100;
+  
+    }
+  }
+
+  // .active-plan-hover {
+  //   &:hover {
+  //     cursor: pointer;
+  //     border: 2px solid #fff;
+  //   }
+  // }
+
+  .pack-availability {
+    width: 200px;
+    border-radius: 10px;
+
+    // border: 0.5px solid #3e4054;
+    .hr {
+      border-bottom: 0.5px solid $bingeBlue-75;
+      opacity: 0.5;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+    }
+
+    li {
+      text-align: center;
+      height: 63.5px;
+
+      &:first-child {
+        height: 150px;
+
+        .checked-item {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .pack-detail {
+        display: flex;
+        flex-direction: column;
+        padding-top: 14px;
+        padding-bottom: 25px;
+
+        span {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+
+        .pack-amount {
+          margin-top: 7px;
+        }
+
+        .crown-icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .preemium-text {
+        line-height: 100% !important;
+
+        span {
+          background: linear-gradient(270deg, #ffa800 0%, #fff389 45.31%, #ffa800 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .checked-item {
+        padding: 25px 0;
+
+        i {
+          font-size: 13px;
+          &:before {
+            color: #c4c4c4;
+          }
+        }
+      }
+
+      .sun-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
+
+        i {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .last-pack-item {
+      height: 192px;
+
+      .checked-item {
+        height: 63px;
+        border-bottom: 0.5px solid #3e4054;
+      }
+
+      .pack-footer-detail {
+        font-family: $font-family-medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        // padding: 7px 11px 14px 10px;
+        color: $purple-25;
+        text-align: center;
+        div{
+          height: 63px;
+          padding: 25px 0;
+        }
+        .hr{
+          height: 0px;
+          padding: 0px;
+        }
+       
+
+        // span {
+        //   display: -webkit-box;
+        //   -webkit-line-clamp: 3;
+        //   // -webkit-box-orient: vertical;
+        //   overflow: hidden;
+        //   text-overflow: ellipsis;
+        // }
+      }
+    }
+  }
+}
+
+
+// .selected-plan {
+//   border: 2px solid $pink-100;
+//   border-radius: 10px;
+//   background-origin: border-box;
+//   background-clip: content-box, border-box;
+//   &.higher-plan {
+//     background: linear-gradient(339.81deg, #220046 59.34%, #E10092 134.97%);
+//     border: 2px solid #564372;
+//     &:hover{
+//       border: 2px solid #564372;
+  
+//     }
+//   }
+  
+//   &:hover{
+//     border: 2px solid $pink-100;
+
+//   }
+// }
+
+
+@media only screen and (max-width: 480px) {
+
+  .pack-wrapper {
+    margin-right: 10px;
+   
+    
+      &:hover {
+        border: 2px solid $bingeBlue-75;
+        cursor: pointer;
+      }
+    // &:hover {
+    //   border: 1px solid $bingeBlue-75;
+    // }
+  }
+
+
+  .pack-availability {
+    width: 110px !important;
+
+    li {
+      .sun-text {
+        span {
+          font-size: 9px !important;
+          letter-spacing: -0.1px !important;
+          margin: 2px;
+        }
+      }
+    }
+
+    .pack-footer-detail {
+      font-size: 9px;
+      text-align: left;
+
+      span {
+        // -webkit-box-orient: vertical;
+        font-size: 9px;
+        line-height: 10.8px;
+        letter-spacing: -0.1px;
+      }
+    }
+  }
+
+}

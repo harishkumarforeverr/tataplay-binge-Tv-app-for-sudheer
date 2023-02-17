@@ -1,0 +1,34 @@
+.play-controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  //@media (max-width: 1280px) {
+  //  top: 50%;
+  //  left: 649px;
+  //}
+  .hide{
+    display: none;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .shown {
+    visibility: visible;
+  }
+
+  #loading {
+    left: -50px;
+  }
+
+  i {
+    font-size: 84px;
+    margin-right: 110px;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+}

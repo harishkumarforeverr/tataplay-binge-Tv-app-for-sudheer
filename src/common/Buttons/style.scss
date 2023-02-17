@@ -1,0 +1,88 @@
+button:focus,
+button:active {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+.btn {
+  font-family: $font-family-semiBold;
+  line-height: 1.2;
+  padding: 13px 40px;
+  border-radius: 25px;
+  color: $text-color;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/*.btn[disabled],
+.btn[disabled]:hover {
+  background: $gray-color !important;
+  color: $black-color !important;
+  cursor: not-allowed;
+  border-color: #ccc;
+}*/
+.btn-block {
+  width: 100%;
+}
+
+.primary-btn {
+  color: $white-color;
+  background-blend-mode: normal, overlay;
+  background: $pink-100;
+  // padding: 13px 0px;
+  font-size: 16px;
+  border: solid 2px $pink-100;
+  cursor: pointer;
+
+   &:hover {
+     color: $white-color;
+     border: 2px solid $white-color;
+     transition: 0ms;
+   }
+}
+
+.primary-btn[disabled] {
+  background: $bingeBlue-50;
+  color: #ffffff;
+  cursor: not-allowed !important;
+  border: 2px solid $bingeBlue-50;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.secondary-btn {
+  background: $white-color;
+  color: $primary-color;
+  border: solid 1px $primary-color;
+  box-shadow: none;
+
+  &:hover {
+    color: $white-color;
+    background-image: linear-gradient(to right, $primary-color, #f18931);
+  }
+}
+
+.secondary-btn[disabled] {
+  background: $white-color;
+  color: $disable-color;
+  cursor: not-allowed;
+  border: solid 1px $disable-color;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.large-button {
+  width: 330px;
+}
+
+.button-tag {
+  display: inline-block;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BA9FFC82-9669-4505-AA2D-E0304E7D8715</title>
+    <g id="Web-Player" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10-Recommended-for-You_WEB" transform="translate(-368.000000, -500.000000)">
+            <g id="recommendation" transform="translate(0.000000, 338.000000)">
+                <g id="assets" transform="translate(44.000000, 66.000000)">
+                    <g id="2-hover" transform="translate(246.000000, 0.000000)">
+                        <g id="Action-Bar" transform="translate(0.000000, 92.000000)">
+                            <g id="Hover-Action---Watchlist" transform="translate(60.000000, 0.000000)">
+                                <g id="Action" transform="translate(6.000000, 4.000000)">
+                                    <g id="icon_watchlist" transform="translate(12.000000, 0.000000)">
+                                        <rect id="Bound" stroke="#0D1118" stroke-width="0.01" x="0" y="0" width="24" height="24"></rect>
+                                        <g id="icon" transform="translate(4.000000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="8" y1="5" x2="8" y2="11" id="Path"></line>
+                                            <line x1="5" y1="8" x2="11" y2="8" id="Path"></line>
+                                            <path d="M8,0 C12.4181333,0 16,3.58186667 16,8 C16,12.4181333 12.4181333,16 8,16 C3.58186667,16 0,12.4181333 0,8 C0,3.58186667 3.58186667,0 8,0 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

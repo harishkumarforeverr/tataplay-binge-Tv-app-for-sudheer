@@ -1,0 +1,134 @@
+.notification-popup {
+  position: absolute;
+  width: 387px;
+  max-height: 583px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #2b2d41;
+  right: 48px;
+  top: 47px;
+  padding: 15px;
+  text-align: left;
+
+  div {
+    &.tab-sub-header {
+      font-size: 14px;
+      line-height: 1.71;
+      color: white;
+      font-family: sky_med;
+      margin-bottom: 10px;
+
+      &.earlier {
+        margin-top: 25px;
+      }
+
+      .delete-block {
+        float: right;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+
+        &.disable-delete {
+          cursor: not-allowed;
+        }
+
+        i.icon-trash-grey {
+          &.disable {
+            pointer-events: none;
+          }
+
+          &:hover {
+            &:before {
+              color: $hover-color;
+            }
+          }
+
+          &.edit-mode {
+            &:before {
+              color: #a3a6c2;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    &.earlier-block {
+      .tab-sub-header {
+        margin-top: 25px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  ul {
+    &.tab-row {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  li {
+    &.tab {
+      width: 50%;
+      text-align: center;
+      margin-right: 0;
+      font-size: 16px;
+      color: #a3a6c2;
+      font-family: sky_med;
+      cursor: pointer;
+
+      &.active {
+        color: $white-color;
+      }
+
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+
+    i.icon-oval {
+      font-size: 5px;
+      position: relative;
+      top: -8px;
+      left: 1px;
+    }
+  }
+
+  .watch-notification,
+  .transaction-notification {
+    width: 357px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 528px;
+    padding-right: 14px;
+    float: right;
+
+    .notification-block {
+      width: 340px;
+      height: 67px;
+      padding: 5px 5px 5px 10px;
+      display: flex;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+    }
+
+    .recent-notification-container {
+      width: 340px;
+      clear: both;
+      position: relative;
+    }
+
+    .notification-checkbox {
+      position: relative;
+      top: 25px;
+
+      .checkbox input[type="checkbox"] {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+
+}
+

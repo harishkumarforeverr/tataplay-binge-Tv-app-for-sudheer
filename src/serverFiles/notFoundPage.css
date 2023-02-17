@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'sky_reg';
+    src: url('../assets/fonts/Sky_Reg.woff') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_med';
+    src: url('../assets/fonts/Sky_Med.woff') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_bold';
+    src: url('../assets/fonts/Sky_Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'sky_italic';
+    src: url('../assets/fonts/Sky_Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot');
+    src: url('../assets/fonts/icomoon.eot?1e1b1d#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf') format('truetype'),
+    url('../assets/fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    cursor: pointer;
+    height: 100%;
+    background-color: #e6e6e6;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    cursor: auto;
+}
+.not-found-page-container{
+    padding: 10% 0 0 25%;
+    background-color: #e6e6e6;
+}
+
+img{
+    height: 50px;
+}
+h1{
+    font-size: 22.5px;
+    color: rgb(32, 33, 36);
+    font-weight: 500;
+}
+
+p{
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(95, 99, 104);
+}

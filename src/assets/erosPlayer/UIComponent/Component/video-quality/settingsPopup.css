@@ -1,0 +1,152 @@
+.VideoQualityIcon{
+    float: left;
+    margin-top: 3.5%;
+    margin-left: 11px;
+    bottom: 5.7%;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0 !important; 
+  }
+  .VideoQualityLabel{
+    font-size: 14px!important;
+    color: #fff!important;
+    margin: auto 0 auto 0;
+    /* margin-bottom: 5%!important; */
+    /* font-family: ProximaNova; */
+    /* opacity: 0.5; */
+    /* display: flex;
+    transform: translate(50px,-15px) */
+    /* margin-left: 12px; */
+    /* margin-left:-88px; */
+  }
+  .settingLabel {
+    font-size: 16px!important;
+    color: #fff!important;
+    display: flex;
+    font-weight: bold !important;
+     /* font-family: ProximaNova-Bold;  */
+    /* margin-left:-113px; */
+    /* margin-bottom: 11.1% !important;
+    margin-top: 4.5%;
+    display: flex;
+    margin-left: 12px; */
+  }
+  .reportContainer{
+    display: flex;
+    grid-gap: 8px; 
+    align-items: center;    
+  }
+  .hide{
+    display: none;
+  }
+.VideoWebQualityLabel{
+  font-size: 14px!important;
+  color: #fff!important;
+  /* font-family: ProximaNova-Bold; */
+}
+.dolbyLabel{
+  font-size: 12px!important;
+  color: #86888b!important;
+  /* font-family: ProximaNova-Regular; */
+  /* position: absolute;
+  top: 51%;
+  left: 70.3%; */
+}
+.qualityLabel{
+  font-size: 12px!important;
+  color: #86888b!important;
+  margin: auto 0 auto 0;
+  /* font-family: ProximaNova-Regular; */
+  /* position: absolute;
+  top: 31.6%;
+  left: 70.3%; */
+}
+.AudioWebQualityLabel{
+  font-size: 16px!important;
+  color: #fff!important;
+  margin: auto 0 auto 0;
+  /* transform: translate(0px,0px); */
+  /* font-family: ProximaNova-Bold; */
+  /* margin-bottom: 10px  !important; */
+}
+  .AudioQualityLabel{
+    font-size: 14px!important;
+    color: #fff!important;
+    margin: auto 0 auto 0;
+    /* margin-bottom: 5%!important; */
+    /* font-family: ProximaNova; */
+    /* opacity: 0.5; */
+    /* display: flex;
+    transform: translate(50px,-16px); */
+  }
+.dividerLine {
+    width: 100%;
+    /* margin-top: 10px; */
+    /* margin-left: 12px; */
+    border-radius: 0.5px;
+    /* bottom: 14.7%; */
+    background-color: #2d3f5c!important;
+    height : 1px;
+    margin: 16px 0 16px 0 !important;
+    display: inline-block;
+    max-width: 100%;
+    /* margin-bottom: 8.5% !important; */
+  }
+
+.reportIcon, .videoQualityIcon , .audioQualityIcon{
+    float: left;
+    /* margin-top: 3.5%; */
+    /* margin-left: 11px; */
+    bottom: 5.7%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0 !important;
+    /* background-image: url(UIComponent/Component/assets/LogiPlayer_icons/ic-issue/ic-issue.png); */
+  }
+
+.audioQualityIcon{
+  height: 20px !important;
+}
+.reportElement {
+    /* float: left; */
+    /* margin-left: 3.8%; */
+    /* margin-top: 9px; */
+    /* font-family: ProximaNova-Regular; */
+    /* bottom: 5.7%; */
+    font-size: 12px;
+    text-decoration: underline;
+    margin: 0 ;
+    /* margin-bottom: 14px; */
+    /* transform: translate(-20px,-23px);
+    margin-bottom: 0 !important; */
+}
+.popupLabel{
+  /* font-family: ProximaNova-Regular; */
+  font-size: 14px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+.upperInnerContainer{
+  margin-top: 22px;
+}
+.iconColumn{
+  display: flex;
+  grid-gap: 15px;
+  align-items: center;
+}
+.iconTitle{
+  display: flex;
+  grid-gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+@media (hover: hover) and (pointer: fine) {
+  .logituit_videoQualityButton:hover{
+      /* transform: scale(1.1) !important; */
+      transition: none !important;
+  }
+  }

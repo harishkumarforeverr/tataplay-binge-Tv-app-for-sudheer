@@ -1,0 +1,66 @@
+.audioLabel{
+    font-size: 14px!important;
+    color: #fff!important;
+    margin-bottom: 16px !important;
+    opacity:0.5;
+    
+    margin-bottom: 16px!important;
+    display: flex;
+}
+.SubtitleLabel{
+    font-size: 14px!important;
+    color: #fff!important;
+    margin-bottom: 16px!important;
+    opacity:0.5;
+    display: flex;
+    
+}
+.logituit_subtitleButton{
+    position: absolute;
+    background-size: contain !important;
+    outline: none;
+    height: 8.1%;
+    width: 2.5%;
+    display: block;
+    transform: rotate(0deg);
+    z-index: 1;
+    cursor: pointer;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.dividerLineSubAudio{
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    bottom: 10%;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.popupSubLabel{
+    font-size: 14px;
+    /* float: left; */
+    margin-left: 8px;
+    text-transform: capitalize;
+    /* margin-top: 5px; */
+  }
+.subPopupLabel{
+    font-size: 14px;
+    /* float: left; */
+    margin-left: 8px;
+    text-transform: capitalize;
+    /* margin-top: 5px; */
+}
+@media (min-width:768px) and (max-width:1024px){
+    .audioLabel,.SubtitleLabel{
+        /* font-size: 12px!important; */
+    }
+    .checkmarkAudio{
+        left: -6%;
+    }
+    .popupSubLabel{
+        /* margin-left: 15px; */
+        font-size: 13px;
+    }
+}
+ 

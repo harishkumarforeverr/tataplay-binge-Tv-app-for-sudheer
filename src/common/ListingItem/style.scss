@@ -1,0 +1,754 @@
+.listing-item {
+  //min-width:200px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+  // box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.50);
+  //margin-right:15px;
+  position: relative;
+  // background-color: #444764;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .broken-image {
+    display: none;
+  }
+
+  // &:hover {
+  //   transition: all 0.15s ease-out;
+  //   transform: scale(1.2);
+  //   border-radius: 2.4px;
+  //   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  //   // border: solid 1.8px #ffffff;
+  //   // background-color: #33354d;
+  //   z-index: 4;
+
+  //   .continue-watching-range {
+  //     .range-background {
+  //       top: -4px;
+  //     }
+  //   }
+  // }
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*   -webkit-transform: translateZ(0);
+       transform: translateZ(0);
+       opacity: 1;
+       transition: opacity 0.1s ease-in;
+       -webkit-transition: opacity 0.1s ease-in;
+       -webkit-filter: blur(0px);
+       -moz-filter: blur(0px);
+       -ms-filter: blur(0px);
+       filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');*/
+    &.crown-image {
+    margin: 8px !important;
+    height: 24px;
+    top: 0%;
+    left: 0%;
+    width: 24px;
+    }
+  }
+
+  .img-overlay {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .icon-play-icon {
+    position: absolute;
+    left: 38%;
+    top: 31px;
+    z-index: 99;
+
+    .path1:before {
+      font-size: 58px;
+    }
+
+    .path2:before {
+      font-size: 58px;
+    }
+  }
+
+  .continue-watching-range {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    z-index: 1;
+
+    .range-background {
+      position: absolute;
+      top: -2px;
+      height: 3px;
+      //width: 100%;
+      margin-left: 0;
+      background-color: #e5007d;
+    }
+  }
+
+  .sports-rail-item {
+    // &::before {
+    //   content: "•";
+    //   width: 10px;
+    //   height: 10px;
+    //   background: #E56C6C;
+    //   border-radius: 50%;
+    //   display: inline-block;
+    //   position: absolute;
+    //   top: 6px;
+    //   left: 4px;
+    // }
+
+    .sports-duration-detail {
+      font-family: "sky_reg";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15px;
+      // letter-spacing: 0;
+      color: #ffffff;
+      position: absolute;
+      right: 0;
+      margin: 8px 8px;
+    }
+    .sport-rail-detail {
+      display: flex;
+      position: absolute;
+      bottom: 36px;
+      align-items: center;
+      padding: 4px 8px;
+      width: 100%;
+      .play {
+        width: 10%;
+        position: relative;
+        bottom: 0;
+      }
+      .play-video-icon {
+        width: 20px;
+        height: 20px;
+      }
+      .three-dots {
+        width: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .three-dots-icon {
+        width: 3px;
+        height: 13px;
+      }
+      .sports-video-title {
+        width: 85%;
+        margin-left: 4px;
+        color: #ffffff;
+        font-family: $font-family-medium;
+        font-size: 12px;
+        letter-spacing: 1px;
+        z-index: 1;
+        line-height: 14.4px;
+        font-style: normal;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        bottom:0 !important;
+        margin-top: 1.7px;
+      }
+
+      &:before {
+        content: "";
+        z-index: 0;
+        position: absolute;
+        left: 0px;
+        bottom: -3px;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        border-radius: 0px 0px 6px 6px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+      }
+    }
+    .bottom-desc-padding {
+      padding: 7px 5px;
+      bottom: 31px;
+    }
+  }
+
+  .item-detail {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    padding: 4px 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #2b2d41;
+
+    span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 18px;
+      font-family: sky_med;
+      // padding-left: 12px;
+      // padding-right: 12px;
+      display: block;
+    }
+
+    img {
+      &.crown-image {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.listing-item div span img {
+  &.tatasky {
+    width: auto;
+    top: 3px;
+    border-radius: 0 !important;
+  }
+
+  width: 36px;
+  height: 20px;
+  margin: inherit;
+  position: relative;
+  // top: 2px;
+}
+
+.listing-portrait {
+  img {
+    width: 200px;
+    height: 266px;
+    position: absolute; // to handle placeHolder image
+    border-radius: 6px !important;
+  }
+
+  .listing-item .item-detail {
+    .title {
+      height: 22px;
+    }
+
+    span img {
+      &.tatasky {
+        height: 26px;
+      }
+    }
+  }
+
+  .listing-item .tvod-item {
+    height: 76px !important;
+  }
+
+  p {
+    padding: 7px 3px 13px 12px !important;
+    height: 63px;
+
+    span {
+      padding-left: 0 !important;
+
+      img {
+        &.tatasky {
+          padding-top: 6px;
+          width: auto;
+          top: 0;
+          height: auto;
+        }
+
+        &.rail-logo-placeholder {
+          width: 118px;
+        }
+      }
+    }
+  }
+
+  img.tatasky {
+    width: 45%;
+  }
+}
+
+.listing-top_portrait {
+  img {
+    width: 310px;
+    height: 412px;
+    position: absolute; // to handle placeHolder image
+    border-radius: 6px !important;
+  }
+
+  .listing-item .item-detail {
+    .title {
+      height: 22px;
+    }
+
+    span {
+      img {
+        &.tatasky {
+          height: 34px;
+          position: absolute;
+          bottom: 58px;
+          top: auto;
+        }
+      }
+    }
+  }
+
+  p {
+    padding: 7px 3px 13px 12px !important;
+    height: 63px;
+
+    span {
+      padding-left: 0 !important;
+
+      img {
+        &.tatasky {
+          padding-top: 6px;
+          width: auto;
+          top: 0;
+          height: auto;
+        }
+
+        &.rail-logo-placeholder {
+          width: 118px;
+        }
+      }
+    }
+  }
+
+  img.tatasky {
+    width: 45%;
+  }
+}
+
+.listing-landscape {
+  .browse-by-genre-listing {
+    img {
+      height: 90px;
+    }
+    &:hover {
+      //border: 1px solid $white-color;
+    }
+  }
+  .live-channel-listing{
+    img{
+      height: 50px;
+    }
+  }
+  .browse-by-lang-listing {
+    .language-rail-item {
+      height: 83px;
+      width: 90px;
+      border-radius: 7px;
+      border: 1px solid #564372;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+
+      img {
+        max-height: 25px;
+        width: auto;
+      }
+      &:hover {
+        border: 1px solid #ffff;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 111px;
+    position: absolute; // to handle placeHolder image
+    border-radius: 6px !important;
+  }
+  .listing-darshan-live-item{
+    img{
+      height: 120px;
+    }
+  }
+  .listing-item .tvod-item {
+    height: 75px !important;
+  }
+
+  .listing-item .item-detail {
+    height: 30px;
+
+    span img {
+      &.active-docubay{
+        height: 16px !important;
+      }
+      &.tatasky {
+        height: 27px;
+        top: 1px;
+      }
+    }
+  }
+}
+
+.listing-vertical .listing-circular li p {
+  bottom: 0;
+
+  span {
+    text-align: center;
+    padding: 0;
+    line-height: 1.2;
+    color: #a3a6c2;
+  }
+}
+
+.listing-vertical .listing-portrait li img {
+  margin: inherit;
+  &:hover {
+    // border: 1px solid $white-color;
+  }
+}
+
+.expires {
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 120%;
+  margin-top: 4px;
+  color: #E56C6C;
+  font-family: $font-family-medium;
+}
+
+.overBottomContent {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 40px;
+  align-items: center;
+  left: 5px;
+  right: 0;
+
+   .three-dots {
+     display: inline-block;
+     width: 30px;
+     height: 19px;
+     object-fit: contain;
+     position: relative;
+     right: 0px;
+     padding-bottom: 3px;
+   }
+  .overBottomContentLeft {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 22px);
+
+    p {
+      font-size: 12px;
+      color:#fff;
+      margin-left: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: sky_reg;
+      line-height: 14.4px;
+      letter-spacing: 1px;
+      overflow: hidden;
+      min-width: 84%;
+    }
+  }
+
+  .botmIcon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    position: relative;
+  }
+}
+
+.time-line {
+  position: relative;
+  z-index: 99;
+  height: 4px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 3px;
+  width: 99%;
+  margin: auto;
+  margin-top: 108px;
+  background: rgba(233, 233, 233, 0.1);
+  overflow: hidden;
+  span {
+    background-color: #e5007d;
+    height: 100%;
+    display: block;
+  }
+}
+.cardTime{
+  font-size: 12px;
+  color:#fff;
+  position: absolute;
+  font-family: sky_reg;
+  right: 8px;
+  top: 5px;
+}
+
+.listing-block{
+  position: relative;
+  .episode-free{
+    position: absolute;
+    bottom: 33px;
+    font-size: 18px;
+    background-color: #6B00DD;
+    color: #fff;
+    border-radius: 0px 2px 2px 5px;
+    padding: 1px 4px;
+    font-family: $font-family-regular;
+    font-weight: 400;
+    width: 77%;
+    letter-spacing: -0.2px;
+  }
+  .top-portrait-episode-free{
+    bottom: 103.5px;
+  }
+  .sports-live-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 2px 3px;
+    position: absolute;
+    border-radius: 2px 6px 2px 2px;
+    width: 49px;
+    height: 23px;
+    right: 0px;
+    background: #6B00DD;
+    font-family: $font-family-regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+    top:0;
+
+    &::before {
+      content: '';
+      -webkit-border-radius: 0.375rem;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      margin-right: 4px;
+      background-color: #E56C6C;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .time-line {
+    margin-top:116px;
+  }
+  .listing-block{
+    position: relative;
+    .seasons-list{
+      height:120px !important;
+      width:212px !important;
+      .season-img{
+        height:120px;
+        width:212px;
+      }
+      .overBottomContent{
+        bottom:5px;
+      }
+    }
+    .episode-free{
+      position: absolute;
+      bottom: 17px;
+      font-size: 8px;
+      background-color: #6B00DD;
+      color: #fff;
+      padding: 1px 4px;
+      font-family: $font-family-regular;
+      font-weight: 400;
+      width: 52%;
+      //z-index: 999;
+    }
+    .top-portrait-episode-free{
+      bottom: 27.5px;
+    }
+    .sports-live-tag {
+      width: 35px;
+      height: 16px;
+      font-size: 10px;
+    }
+  }
+  .listing-item {
+    .item-detail {
+      bottom: 0;
+    }
+    .sports-rail-item {
+      .sports-duration-detail {
+        font-size: 8px;
+      }
+      .duration-season {
+        font-size: 12px;
+      }
+      .sport-rail-detail {
+        bottom: 18px;
+        .play-video-icon {
+          width: 13.33px;
+          height: 13.33px;
+          margin-top: 0;
+        }
+        .sports-video-title {
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 9px;
+          letter-spacing: 0.2142857015132904px;
+          -webkit-line-clamp: 2;
+        }
+        .season-title {
+          line-height: 12px;
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+        &:after {
+          bottom: -1px;
+        }
+      }
+    }
+
+    img {
+      &.crown-image {
+        height: 20px !important;
+        width: 20px !important;
+        margin: 4px !important;
+      }
+    }
+  }
+  .listing-portrait {
+    .episode-free{
+      width: 77%;
+    }
+    img {
+      width: 93px;
+      height: 140px;
+      border-radius: 6px;
+    }
+
+    p {
+      padding: 7px 4px 7px 4px !important;
+      height: 30px;
+    }
+
+    .listing-item .item-detail {
+      height: 17px;
+
+      span img {
+        &.tatasky {
+          height: 12px;
+        }
+      }
+      span img {
+        &.crown-image {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  .listing-top_portrait {
+    img {
+      width: 153px;
+      height: 230px;
+      border-radius: 6px;
+    }
+
+    p {
+      padding: 7px 4px 7px 4px !important;
+      height: 30px;
+    }
+
+    .listing-item .item-detail {
+      height: 27px;
+
+      span img {
+        &.tatasky {
+          height: 14px;
+          bottom: 8px;
+        }
+      }
+      &.crown-image {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .listing-landscape {
+    .listing-darshan-live-item{
+      img{
+        height: 80px;
+      }
+    }
+    .browse-by-lang-listing {
+      .language-rail-item {
+        height: 64px;
+        width: 70px;
+        img {
+          height: 16px;
+          width: auto;
+        }
+      }
+    }
+    .browse-by-genre-listing {
+      img {
+        height: 64px;
+        width: 70px;
+      }
+    }
+
+    img {
+      height: 80px;
+      width: 140px;
+      border-radius: 6px;
+    }
+
+    .listing-item .item-detail {
+      height: 17px;
+
+      span img {
+        &.tatasky {
+          height: 12px;
+          // top: auto;
+        }
+        &.active-docubay{
+          height: 12px !important;
+        }
+      }
+      span img {
+        &.crown-image {
+          width: 20px;
+          height: 20px;
+          top: -2.67em;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  .overBottomContent {
+    bottom: 22px;
+    .three-dots{
+      display: inline-block;
+      width: 15px;
+      height: 13px;
+      object-fit: contain;
+      position: relative;
+      margin-top: -2px;
+      right: -1px;
+    }
+  }
+}

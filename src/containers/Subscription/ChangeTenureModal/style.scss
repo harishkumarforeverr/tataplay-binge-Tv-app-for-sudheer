@@ -1,0 +1,663 @@
+.tenure-selection-modal {
+  .popup_overlay.black_overlay{
+    background: rgba(43, 45, 65, 0.9)
+  }
+  .popupSec {
+    width: 640px;
+    height: auto;
+    max-height: 593px;
+    overflow-y: auto;
+    // background: #33354d;
+    // border: 1px solid #444764;
+    background: linear-gradient(146.32deg, #020005 0%, #220046 87.9%);    border: 1px solid $bingeBlue-75;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    .modal-body{
+      padding: 0;
+      overflow-y: auto;
+    }
+    
+    .tenure-modal-body {
+      padding: 33px 78px 28px 78px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 70vh;
+      overflow-y: none;
+
+      .modal-title {
+        text-align: center;
+
+        img {
+          height: 40px;
+          width: 40px;
+          // margin-bottom: 18px;
+        }
+        
+        .discount-verbiage{
+          font-size: 22px;
+          font-family: $font-family-regular;
+        }
+     
+        h1 {
+          &.disable-highlight{
+            background: unset;
+            -webkit-text-fill-color:unset;
+          }
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 26px;
+          line-height: 120%;
+          text-align: center;
+          background: linear-gradient(
+            270deg,
+            #ffa800 0%,
+            #fff389 45.31%,
+            #ffa800 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 120%;
+          color: #ffffff;
+        }
+      }
+
+      .tenure-list-detail {
+        
+        .payment-container {
+          display: flex;
+          flex-direction: column;
+
+          > span {
+            display: flex;
+            justify-content: space-between;
+            font-family: $font-family-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            padding: 20px 8% 15px 8%;
+
+            &:first-child {
+              border-bottom: 1px solid $bingeBlue-75;
+              padding-top: 0px;
+            }
+          }
+          .current-bal {
+            color: #a3a6c2;
+          }
+
+          .pending-bal {
+            color: #ffff;
+          }
+        }
+
+        p {
+          font-family: $font-family-regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 120%;
+          color: #a3a6c2;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        ul {
+          padding: 20px 0px;
+          li {
+            margin-bottom: 33px;
+            position: relative;
+           
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .tenure-offer {
+              padding: 4px 20px;
+              position: absolute;
+              // width: 98px;
+              height: 23px;
+              left: 20px;
+              bottom: 77px;
+              // background: #e5007d;
+              background: $purple-100;
+              border-radius: 6px 6px 0px 0px;
+              font-family: $font-family-regular;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 13px;
+              line-height: 120%;
+              color: #ffffff;
+            }
+
+            .tenure-item {
+              width: 420px;
+              height: 76px;
+              padding: 16px 15px 17px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              // background: #28293e;
+              background: $background-page;
+              mix-blend-mode: normal;
+              border: 1px solid $bingeBlue-75;
+              box-sizing: border-box;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              &:hover{
+                padding: 15px 14px 16px;
+                border: 2px solid #FFFFFF;
+                cursor: pointer;
+  
+              }
+              &.selected-tenure{
+                border: 2px solid #E10092;
+                padding: 15px 14px 16px;
+                &:hover{
+                  border: 2px solid #E10092;
+      
+                }
+              }
+              .left-item {
+                display: flex;
+                align-items: center;
+
+                .tenure-icon {
+                  margin-right: 26px;
+                  width: 38px;
+                  height: 38px;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                .tenure-duration {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+
+                  span {
+                    font-family: $font-family-medium;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 120%;
+
+                    &:first-child {
+                      font-size: 20px;
+                      color: #ffffff;
+                    }
+
+                    &:last-child {
+                      font-size: 16px;
+                      // color: #a3a6c2;
+                      color: #c7c0d0;
+                    }
+                  }
+                }
+              }
+
+              .right-item {
+                display: flex;
+                align-items: center;
+
+                .tenure-ammount {
+                  font-family: $font-family-medium;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 120%;
+                  margin-right: 15px;
+                  display: flex;
+                  align-items: center;
+
+                  .old-tenure-amount {
+                    font-size: 16px;
+                    color: #C7C0D0;
+                    text-decoration-line: line-through;
+                    margin-right: 15px;  
+                    font-family: $font-family-regular;
+                    span{
+                      &:first-child{
+                        margin-right: 1px;
+                      }
+                    }
+                  }
+
+                  .new-tenure-amount {
+                    color: $white-color;
+                    font-size: 20px;
+                    font-family:$font-family-medium;
+                    span{
+                      &:first-child{
+                        margin-right: 1px;
+                      }
+                    }
+                  }
+                }
+
+                .hide-radio-btn {
+                  visibility: hidden;
+                }
+
+                .active-tenure span {
+                  // color: $white-color;
+                }
+              }
+            }
+
+            .current-plan-text {
+              font-family: $font-family-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 120%;
+              color:$pink-25;
+              text-align: start;
+            }
+          }
+
+          .current-plan {
+            .tenure-offer {
+              bottom: 90px;
+            }
+
+            .tenure-item {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      .modal-footer {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: $font-family-medium!important;
+        color: $purple-25;
+      }
+      .modal-action {
+        text-align: center;
+        .primary-btn {
+          width: 420px;
+          margin-right: 0;
+          margin-bottom: 20px;
+          font-size: 20px;
+          line-height: 120%;
+          height: 45px;
+          padding: 9px 40px;
+        }
+
+        .tenure-not-now {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 120%;
+          color: $pink-25;
+          cursor: pointer;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .discount-verbiage-footer{
+      font-style: normal;
+      font-weight: $font-family-regular;
+      font-weight: 500;
+      font-size: 14px;
+     line-height: 120%;
+     color: #D6C6F4;
+     margin-top: -10px;
+     margin-bottom: 20px;
+     width: 320px;
+    }
+
+  }
+
+  }
+
+
+  @media only screen  and (max-width: 480px) {
+    .tenure-modal-body {
+      .back-arrow{
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-self: flex-start;
+        margin-left:23px ;
+        img{
+          width: 100%;
+        }
+      }
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: 70vh;
+      overflow-y: none;
+
+      .modal-title {
+        text-align: center;
+
+        img {
+          height: 40px;
+          width: 40px;
+          // margin-bottom: 18px;
+        }
+        .discount-verbiage{
+          font-size: 22px;
+          font-family: $font-family-regular;
+        }
+
+        h1 {
+          &.disable-highlight{
+            background: unset;
+            -webkit-text-fill-color:unset;
+          }
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 120%;
+          text-align: center;
+          background: linear-gradient(
+            270deg,
+            #ffa800 0%,
+            #fff389 45.31%,
+            #ffa800 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 10px 0;
+        }
+
+        p {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 120%;
+          color: #ffffff;
+          margin-bottom: 20px;
+        }
+      }
+
+      .tenure-list-detail {
+         width: 100%;
+        .payment-container {
+          display: flex;
+          flex-direction: column;
+          padding: 16px 14% !important;
+          height: auto;
+
+          > span {
+            display: flex;
+            justify-content: space-between;
+            font-family: $font-family-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 120%;
+            padding: 20px 8% 15px 8%;
+
+            &:first-child {
+              border-bottom: 1px solid $bingeBlue-75;
+              padding-top: 0px;
+            }
+          }
+          .current-bal {
+            color: #a3a6c2;
+          }
+
+          .pending-bal {
+            color: #ffff;
+          }
+        }
+
+        p {
+          font-family: $font-family-regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 120%;
+          color: #a3a6c2;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        ul {
+          padding:0px 20px;
+          li {
+            margin-bottom: 33px;
+            position: relative;
+           
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .tenure-offer {
+              padding: 4px 20px;
+              position: absolute;
+              // width: 98px;
+              height: 23px;
+              left: 20px;
+              bottom: 66px;
+              // background: #e5007d;
+              background: $purple-100;
+              border-radius: 6px 6px 0px 0px;
+              font-family: $font-family-regular;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 13px;
+              line-height: 120%;
+              color: #ffffff;
+            }
+
+            .tenure-item {
+              // height: 76px;
+              padding: 9px 17px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              // background: #28293e;
+              background: $background-page;
+              mix-blend-mode: normal;
+              border: 1px solid $bingeBlue-75;
+              box-sizing: border-box;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              &:hover{
+                padding: 15px 14px 16px;
+                border: 2px solid #FFFFFF;
+                cursor: pointer;
+  
+              }
+              &.selected-tenure{
+                border: 2px solid #E10092;
+                padding: 8px 16px;
+                &:hover{
+                  border: 2px solid #E10092;
+      
+                }
+              }
+              .left-item {
+                display: flex;
+                align-items: center;
+
+                .tenure-icon {
+                  margin-right: 12px;
+                  width: 38px;
+                  height: 38px;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                .tenure-duration {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+
+
+                  span {
+                    font-family: $font-family-medium;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 120%;
+
+                    &:first-child {
+                      font-size: 16px;
+                      color: #ffffff;
+                    }
+
+                    &:last-child {
+                      font-size: 14px;
+                      // color: #a3a6c2;
+                      color: rgba(255, 255, 255, 0.75);;
+                    }
+                  }
+                }
+              }
+
+              .right-item {
+                display: flex;
+                align-items: center;
+
+                .tenure-ammount {
+                  font-family: $font-family-medium;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 120%;
+                  margin-right: 15px;
+                  display: flex;
+                  align-items: center;
+
+                  .old-tenure-amount {
+                    font-size: 16px;
+                    color: #C7C0D0;
+                    text-decoration-line: line-through;
+                    margin-right: 6px;
+                    font-family: $font-family-regular;
+                    span{
+                      &:first-child{
+                        margin-right: 1px;
+                      }
+                    }
+                  }
+
+                  .new-tenure-amount {
+                    color: $white-color;
+                    font-size: 20px;
+                    font-family:$font-family-medium;
+                    span{
+                      &:first-child{
+                        margin-right: 1px;
+                      }
+                    }
+                  }
+                }
+
+                .hide-radio-btn {
+                  visibility: hidden;
+                }
+
+                .active-tenure span {
+                  // color: $white-color;
+                }
+              }
+            }
+
+            .current-plan-text {
+              font-family: $font-family-regular;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 120%;
+              color:$pink-25;
+              text-align: start;
+            }
+          }
+
+          .current-plan {
+            .tenure-offer {
+              bottom: 90px;
+            }
+
+            .tenure-item {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      .footer-message{
+        padding: 0 20px;
+        font-size: 13px;
+      }
+      .modal-footer {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 120%;
+        text-align: center;
+        font-family: $font-family-medium!important;
+        color: $purple-25;
+        margin: 20px 0px 5px 0px;
+      }
+      .modal-action {
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+
+        .primary-btn {
+          margin-right: 0;
+          margin-bottom: 20px;
+          font-size: 16px;
+          line-height: 120%;
+          height: 45px;
+          padding: 9px 40px;
+          width: 100%;
+        }
+
+        .tenure-not-now {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 120%;
+          color: $pink-25;
+          cursor: pointer;
+          margin-bottom: 30px;
+        }
+      }
+      .discount-verbiage-footer{
+        font-style: normal;
+        font-family: $font-family-regular;
+        font-weight: 500;
+        font-size: 12px;
+       line-height: 120%;
+       color: #D6C6F4;
+       margin-bottom: 20px;
+       width: 320px;
+      }
+    }
+  }
+
+
+

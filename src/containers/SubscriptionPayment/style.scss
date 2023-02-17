@@ -1,0 +1,296 @@
+.payment-container {
+  padding: 1.6% 5.4% 5% 5.2%;
+
+  h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-family: $font-family-medium;
+    font-size: 22px;
+    line-height: 120%;
+    color: $white-color;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .payment-gateway-wrapper {
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .payable-amount {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #220046;
+
+      border: 1px solid $bingeBlue-75;
+      box-sizing: border-box;
+      border-radius: 10px;
+      padding: 20px 15px;
+      .text {
+        font-size: 14px;
+        line-height: 110%;
+        font-family: $font-family-medium!important;
+        color: $white-color;
+      }
+      .amount {
+        color: $white-color;
+        font-family: $font-family-medium!important;
+        font-size: 16px;
+        line-height: 120%;
+      }
+    }
+    .balance-wrapper {
+      // background: #28293e;
+      border: 1px solid $bingeBlue-75;
+      padding: 19px 20px;
+      margin-top: 24px;
+      border-radius: 10px;
+      background-color: #220046;
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        font-family: $font-family-medium;
+        /* or 19px */
+
+        /* White */
+
+        color: $white-color;
+      }
+    }
+    .balance-show {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 20px;
+      border-bottom: 1px solid $bingeBlue-75;
+
+      .wallet-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .wallet-wrapper {
+          display: flex;
+          align-items: center;
+          div:nth-child(1) {
+            width: 18px;
+            height: 16px;
+            img {
+              width: 100%;
+            }
+          }
+          div:nth-child(2) {
+            padding-left: 16.25px;
+            p:nth-child(1) {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 120%;
+              font-family: $font-family-medium;
+              /* or 19px */
+
+              /* White */
+
+              color: $white-color;
+            }
+            p:nth-child(2) {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 110%;
+              padding-top: 5.5px;
+              font-family: $font-family-medium;
+              color: #a3a6c2;
+            }
+          }
+        }
+        .amount-show {
+          display: inline-flex;
+          align-items: center;
+          p {
+            font-size: 16px;
+            color: $white-color;
+            padding-right: 1px;
+          }
+          .checkbox {
+            .checkbox-text {
+              margin-right: 30px;
+              font-size: 16px;
+              line-height: 120%;
+              color: $white-color;
+            }
+            label {
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      .make-payment-btn {
+        padding-left: 34px;
+        margin-top: 10px;
+        p {
+          font-family: $font-family-medium;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 120%;
+          color: $bingeBlue-25;
+          margin-bottom: 10px;
+          &.err-msg{
+            color: #E56C6C;
+          }
+        }
+        .primary-btn{
+          font-size: 14px!important;
+          padding: 14px;
+
+        }
+        .btn {
+          width: 180px;
+
+        }
+      }
+    }
+    .more-methods {
+      margin: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .hr {
+        width: 50px;
+        border: 0.5px solid $bingeBlue-75;
+      }
+      div:nth-child(2) {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        font-family: $font-family-medium!important;
+        text-align: center;
+
+        color: $pink-25;
+      }
+    }
+  }
+
+  .payment-frame-block {
+    width: 100%;
+    height: 580px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .payment-container {
+    height: 100vh;
+    padding: 8% 5.4% 28% 5.2%!important;
+
+    h3 {
+      font-size: 18px;
+      width: 100%;
+    }
+    .payment-gateway-wrapper {
+      width: 95%;
+      margin: 15px auto;
+      height: 100%;
+      .payable-amount {
+        padding: 15px 12px;
+        .text {
+          font-size: 12px;
+        }
+        .amount {
+          font-size: 14px;
+        }
+      }
+      .balance-wrapper {
+        padding: 15px 16px;
+        margin-top: 18px;
+        p {
+          font-size: 14px;
+
+          /* or 19px */
+
+          /* White */
+        }
+      }
+      .balance-show {
+        padding: 15px 17px;
+        border-bottom: 1px solid $bingeBlue-75;
+        .wallet-container {
+          .wallet-wrapper {
+            div:nth-child(1) {
+              width: 18px;
+              height: 16px;
+              img {
+                width: 100%;
+              }
+            }
+            div:nth-child(2) {
+              padding-left: 13px;
+              p:nth-child(1) {
+                font-size: 14px;
+              }
+              p:nth-child(2) {
+                font-size: 12px;
+                padding-top: 4px;
+              }
+            }
+          }
+          .amount-show {
+            p {
+              font-size: 14px;
+            }
+            .checkbox {
+              .checkbox-text {
+                margin-right: 15px !important;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .more-methods {
+        margin: 18px 0;
+
+        .hr {
+          width: 35px;
+        }
+        div:nth-child(2) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .payment-frame-block {
+      height: 100%;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .payment-container {
+    .payment-gateway-wrapper {
+      .balance-show {
+        .wallet-container {
+          .wallet-wrapper {
+            div:nth-child(2) {
+              p:nth-child(2) {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .payment-frame-block{
+      height: 40vh;
+    }
+  }
+}

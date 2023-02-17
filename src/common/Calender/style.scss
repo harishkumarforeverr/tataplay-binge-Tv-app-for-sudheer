@@ -1,0 +1,271 @@
+.calender-container {
+  position: relative;
+
+  input[type="text"] {
+    width: 396px;
+    box-sizing: border-box;
+    height: 59px;
+    background-color: $background-page;
+    border: 1px solid $bingeBlue-75;
+    font-size: 16px;
+    color: #a3a6c2;
+    font-family: $font-family-medium;
+    padding: 0 21px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+
+    &::placeholder {
+      letter-spacing: 0;
+    }
+  }
+
+  .calender-label {
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+
+  .icon-block {
+    z-index: 1;
+    width: fit-content;
+    display: inline-block;
+    margin-top: 14px;
+    position: absolute;
+    right: 20px;
+
+    .icon-calender {
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+
+  .react-datepicker__portal {
+    background: rgba(43, 45, 65, 0.9);
+  }
+
+  .react-datepicker-popper {
+    position: absolute;
+    will-change: unset !important;
+    top: 120px !important;
+    left: 40% !important;
+    transform: none !important;
+  }
+
+
+  .react-datepicker-popper[data-placement^="bottom"] {
+    margin-top: 0;
+  }
+
+  .react-datepicker {
+    border: none;
+    min-width: 252px;
+    background-color: $background-page;
+    border-bottom: 1px solid $bingeBlue-75;
+  }
+
+  .calender-top-block {
+    // background-color: #52547a;
+    background: linear-gradient(294.99deg, #020005 0%, #220046 100%);
+    padding: 15px;
+    margin-bottom: 14px;
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid $bingeBlue-75;
+
+    p {
+      &:first-child {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        font-family: $font-family-medium;
+        opacity: 0.7;
+      }
+
+      &:last-child {
+        font-size: 31px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.03;
+        letter-spacing: normal;
+        color: #ffffff;
+        font-family: $font-family-medium;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .react-datepicker__header {
+    border-bottom: none;
+    background-color: $background-page;
+  }
+
+  .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+    font-size: 14px !important;
+    font-family: $font-family-regular;
+    margin-bottom: 16px;
+    color: $white-color;
+  }
+
+  .react-datepicker__month-container {
+    width: 252px;
+    min-height: 250px;
+  }
+
+  .calender-custom-container {
+    width: 252px;
+    min-height: 432px;
+    // background: white;
+    background-color: $background-page;
+    // border: 1px solid $bingeBlue-75;
+
+    .button-block {
+      top: 44px;
+      position: relative;
+      float: right;
+      margin-right: 26px;
+
+      span {
+        font-family: $font-family-medium;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: $pink-25;
+        cursor: pointer;
+
+        &:first-child {
+          margin-right: 34px;
+        }
+      }
+    }
+  }
+
+  .react-datepicker__day-name {
+    // color: rgba(0, 0, 0, 0.3);
+    color: $white-color;
+
+  }
+
+  .react-datepicker__day, .react-datepicker__time-name {
+    // color: rgba(0, 0, 0, 0.87);
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+
+  .react-datepicker__day--disabled, .react-datepicker__month-text--disabled, .react-datepicker__quarter-text--disabled, .react-datepicker__year-text--disabled {
+    color: $disable-color;
+  }
+
+  .react-datepicker__day--keyboard-selected {
+    background-color: $pink-100;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .react-datepicker__portal .react-datepicker__day-name, .react-datepicker__portal .react-datepicker__day, .react-datepicker__portal .react-datepicker__time-name {
+    width: 32px;
+    margin: 0;
+    line-height: 32px;
+    font-family: $font-family-regular;
+    color: $white-color;
+  }
+
+  button.react-datepicker__navigation.react-datepicker__navigation--previous {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 28px;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
+    &:hover {
+      border-right-color: $black-color;
+    }
+  }
+
+  button.react-datepicker__navigation.react-datepicker__navigation--next {
+    border: solid $black-color;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 28px;
+
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+
+  .react-datepicker__month {
+    margin: 0;
+    text-align: center;
+  }
+
+  .react-datepicker__day--selected {
+    background-color: #52547a;
+    color: $white-color;
+    border-radius: 50%;
+
+    &:hover {
+      // background-color: #52547a;
+      border: 1px solid $white-color;
+    }
+  }
+
+  .react-datepicker__day--keyboard-selected:hover {
+    // background-color: #52547a;
+    // border: 0.2px solid $white-color;
+  }
+
+  .react-datepicker__day:hover {
+    border-radius: 50%;
+    // border: 0.5px solid $white-color;
+    background-color: $pink-100;
+  }
+  .react-datepicker__day{
+    color: $white-color;
+  }
+
+  .previous-item {
+    display: inline-block;
+    width: 32px;
+    margin: 0;
+    line-height: 32px;
+    font-family: $font-family-regular;
+    color: $white-color;
+  }
+}
+@media only screen and (max-width: 600px){
+  .calender-container {
+    position: relative;
+  
+    input[type="text"] {
+      width: 324px;
+      // box-sizing: border-box;
+      // height: 59px;
+      // background-color: #2b2d41;
+      // border: 1px solid #444764;
+      // font-size: 16px;
+      // color: #a3a6c2;
+      // font-family: sky_med;
+      // padding: 0 21px;
+      // letter-spacing: 3px;
+      // border-radius: 10px;
+    }
+  }
+  
+}
