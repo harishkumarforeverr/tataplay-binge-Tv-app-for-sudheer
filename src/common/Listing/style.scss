@@ -1,6 +1,50 @@
 @import '../../assets/scss/variable.scss';
-.shuffleCardContainer {
-  display: none;
+.shuffleCardContainer{
+  display:  grid ;
+  align-items:  center ;
+  justify-content:  center ;
+  height:  100% ;
+  width:  100% ;
+  box-sizing:  border-box ;
+  background:  #220046 ;
+  border:  0.603432px solid #e4e4e4 ;
+  border-radius:  6.07203px ;
+  position:  absolute ;
+  top: 0;
+  .innerCard_two{
+    height: 99.6%;
+    width: 99.6%;
+  }
+  .innerCard_three{
+    height: 99.3%;
+    width: 99.3%;
+  }
+  .innerCard_four{
+    height: 99.5%;
+    width: 99.2%;                                             
+
+
+  }
+  .shuffleCard_content{
+    display: flex ;
+    justify-content:  center ;
+    align-items:  center ;
+    margin-bottom:  .5rem ;
+
+  }
+  .shuffleCard_img{
+    height: 100% !important;
+    width: 25% !important;
+    position: relative;
+  }
+  .shuffleCard_text{
+    color:  #F3CBE3 ;
+    font-size:  78% !important;
+    text-align:  center ;
+    margin-bottom:  10px ;
+    font-weight: 600;
+    display:  block ;
+  }
 }
 .listing-container {
 
@@ -124,7 +168,7 @@
     color: $white-color;
 
     &:after {
-      content: "";
+      content: ""  ;
       display: inline-block;
       width: 21px;
       height: 20px;
@@ -383,7 +427,7 @@
       // have check wheather
       height: 144px;
       margin-right: 20px;
-      border-radius: 116px;
+      border-radius: 6px;
 
       // &:hover {
       //   transform: scale(1.12);
